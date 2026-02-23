@@ -1,0 +1,179 @@
+{
+  "navigation": {
+    "about": "About",
+    "companies": "Companies",
+    "sectors": "Sectors",
+    "standards": "Standards",
+    "workWithUs": "Work with us",
+    "partnerWithUs": "Partner with us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "GRUPO GLOBE",
+    "headline": "Building enduring value across critical industries",
+    "subheadline": "A Canadian-based holding company applying rigorous operational standards to energy, mining, real estate, healthcare, and industrial services across North and South America.",
+    "tagline": "The Canadian standard. Not the exception.",
+    "ctaPrimary": "Our Companies",
+    "ctaSecondary": "Learn More",
+    "scroll": "Scroll"
+  },
+  "metrics": {
+    "companies": {
+      "number": "6",
+      "label": "Companies",
+      "description": "Operating portfolio"
+    },
+    "sectors": {
+      "number": "5",
+      "label": "Sectors",
+      "description": "Strategic industries"
+    },
+    "countries": {
+      "number": "2",
+      "label": "Countries",
+      "description": "Canada and Chile"
+    },
+    "experience": {
+      "number": "20+",
+      "label": "Years",
+      "description": "Operational experience"
+    }
+  },
+  "about": {
+    "label": "OUR PHILOSOPHY",
+    "headline": "We fall in love with problems, not solutions",
+    "subheadline": "Rather than seeking companies to acquire, we identify critical challenges in essential industries—then build or partner with the operations that can solve them with precision and consistency.",
+    "principle1": {
+      "number": "01",
+      "title": "Operational Rigor",
+      "description": "Canadian standards applied across our portfolio: documented processes, complete traceability, zero improvisation."
+    },
+    "principle2": {
+      "number": "02",
+      "title": "Industry Expertise",
+      "description": "Deep operational experience in each sector, with hands-on management and sector-specific technical knowledge."
+    },
+    "principle3": {
+      "number": "03",
+      "title": "Enduring Value",
+      "description": "Building businesses for the long term, with sustainable practices and measurable impact on communities."
+    }
+  },
+  "themes": {
+    "energy": {
+      "label": "ENERGY",
+      "headline": "Powering Critical Operations",
+      "description": "When production can't stop, our energy systems keep running. Reliable power for mining operations, industrial facilities, and remote sites across North and South America.",
+      "link": "Globe Power"
+    },
+    "modular": {
+      "label": "MODULAR CONSTRUCTION",
+      "headline": "Redefining Construction Speed",
+      "description": "Industrial infrastructure delivered in days, not months. Certified modular solutions that reduce timelines by 60% without compromising on quality or safety standards.",
+      "link": "Globe Modular"
+    },
+    "services": {
+      "label": "CRITICAL SERVICES",
+      "headline": "When Downtime Isn't an Option",
+      "description": "From hospital infrastructure to mining equipment, we maintain critical systems that can't fail. Preventive maintenance, rapid response, complete reliability.",
+      "link": "Globe Services"
+    }
+  },
+  "standards": {
+    "label": "CANADIAN STANDARDS",
+    "headline": "The quiet discipline of doing things right",
+    "subheadline": "Canadian standards aren't about marketing—they're about operational rigor, complete documentation, and the discipline to maintain excellence even when no one is watching.",
+    "precision": {
+      "title": "Precision",
+      "description": "Measurable results, documented processes, complete traceability from planning to execution."
+    },
+    "consistency": {
+      "title": "Consistency",
+      "description": "The same high standard applied across every project, every site, every interaction."
+    },
+    "integrity": {
+      "title": "Integrity",
+      "description": "Doing what we promised, when we promised it, to the standard we committed to."
+    },
+    "footer": "This is the standard that defines every Globe company. Not the exception—the expectation."
+  },
+  "portfolio": {
+    "label": "OUR PORTFOLIO",
+    "headline": "Six companies. One standard.",
+    "subheadline": "Each company operates independently with deep sector expertise, while benefiting from shared operational standards and cross-portfolio synergies.",
+    "learnMore": "Learn More",
+    "companies": {
+      "power": {
+        "sector": "Energy",
+        "tagline": "Reliable power for critical operations",
+        "description": "Industrial energy systems for mining, remote sites, and facilities that can't afford downtime."
+      },
+      "modular": {
+        "sector": "Construction",
+        "tagline": "Industrial infrastructure in days, not months",
+        "description": "Certified modular construction reducing project timelines by 60% while meeting Canadian building codes."
+      },
+      "services": {
+        "sector": "Maintenance",
+        "tagline": "Critical systems maintenance",
+        "description": "Preventive and emergency maintenance for hospitals, industrial facilities, and mining operations."
+      },
+      "flota": {
+        "sector": "Mining",
+        "tagline": "Fleet management expertise",
+        "description": "Mining equipment management and optimization for operations across Chile."
+      },
+      "liftparts": {
+        "sector": "Mining",
+        "tagline": "Critical mining components",
+        "description": "Immediate availability of essential parts for mining operations when every hour counts."
+      },
+      "academy": {
+        "sector": "Healthcare",
+        "tagline": "Medical education excellence",
+        "description": "Healthcare training programs meeting international certification standards."
+      }
+    }
+  },
+  "ecosystem": {
+    "label": "THE GLOBE ECOSYSTEM",
+    "headline": "Stronger together",
+    "subheadline": "Each Globe company benefits from being part of a larger network—shared operational expertise, cross-sector insights, and collective intelligence that enables us to identify and act on opportunities others can't see.",
+    "synergies": {
+      "number": "01",
+      "title": "Cross-Sector Synergies",
+      "description": "Globe Power provides energy for Globe Modular construction sites. Globe Services maintains equipment for Globe Flota operations."
+    },
+    "intelligence": {
+      "number": "02",
+      "title": "Shared Intelligence",
+      "description": "Operational insights and market intelligence flow across companies, enabling faster decision-making and better outcomes."
+    },
+    "standards": {
+      "number": "03",
+      "title": "Unified Standards",
+      "description": "Canadian operational standards applied consistently across all companies, ensuring quality and reliability at every touchpoint."
+    }
+  },
+  "cta": {
+    "headline": "Partner with companies that solve real problems",
+    "subheadline": "Whether you're an entrepreneur building a business that transforms its sector, an investor seeking enduring value, or talent looking to work where decisions matter—we want to hear from you.",
+    "ctaPrimary": "Get in Touch",
+    "ctaSecondary": "Career Opportunities"
+  },
+  "footer": {
+    "description": "Building enduring value across critical industries with Canadian operational standards.",
+    "portfolioTitle": "Portfolio",
+    "companyTitle": "Company",
+    "connectTitle": "Connect",
+    "companyLinks": {
+      "about": "About Us",
+      "approach": "Our Approach",
+      "standards": "Canadian Standards",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "copyright": "© 2026 Grupo Globe. All rights reserved.",
+    "tagline": "The standard. Not the exception."
+  }
+}

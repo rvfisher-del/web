@@ -1,0 +1,179 @@
+{
+  "navigation": {
+    "about": "Nosotros",
+    "companies": "Empresas",
+    "sectors": "Sectores",
+    "standards": "Estándar",
+    "workWithUs": "Trabaja con nosotros",
+    "partnerWithUs": "Asóciate con nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "label": "GRUPO GLOBE",
+    "headline": "Construyendo valor duradero en industrias críticas",
+    "subheadline": "Una holding canadiense que aplica estándares operacionales rigurosos a energía, minería, bienes raíces, salud y servicios industriales en América del Norte y del Sur.",
+    "tagline": "El estándar canadiense. No la excepción.",
+    "ctaPrimary": "Nuestras Empresas",
+    "ctaSecondary": "Conocer Más",
+    "scroll": "Desplazar"
+  },
+  "metrics": {
+    "companies": {
+      "number": "6",
+      "label": "Empresas",
+      "description": "Portfolio operando"
+    },
+    "sectors": {
+      "number": "5",
+      "label": "Sectores",
+      "description": "Industrias estratégicas"
+    },
+    "countries": {
+      "number": "2",
+      "label": "Países",
+      "description": "Canadá y Chile"
+    },
+    "experience": {
+      "number": "20+",
+      "label": "Años",
+      "description": "Experiencia operacional"
+    }
+  },
+  "about": {
+    "label": "NUESTRA FILOSOFÍA",
+    "headline": "Nos enamoramos de problemas, no de soluciones",
+    "subheadline": "En lugar de buscar empresas para adquirir, identificamos desafíos críticos en industrias esenciales—luego construimos o nos asociamos con las operaciones que pueden resolverlos con precisión y consistencia.",
+    "principle1": {
+      "number": "01",
+      "title": "Rigor Operacional",
+      "description": "Estándares canadienses aplicados en todo nuestro portafolio: procesos documentados, trazabilidad completa, cero improvisación."
+    },
+    "principle2": {
+      "number": "02",
+      "title": "Experiencia Industrial",
+      "description": "Profunda experiencia operacional en cada sector, con gestión práctica y conocimiento técnico específico del sector."
+    },
+    "principle3": {
+      "number": "03",
+      "title": "Valor Duradero",
+      "description": "Construyendo negocios para el largo plazo, con prácticas sustentables e impacto medible en las comunidades."
+    }
+  },
+  "themes": {
+    "energy": {
+      "label": "ENERGÍA",
+      "headline": "Energizando Operaciones Críticas",
+      "description": "Cuando la producción no puede detenerse, nuestros sistemas de energía siguen funcionando. Energía confiable para operaciones mineras, instalaciones industriales y sitios remotos en América del Norte y del Sur.",
+      "link": "Globe Power"
+    },
+    "modular": {
+      "label": "CONSTRUCCIÓN MODULAR",
+      "headline": "Redefiniendo la Velocidad de Construcción",
+      "description": "Infraestructura industrial entregada en días, no meses. Soluciones modulares certificadas que reducen los tiempos en un 60% sin comprometer la calidad o los estándares de seguridad.",
+      "link": "Globe Modular"
+    },
+    "services": {
+      "label": "SERVICIOS CRÍTICOS",
+      "headline": "Cuando el Tiempo Muerto No es una Opción",
+      "description": "Desde infraestructura hospitalaria hasta equipos mineros, mantenemos sistemas críticos que no pueden fallar. Mantenimiento preventivo, respuesta rápida, confiabilidad completa.",
+      "link": "Globe Services"
+    }
+  },
+  "standards": {
+    "label": "ESTÁNDARES CANADIENSES",
+    "headline": "La disciplina silenciosa de hacer las cosas bien",
+    "subheadline": "Los estándares canadienses no son sobre marketing—son sobre rigor operacional, documentación completa y la disciplina de mantener la excelencia incluso cuando nadie está mirando.",
+    "precision": {
+      "title": "Precisión",
+      "description": "Resultados medibles, procesos documentados, trazabilidad completa desde la planificación hasta la ejecución."
+    },
+    "consistency": {
+      "title": "Consistencia",
+      "description": "El mismo alto estándar aplicado en cada proyecto, cada sitio, cada interacción."
+    },
+    "integrity": {
+      "title": "Integridad",
+      "description": "Hacer lo que prometimos, cuando lo prometimos, según el estándar al que nos comprometimos."
+    },
+    "footer": "Este es el estándar que define cada empresa Globe. No la excepción—la expectativa."
+  },
+  "portfolio": {
+    "label": "NUESTRO PORTAFOLIO",
+    "headline": "Seis empresas. Un estándar.",
+    "subheadline": "Cada empresa opera independientemente con profunda experiencia sectorial, mientras se beneficia de estándares operacionales compartidos y sinergias cruzadas del portafolio.",
+    "learnMore": "Conocer Más",
+    "companies": {
+      "power": {
+        "sector": "Energía",
+        "tagline": "Energía confiable para operaciones críticas",
+        "description": "Sistemas de energía industrial para minería, sitios remotos e instalaciones que no pueden permitirse tiempos muertos."
+      },
+      "modular": {
+        "sector": "Construcción",
+        "tagline": "Infraestructura industrial en días, no meses",
+        "description": "Construcción modular certificada que reduce los tiempos de proyecto en un 60% cumpliendo con los códigos de construcción canadienses."
+      },
+      "services": {
+        "sector": "Mantenimiento",
+        "tagline": "Mantenimiento de sistemas críticos",
+        "description": "Mantenimiento preventivo y de emergencia para hospitales, instalaciones industriales y operaciones mineras."
+      },
+      "flota": {
+        "sector": "Minería",
+        "tagline": "Experiencia en gestión de flotas",
+        "description": "Gestión y optimización de equipos mineros para operaciones en todo Chile."
+      },
+      "liftparts": {
+        "sector": "Minería",
+        "tagline": "Componentes mineros críticos",
+        "description": "Disponibilidad inmediata de piezas esenciales para operaciones mineras cuando cada hora cuenta."
+      },
+      "academy": {
+        "sector": "Salud",
+        "tagline": "Excelencia en educación médica",
+        "description": "Programas de capacitación en salud que cumplen con estándares de certificación internacional."
+      }
+    }
+  },
+  "ecosystem": {
+    "label": "EL ECOSISTEMA GLOBE",
+    "headline": "Más fuertes juntos",
+    "subheadline": "Cada empresa Globe se beneficia de ser parte de una red más grande—experiencia operacional compartida, insights intersectoriales e inteligencia colectiva que nos permite identificar y actuar en oportunidades que otros no pueden ver.",
+    "synergies": {
+      "number": "01",
+      "title": "Sinergias Intersectoriales",
+      "description": "Globe Power provee energía para los sitios de construcción de Globe Modular. Globe Services mantiene equipos para las operaciones de Globe Flota."
+    },
+    "intelligence": {
+      "number": "02",
+      "title": "Inteligencia Compartida",
+      "description": "Insights operacionales e inteligencia de mercado fluyen entre empresas, permitiendo toma de decisiones más rápida y mejores resultados."
+    },
+    "standards": {
+      "number": "03",
+      "title": "Estándares Unificados",
+      "description": "Estándares operacionales canadienses aplicados consistentemente en todas las empresas, asegurando calidad y confiabilidad en cada punto de contacto."
+    }
+  },
+  "cta": {
+    "headline": "Asóciese con empresas que resuelven problemas reales",
+    "subheadline": "Ya sea que seas un emprendedor construyendo un negocio que transforma su sector, un inversionista buscando valor duradero, o talento buscando trabajar donde las decisiones importan—queremos saber de ti.",
+    "ctaPrimary": "Contáctenos",
+    "ctaSecondary": "Oportunidades de Carrera"
+  },
+  "footer": {
+    "description": "Construyendo valor duradero en industrias críticas con estándares operacionales canadienses.",
+    "portfolioTitle": "Portafolio",
+    "companyTitle": "Compañía",
+    "connectTitle": "Conectar",
+    "companyLinks": {
+      "about": "Nosotros",
+      "approach": "Nuestro Enfoque",
+      "standards": "Estándares Canadienses",
+      "careers": "Carreras",
+      "contact": "Contacto"
+    },
+    "copyright": "© 2026 Grupo Globe. Todos los derechos reservados.",
+    "tagline": "El estándar. No la excepción."
+  }
+}
