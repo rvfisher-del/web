@@ -11,11 +11,12 @@ export default createMiddleware({
   // Detect locale from Accept-Language header
   localeDetection: true,
 
-  // Prefix the default locale
-  localePrefix: 'always'
+  // Don't prefix default locale - shows / instead of /es
+  localePrefix: 'as-needed'
 });
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(en|es)/:path*']
+  // Exclude /servicios paths (handled by Vercel rewrites)
+  matcher: ['/', '/(en|es)/:path*', '/((?!servicios|api|_next/static|_next/image|favicon.ico).*)']
 };
