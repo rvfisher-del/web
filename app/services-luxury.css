@@ -1,0 +1,363 @@
+/* ===================================================================
+   GLOBE SERVICES - APPROACHABLE LUXURY
+   Playfair Display (Headings) + Inter (Body) | Colorful Shadows | Warmth
+   Slogan: "You are a client, not a number"
+   =================================================================== */
+
+/* Font imported in globals.css */
+
+/* ============= RESET & BASE ============= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Warm Neutrals (60%) */
+  --neutral-50: #FAFAF9;
+  --neutral-100: #F5F5F4;
+  --neutral-200: #E7E5E4;
+  --neutral-600: #57534E;
+  --neutral-900: #1C1917;
+  
+  /* Warm Secondary (30%) */
+  --warm-50: #FFF7ED;
+  --warm-100: #FFEDD5;
+  --warm-200: #FED7AA;
+  --warm-600: #EA580C;
+  
+  /* Accent Orange (10%) */
+  --accent: #FF8C42;
+  --accent-dark: #E57835;
+  
+  /* Colorful Shadows (Indigo for depth) */
+  --shadow-indigo: 99 102 241;
+  --shadow-orange: 255 140 66;
+  
+  --grid-gap: 24px;
+  --max-width: 1440px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-variant-numeric: tabular-nums;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--neutral-900);
+  background: var(--neutral-50);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============= 12-COLUMN GRID SYSTEM ============= */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--grid-gap);
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+.col-span-1 { grid-column: span 1; }
+.col-span-2 { grid-column: span 2; }
+.col-span-3 { grid-column: span 3; }
+.col-span-4 { grid-column: span 4; }
+.col-span-5 { grid-column: span 5; }
+.col-span-6 { grid-column: span 6; }
+.col-span-7 { grid-column: span 7; }
+.col-span-8 { grid-column: span 8; }
+.col-span-9 { grid-column: span 9; }
+.col-span-10 { grid-column: span 10; }
+.col-span-11 { grid-column: span 11; }
+.col-span-12 { grid-column: span 12; }
+
+.col-start-1 { grid-column-start: 1; }
+.col-start-2 { grid-column-start: 2; }
+.col-start-3 { grid-column-start: 3; }
+.col-start-4 { grid-column-start: 4; }
+.col-start-5 { grid-column-start: 5; }
+.col-start-6 { grid-column-start: 6; }
+.col-start-7 { grid-column-start: 7; }
+
+/* ============= TYPOGRAPHY - APPROACHABLE LUXURY ============= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--neutral-900);
+}
+
+h1 {
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.lead {
+  font-size: clamp(18px, 2vw, 21px);
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--neutral-600);
+}
+
+/* ============= HEADER ============= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(250, 250, 249, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px var(--grid-gap);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 160px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--neutral-900);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+.btn-contact {
+  display: inline-block;
+  background: var(--neutral-900);
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-contact:hover {
+  background: var(--accent);
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+}
+
+/* ============= LUXURY CARDS - COLORFUL SHADOWS ============= */
+
+.card-luxury {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 32px;
+  box-shadow: 
+    0 1px 3px rgba(var(--shadow-indigo), 0.08),
+    0 8px 24px rgba(var(--shadow-indigo), 0.12),
+    0 16px 48px rgba(var(--shadow-indigo), 0.08);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1px solid rgba(var(--shadow-indigo), 0.06);
+}
+
+.card-luxury:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 2px 6px rgba(var(--shadow-orange), 0.1),
+    0 12px 32px rgba(var(--shadow-orange), 0.15),
+    0 24px 64px rgba(var(--shadow-indigo), 0.12);
+  border-color: rgba(var(--shadow-orange), 0.2);
+}
+
+/* ============= STATS - HUMAN-CENTRIC ============= */
+
+.stats-horizontal {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+  padding: 80px 0;
+  border-top: 1px solid var(--warm-200);
+  border-bottom: 1px solid var(--warm-200);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 220px;
+}
+
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(56px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--neutral-900);
+}
+
+.stat-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--neutral-600);
+}
+
+/* ============= BUTTONS - FRIENDLY LANGUAGE ============= */
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 
+    0 2px 8px rgba(var(--shadow-orange), 0.2),
+    0 8px 24px rgba(var(--shadow-orange), 0.15);
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 4px 12px rgba(var(--shadow-orange), 0.3),
+    0 12px 32px rgba(var(--shadow-orange), 0.25);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: white;
+  color: var(--neutral-900);
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: 2px solid var(--neutral-200);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 
+    0 2px 8px rgba(var(--shadow-indigo), 0.08),
+    0 8px 24px rgba(var(--shadow-indigo), 0.08);
+}
+
+.btn-secondary:hover {
+  background: var(--neutral-900);
+  color: white;
+  border-color: var(--neutral-900);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 4px 12px rgba(var(--shadow-indigo), 0.15),
+    0 12px 32px rgba(var(--shadow-indigo), 0.12);
+}
+
+/* ============= SECTIONS ============= */
+
+section {
+  padding: 120px 0;
+}
+
+.section-padding-sm {
+  padding: 80px 0;
+}
+
+/* Warm background for alternating sections */
+.section-warm {
+  background: var(--warm-50);
+}
+
+/* ============= FOOTER ============= */
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* ============= RESPONSIVE ============= */
+
+@media (max-width: 768px) {
+  .grid-12 {
+    grid-template-columns: 1fr;
+  }
+  
+  .col-span-1, .col-span-2, .col-span-3, .col-span-4,
+  .col-span-5, .col-span-6, .col-span-7, .col-span-8,
+  .col-span-9, .col-span-10, .col-span-11, .col-span-12 {
+    grid-column: span 1;
+  }
+  
+  .stats-horizontal {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .stat-item {
+    max-width: 100%;
+  }
+}

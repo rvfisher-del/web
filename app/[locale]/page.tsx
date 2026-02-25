@@ -346,7 +346,7 @@ export default function Home() {
               key: "modular", 
               url: "http://localhost:3000" // DEV: localhost:3000 | PROD: https://modular.grupoGlobe.com
             },
-            { logo: "logo-globe-services.png", name: "Globe Services", key: "services", url: "#" },
+            { logo: "logo-globe-services.png", name: "Globe Services", key: "services", url: "/services" },
             { logo: "logo-globe-flota.png", name: "Globe Flota y Equipos", key: "flota", url: "#" },
             { logo: "logo-globe-lift-parts.png", name: "Globe Lift Parts", key: "liftparts", url: "#" },
             { logo: "logo-globe-academy.png", name: "Globe Academy", key: "academy", url: "#" }
