@@ -62,7 +62,7 @@ export default function Home() {
         {/* Scroll Indicator with Tailwind animation */}
         <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-40 animate-bounce">
           <span className="text-[11px] font-semibold tracking-[0.3em] uppercase text-neutral-600">Scroll</span>
-          <svg className="w-6 h-6 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-neutral-600" style={{ objectFit: "cover", width: "100%", height: "100%" }}="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
@@ -146,10 +146,10 @@ export default function Home() {
           {/* Theme 1: Energy */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[600px] overflow-hidden order-2 lg:order-1 group">
-              <Image
+              <img
                 src="/images/hero/opening-image.png"
                 alt="Energy Transition"
-                fill
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Warm orange glow overlay - Pure Tailwind */}
@@ -192,10 +192,10 @@ export default function Home() {
               </a>
             </div>
             <div className="relative h-[600px] overflow-hidden group">
-              <Image
+              <img
                 src="/images/geographic/chile-new.jpg"
                 alt="Modular Construction"
-                fill
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-bl from-orange-500/35 via-orange-400/20 to-transparent mix-blend-screen pointer-events-none" />
@@ -206,10 +206,10 @@ export default function Home() {
           {/* Theme 3: Services */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[600px] overflow-hidden order-2 lg:order-1 group">
-              <Image
+              <img
                 src="/images/geographic/canada-canadian-forest.jpg"
                 alt="Essential Services"
-                fill
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/35 via-orange-400/20 to-transparent mix-blend-screen pointer-events-none" />
@@ -237,10 +237,10 @@ export default function Home() {
       {/* Canadian Standard - Premium Dark Section */}
       <section id="estandar" className="relative py-40 px-10 bg-neutral-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <Image
+          <img
             src="/images/geographic/canada-canadian-forest.jpg"
             alt="Background"
-            fill
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
             className="object-cover"
           />
         </div>
@@ -346,11 +346,9 @@ export default function Home() {
           ].map((company, i) => (
             <div key={i} className="group bg-white border border-neutral-200 hover:border-[#FF8C42] p-12 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
               <div className="flex items-start justify-between mb-6">
-                <Image
+                <img
                   src={`/images/logos/${company.logo}`}
                   alt={company.name}
-                  width={140}
-                  height={50}
                   className="h-10 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#FF8C42] bg-[#FF8C42]/10 px-3 py-1.5">
@@ -439,11 +437,9 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <Image
+              <img
                 src="/images/logos/logo-grupo-globe.png"
                 alt="Grupo Globe"
-                width={120}
-                height={60}
                 className="h-15 w-auto mb-6 brightness-0 invert opacity-80"
               />
               <p className="text-sm font-light text-white/60 leading-relaxed">
