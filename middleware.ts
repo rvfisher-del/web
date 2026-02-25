@@ -8,8 +8,8 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: 'es',
 
-  // Detect locale from Accept-Language header
-  localeDetection: true,
+  // Disable automatic locale detection - user explicitly chooses language
+  localeDetection: false,
 
   // Don't prefix default locale - shows / instead of /es
   localePrefix: 'as-needed'
