@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './components/LanguageSwitcher';
 
@@ -11,12 +10,10 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/8">
         <div className="max-w-[1400px] mx-auto px-10 py-5 flex justify-between items-center">
           <div className="logo">
-            <Image
+            <img
               src="/images/logos/logo-grupo-globe.png"
               alt="Grupo Globe"
-              width={480}
-              height={240}
-              className="h-60 w-auto transition-all duration-300"
+              className="h-20 w-auto transition-all duration-300"
             />
           </div>
           <nav className="hidden md:flex gap-12 items-center">
@@ -31,6 +28,9 @@ export default function Home() {
             </a>
             <a href="#estandar" className="text-[13px] font-semibold tracking-[0.15em] uppercase text-black hover:text-[#FF8C42] transition-colors">
               {t('navigation.standards')}
+            </a>
+            <a href="/servicios" className="text-[13px] font-semibold tracking-[0.15em] uppercase text-black hover:text-[#FF8C42] transition-colors">
+              Servicios
             </a>
             <a href="#work" className="text-[13px] font-semibold tracking-[0.15em] uppercase text-black hover:text-[#FF8C42] transition-colors">
               {t('navigation.workWithUs')}
@@ -189,12 +189,7 @@ export default function Home() {
           {/* Theme 1: Energy Transition */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[600px] overflow-hidden warm-glow order-2 lg:order-1">
-              <Image
-                src="/images/hero/opening-image.png"
-                alt="Energy Transition"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
-              />
+              <img src="/images/hero/opening-image.png" alt="Energy Transition" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
             </div>
             <div className="order-1 lg:order-2">
@@ -230,12 +225,7 @@ export default function Home() {
               </a>
             </div>
             <div className="relative h-[600px] overflow-hidden warm-glow">
-              <Image
-                src="/images/geographic/chile-new.jpg"
-                alt="Modular Construction"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
-              />
+              <img src="/images/geographic/chile-new.jpg" alt="Modular Construction" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-bl from-black/40 to-transparent" />
             </div>
           </div>
@@ -243,12 +233,7 @@ export default function Home() {
           {/* Theme 3: Essential Services */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[600px] overflow-hidden warm-glow order-2 lg:order-1">
-              <Image
-                src="/images/geographic/canada-canadian-forest.jpg"
-                alt="Essential Services"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
-              />
+              <img src="/images/geographic/canada-canadian-forest.jpg" alt="Essential Services" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
             </div>
             <div className="order-1 lg:order-2">
@@ -272,12 +257,7 @@ export default function Home() {
       {/* Canadian Standard - Premium Section */}
       <section id="estandar" className="relative py-40 px-10 bg-[#1a1a1a] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <Image
-            src="/images/geographic/canada-canadian-forest.jpg"
-            alt="Background"
-            fill
-            className="object-cover"
-          />
+          <img src="/images/geographic/canada-canadian-forest.jpg" alt="Background" className="absolute inset-0 w-full h-full object-cover" />
         </div>
         <div className="relative max-w-5xl mx-auto text-center">
           <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-[#FF8C42] mb-8">
@@ -353,13 +333,7 @@ export default function Home() {
           ].map((company, i) => (
             <div key={i} className="group bg-white border border-[#F5F5F5] hover:border-[#FF8C42] p-12 transition-all duration-300 hover:shadow-2xl">
               <div className="flex items-start justify-between mb-6">
-                <Image
-                  src={`/images/logos/${company.logo}`}
-                  alt={company.name}
-                  width={140}
-                  height={50}
-                  className="h-[40px] w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
-                />
+                <img src={`/images/logos/${company.logo}`} alt={company.name} className="h-[40px] w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#FF8C42] bg-[#FF8C42]/10 px-3 py-1.5">
                   {t(`portfolio.companies.${company.key}.sector`)}
                 </div>
@@ -460,13 +434,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <Image
-                src="/images/logos/logo-grupo-globe.png"
-                alt="Grupo Globe"
-                width={120}
-                height={60}
-                className="h-15 w-auto mb-6 brightness-0 invert opacity-80"
-              />
+              <img src="/images/logos/logo-grupo-globe.png" alt="Grupo Globe" className="h-15 w-auto mb-6 brightness-0 invert opacity-80" />
               <p className="text-sm font-light text-white/60 leading-relaxed">
                 {t('footer.description')}
               </p>
