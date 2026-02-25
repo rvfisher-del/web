@@ -8,7 +8,7 @@ export default function Home() {
     <div className="bg-white">
       {/* Minimalist Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/8">
-        <div className="max-w-[1400px] mx-auto px-10 py-5 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center">
           <div className="logo">
             <img
               src="/images/logos/logo-grupo-globe.png"
@@ -81,8 +81,8 @@ export default function Home() {
       </section>
 
       {/* Key Statistics - Brookfield-style metrics */}
-      <section className="py-24 px-10 bg-white border-t border-b border-black/8">
-        <div className="max-w-[1400px] mx-auto">
+      <section className="py-24 bg-white border-t border-b border-black/8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-12 text-center">
             <div className="group">
               <div className="text-[clamp(56px,8vw,80px)] font-black leading-none tracking-[-0.03em] text-[#FF8C42] mb-3 group-hover:scale-105 transition-transform duration-300">
@@ -185,10 +185,10 @@ export default function Home() {
 
       {/* Strategic Themes - Brookfield "Built for What's Next" style */}
       <section className="py-32 px-10 bg-white">
-        <div className="max-w-[1400px] mx-auto space-y-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
           {/* Theme 1: Energy Transition */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[600px] overflow-hidden warm-glow order-2 lg:order-1">
+            <div className="relative h-[600px] aspect-video overflow-hidden warm-glow order-2 lg:order-1">
               <img src="/images/hero/opening-image.png" alt="Energy Transition" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
                 {t('themes.modular.link')} <span className="group-hover:translate-x-1 transition-transform">→</span>
               </a>
             </div>
-            <div className="relative h-[600px] overflow-hidden warm-glow">
+            <div className="relative h-[600px] aspect-video overflow-hidden warm-glow">
               <img src="/images/geographic/chile-new.jpg" alt="Modular Construction" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-bl from-black/40 to-transparent" />
             </div>
@@ -232,7 +232,7 @@ export default function Home() {
 
           {/* Theme 3: Essential Services */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[600px] overflow-hidden warm-glow order-2 lg:order-1">
+            <div className="relative h-[600px] aspect-video overflow-hidden warm-glow order-2 lg:order-1">
               <img src="/images/geographic/canada-canadian-forest.jpg" alt="Essential Services" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
             </div>
@@ -255,7 +255,7 @@ export default function Home() {
       </section>
 
       {/* Canadian Standard - Premium Section */}
-      <section id="estandar" className="relative py-40 px-10 bg-[#1a1a1a] text-white overflow-hidden">
+      <section id="estandar" className="relative py-40 bg-[#1a1a1a] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <img src="/images/geographic/canada-canadian-forest.jpg" alt="Background" className="absolute inset-0 w-full h-full object-cover" />
         </div>
@@ -304,7 +304,7 @@ export default function Home() {
       </section>
 
       {/* Portfolio - Brookfield "Who We Serve" style */}
-      <section id="empresas" className="py-40 px-10 bg-white">
+      <section id="empresas" className="py-40 bg-white">
         <div className="max-w-5xl mx-auto text-center mb-20">
           <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-[#FF8C42] mb-8">
             {t('portfolio.label')}
@@ -317,7 +317,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
           {[
             { logo: "logo-globe-power.png", name: "Globe Power", key: "power", url: "#" },
             { 
@@ -410,7 +410,7 @@ export default function Home() {
       </section>
 
       {/* CTA - Brookfield style */}
-      <section id="contacto" className="py-40 px-10 bg-black text-white text-center">
+      <section id="contacto" className="py-40 bg-black text-white text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-[clamp(40px,6vw,64px)] font-extrabold leading-[1.1] tracking-[-0.02em] mb-12">
             {t('cta.headline')}
@@ -431,7 +431,7 @@ export default function Home() {
 
       {/* Footer - Sophisticated */}
       <footer className="bg-[#1a1a1a] text-white py-20 px-10 border-t border-white/10">
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
               <img src="/images/logos/logo-grupo-globe.png" alt="Grupo Globe" className="h-15 w-auto mb-6 brightness-0 invert opacity-80" />
