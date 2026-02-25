@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/servicios",
+      "destination": "https://globe-services-nextjs.vercel.app/servicios"
+    },
+    {
+      "source": "/servicios/:path*",
+      "destination": "https://globe-services-nextjs.vercel.app/servicios/:path*"
+    }
+  ]
+}

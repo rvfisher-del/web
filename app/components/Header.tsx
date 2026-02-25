@@ -94,7 +94,7 @@ export default function Header({ scrolled }: HeaderProps) {
                     Globe Academy
                   </a>
                   <a
-                    href="#globe-services"
+                    href="/servicios"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
                   >
                     Globe Services
