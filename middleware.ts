@@ -17,6 +17,6 @@ export default createMiddleware({
 
 export const config = {
   // Match only internationalized pathnames
-  // Exclude /servicios paths (handled by Vercel rewrites)
-  matcher: ['/', '/(en|es)/:path*', '/((?!servicios|api|_next/static|_next/image|favicon.ico).*)']
+  // Exclude /servicios paths (handled by Vercel rewrites) and static assets
+  matcher: ['/', '/(en|es)/:path*', '/((?!servicios|api|_next/static|_next/image|images|favicon.ico).*)']
 };
