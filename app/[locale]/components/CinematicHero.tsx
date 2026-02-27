@@ -65,7 +65,7 @@ export default function CinematicHero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="font-black uppercase tracking-tighter mb-0"
+              className="font-black tracking-tighter mb-0"
               style={{ 
                 fontSize: 'clamp(3rem, 8vw, 9rem)',
                 letterSpacing: '-0.05em',
@@ -74,25 +74,22 @@ export default function CinematicHero() {
                 fontFamily: "'Inter', -apple-system, sans-serif"
               }}
             >
-              <span className="text-white">EL ESTÁNDAR</span>
-              <br />
-              <span className="text-white">CANADIENSE</span>
+              <span className="text-white">{t('hero.headline')}</span>
             </motion.h1>
 
-            {/* Subtle Tagline - The Whisper */}
+            {/* Branded Badge/Tagline - Smaller, Subtle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="font-light italic text-slate-400 mt-4"
+              className="font-light uppercase text-slate-400/80 mt-6"
               style={{ 
-                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
-                letterSpacing: '0.02em',
+                fontSize: 'clamp(0.875rem, 1.5vw, 1.125rem)',
+                letterSpacing: '0.15em',
                 lineHeight: '1.6'
               }}
             >
-              Construyendo valor desde la precisión, <br />
-              no desde la excepción.
+              {t('hero.label')}
             </motion.p>
 
             {/* Vertical Tracing Line - The Bridge */}
