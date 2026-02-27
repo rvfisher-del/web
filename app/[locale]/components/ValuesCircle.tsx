@@ -78,6 +78,17 @@ export default function ValuesCircle() {
           </motion.div>
         </motion.div>
 
+        {/* NEW Label */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8"
+        >
+          VISIÓN 360° DEL VALOR
+        </motion.div>
+
         {/* Headline */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -86,9 +97,7 @@ export default function ValuesCircle() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-[clamp(32px,5vw,56px)] font-black leading-[1.2] tracking-tighter text-black mb-8"
         >
-          Construyendo valor duradero
-          <br />
-          en industrias críticas
+          De la energía que alimenta la mina, hasta el mantenimiento que mantiene los equipos operando
         </motion.h2>
 
         {/* Subtext */}
@@ -97,59 +106,21 @@ export default function ValuesCircle() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[18px] font-light text-black/60 leading-relaxed max-w-2xl mx-auto"
+          className="text-[18px] font-light text-black/60 leading-relaxed max-w-2xl mx-auto mb-8"
         >
-          No perseguimos ganancias de corto plazo. Construimos empresas que trascienden ciclos económicos, 
-          con prácticas sustentables e impacto medible en las comunidades donde operamos.
+          No perseguimos ganancias de un trimestre. Construimos empresas que operan décadas—con impacto medible en empleo, seguridad y comunidades.
         </motion.p>
 
-        {/* Three Pillars */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
+        {/* Closing Line */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-16"
+          transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          className="text-[20px] font-bold text-black"
         >
-          <div>
-            <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
-              01
-            </div>
-            <h3 className="text-[20px] font-bold tracking-tight text-black mb-3">
-              Rigor Operacional
-            </h3>
-            <p className="text-[15px] font-light text-black/60 leading-relaxed">
-              Estándares canadienses aplicados en todo nuestro portafolio: procesos documentados, 
-              trazabilidad completa, cero improvisación.
-            </p>
-          </div>
-
-          <div>
-            <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
-              02
-            </div>
-            <h3 className="text-[20px] font-bold tracking-tight text-black mb-3">
-              Experiencia Industrial
-            </h3>
-            <p className="text-[15px] font-light text-black/60 leading-relaxed">
-              Profunda experiencia operacional en cada sector, con gestión práctica y conocimiento 
-              técnico específico del sector.
-            </p>
-          </div>
-
-          <div>
-            <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
-              03
-            </div>
-            <h3 className="text-[20px] font-bold tracking-tight text-black mb-3">
-              Valor Duradero
-            </h3>
-            <p className="text-[15px] font-light text-black/60 leading-relaxed">
-              Construyendo negocios para el largo plazo, con prácticas sustentables e impacto 
-              medible en las comunidades.
-            </p>
-          </div>
-        </motion.div>
+          Las industrias críticas no tienen días libres. Nosotros tampoco.
+        </motion.p>
       </div>
     </section>
   );

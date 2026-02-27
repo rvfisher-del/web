@@ -380,9 +380,23 @@ export default function Home() {
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] mb-12" style={{ letterSpacing: '-0.05em' }}>
                 {t('cta.headline')}
               </h2>
-              <p className="text-[clamp(18px,2vw,24px)] font-light text-white/70 mb-14 leading-relaxed">
+              <p className="text-[clamp(18px,2vw,24px)] font-light text-white/70 mb-8 leading-relaxed">
                 {t('cta.subheadline')}
               </p>
+              
+              {/* Audience Breakdown */}
+              <div className="max-w-3xl mx-auto mb-14 space-y-4 text-left">
+                <p className="text-[16px] font-light text-white/80 leading-relaxed">
+                  <strong className="font-semibold text-white">Para fundadores:</strong> {t('cta.founders')}
+                </p>
+                <p className="text-[16px] font-light text-white/80 leading-relaxed">
+                  <strong className="font-semibold text-white">Para inversionistas:</strong> {t('cta.investors')}
+                </p>
+                <p className="text-[16px] font-light text-white/80 leading-relaxed">
+                  <strong className="font-semibold text-white">Para talento técnico:</strong> {t('cta.talent')}
+                </p>
+              </div>
+
               <div className="flex flex-wrap justify-center gap-6">
                 <a 
                   href="#" 
@@ -395,6 +409,12 @@ export default function Home() {
                   className="bg-transparent border-2 border-white text-white px-12 py-5 text-[12px] font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-300"
                 >
                   {t('cta.ctaSecondary')}
+                </a>
+                <a 
+                  href="#" 
+                  className="bg-transparent border-2 border-white text-white px-12 py-5 text-[12px] font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  {t('cta.ctaTertiary')}
                 </a>
               </div>
             </ScrollReveal>
