@@ -1,4 +1,46 @@
 {
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/videos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "video/mp4"
+        }
+      ]
+    },
+    {
+      "source": "/(power|modular|servicios)/_next/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(power|modular|servicios)/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/servicios",
@@ -7,6 +49,14 @@
     {
       "source": "/servicios/:path*",
       "destination": "https://globe-services-nextjs.vercel.app/:path*"
+    },
+    {
+      "source": "/power",
+      "destination": "https://globe-power-nextjs.vercel.app"
+    },
+    {
+      "source": "/power/:path*",
+      "destination": "https://globe-power-nextjs.vercel.app/:path*"
     }
   ]
 }

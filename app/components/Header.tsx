@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface HeaderProps {
   scrolled: boolean;
@@ -9,6 +9,18 @@ interface HeaderProps {
 export default function Header({ scrolled }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [companiesDropdownOpen, setCompaniesDropdownOpen] = useState(false);
+  const [powerPrefetched, setPowerPrefetched] = useState(false);
+
+  // Prefetch /power route when hovering over Globe Power link
+  const prefetchPower = () => {
+    if (!powerPrefetched && typeof window !== 'undefined') {
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = '/power/';
+      document.head.appendChild(link);
+      setPowerPrefetched(true);
+    }
+  };
 
   return (
     <header
@@ -68,40 +80,51 @@ export default function Header({ scrolled }: HeaderProps) {
                 Empresas ▾
               </button>
               {companiesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 border border-gray-100">
+                <div 
+                  className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 border border-gray-100"
+                  onMouseEnter={() => setCompaniesDropdownOpen(true)}
+                  onMouseLeave={() => setCompaniesDropdownOpen(false)}
+                >
                   <a
-                    href="#globe-power"
+                    href="/power/"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                    onClick={() => setCompaniesDropdownOpen(false)}
+                    onMouseEnter={prefetchPower}
                   >
                     Globe Power
                   </a>
                   <a
                     href="#globe-flota"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                    onClick={() => setCompaniesDropdownOpen(false)}
                   >
                     Globe Flota y Equipos
                   </a>
                   <a
                     href="#globe-modular"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                    onClick={() => setCompaniesDropdownOpen(false)}
                   >
                     Globe Modular
                   </a>
                   <a
                     href="#globe-academy"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                    onClick={() => setCompaniesDropdownOpen(false)}
                   >
                     Globe Academy
                   </a>
                   <a
                     href="/servicios"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                    onClick={() => setCompaniesDropdownOpen(false)}
                   >
                     Globe Services
                   </a>
                   <a
                     href="#globe-lift-parts"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                    onClick={() => setCompaniesDropdownOpen(false)}
                   >
                     Globe Lift Parts
                   </a>

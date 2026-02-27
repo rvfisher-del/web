@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import { locales } from '@/i18n';
+import type { Metadata } from 'next';
 import '../globals.css';
 
 const inter = Inter({ 
@@ -10,6 +11,18 @@ const inter = Inter({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-inter',
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://grupo-globe-nextjs.vercel.app'),
+  title: 'Grupo Globe',
+  description: 'Building enduring value in critical industries across North and South America',
+  icons: {
+    icon: '/images/favicons/favicon-grupo-globe.svg',
+  },
+  openGraph: {
+    images: ['/images/logos/logo-grupo-globe.png'],
+  },
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
