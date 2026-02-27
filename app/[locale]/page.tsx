@@ -29,7 +29,7 @@ export default function Home() {
 
         {/* Key Statistics - Premium Minimal */}
         <section className="py-32 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal>
               <div className="grid md:grid-cols-4 gap-16 text-center">
                 <div className="group">
@@ -39,7 +39,7 @@ export default function Home() {
                   <div className="text-[13px] font-bold uppercase tracking-[0.2em] text-black/40 mb-3">
                     {t('metrics.companies.label')}
                   </div>
-                  <div className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <div className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('metrics.companies.description')}
                   </div>
                 </div>
@@ -50,7 +50,7 @@ export default function Home() {
                   <div className="text-[13px] font-bold uppercase tracking-[0.2em] text-black/40 mb-3">
                     {t('metrics.sectors.label')}
                   </div>
-                  <div className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <div className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('metrics.sectors.description')}
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function Home() {
                   <div className="text-[13px] font-bold uppercase tracking-[0.2em] text-black/40 mb-3">
                     {t('metrics.countries.label')}
                   </div>
-                  <div className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <div className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('metrics.countries.description')}
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function Home() {
                   <div className="text-[13px] font-bold uppercase tracking-[0.2em] text-black/40 mb-3">
                     {t('metrics.experience.label')}
                   </div>
-                  <div className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <div className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('metrics.experience.description')}
                   </div>
                 </div>
@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* About - Investment Approach */}
         <section id="nosotros" className="py-32 bg-gradient-to-br from-slate-50 to-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal className="text-center mb-20">
               <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8">
                 {t('about.label')}
@@ -91,7 +91,7 @@ export default function Home() {
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] text-black mb-10" style={{ letterSpacing: '-0.05em' }}>
                 {t('about.headline')}
               </h2>
-              <p className="text-[clamp(18px,2vw,24px)] font-light text-black/60 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-[clamp(18px,2vw,24px)] font-light text-slate-600 max-w-4xl mx-auto leading-relaxed">
                 {t('about.subheadline')}
               </p>
             </ScrollReveal>
@@ -99,13 +99,13 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-12">
               <ScrollReveal delay={0.1}>
                 <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                  <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
+                  <div className="mt-12 mb-4 text-[14px] font-bold tracking-[0.2em] uppercase text-amber-700 mb-6">
                     {t('about.principle1.number')}
                   </div>
-                  <h3 className="text-[24px] font-bold tracking-tight text-black mb-3">
+                  <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-3">
                     {t('about.principle1.title')}
                   </h3>
-                  <p className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <p className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('about.principle1.description')}
                   </p>
                 </div>
@@ -113,13 +113,13 @@ export default function Home() {
 
               <ScrollReveal delay={0.2}>
                 <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                  <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
+                  <div className="mt-12 mb-4 text-[14px] font-bold tracking-[0.2em] uppercase text-amber-700 mb-6">
                     {t('about.principle2.number')}
                   </div>
-                  <h3 className="text-[24px] font-bold tracking-tight text-black mb-3">
+                  <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-3">
                     {t('about.principle2.title')}
                   </h3>
-                  <p className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <p className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('about.principle2.description')}
                   </p>
                 </div>
@@ -127,13 +127,13 @@ export default function Home() {
 
               <ScrollReveal delay={0.3}>
                 <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                  <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
+                  <div className="mt-12 mb-4 text-[14px] font-bold tracking-[0.2em] uppercase text-amber-700 mb-6">
                     {t('about.principle3.number')}
                   </div>
-                  <h3 className="text-[24px] font-bold tracking-tight text-black mb-3">
+                  <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-3">
                     {t('about.principle3.title')}
                   </h3>
-                  <p className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <p className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('about.principle3.description')}
                   </p>
                 </div>
@@ -150,15 +150,15 @@ export default function Home() {
 
         {/* Strategic Themes - Minimal Treatment */}
         <section className="py-32 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-32">
             {/* Theme 1: Energy Transition */}
             <ScrollReveal>
               <div className="grid lg:grid-cols-2 gap-20 items-center">
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden">
                   <img 
                     src="/images/hero/opening-image.png" 
                     alt="Energy Transition" 
-                    className="absolute inset-0 w-full h-full object-cover" 
+                    className="w-full h-full object-cover" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
                 </div>
@@ -202,11 +202,11 @@ export default function Home() {
                     {t('themes.modular.link')} <span>→</span>
                   </a>
                 </div>
-                <div className="relative aspect-video overflow-hidden order-1 lg:order-2">
+                <div className="relative aspect-[16/9] overflow-hidden order-1 lg:order-2">
                   <img 
                     src="/images/geographic/chile-new.jpg" 
                     alt="Modular Construction" 
-                    className="absolute inset-0 w-full h-full object-cover" 
+                    className="w-full h-full object-cover" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-bl from-black/40 to-transparent" />
                 </div>
@@ -216,11 +216,11 @@ export default function Home() {
             {/* Theme 3: Essential Services */}
             <ScrollReveal>
               <div className="grid lg:grid-cols-2 gap-20 items-center">
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden">
                   <img 
                     src="/images/geographic/canada-canadian-forest.jpg" 
                     alt="Essential Services" 
-                    className="absolute inset-0 w-full h-full object-cover" 
+                    className="w-full h-full object-cover" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
                 </div>
@@ -248,15 +248,15 @@ export default function Home() {
 
         {/* Canadian Standard - Minimal */}
         <section id="estandar" className="py-32 bg-slate-950 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 {/* Image Side */}
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden">
                   <img 
                     src="/images/geographic/canada-canadian-forest.jpg" 
                     alt="Canadian Standards" 
-                    className="absolute inset-0 w-full h-full object-cover" 
+                    className="w-full h-full object-cover" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-transparent" />
                 </div>
@@ -311,7 +311,7 @@ export default function Home() {
 
         {/* Ecosystem - Minimal */}
         <section id="sectores" className="py-32 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
             <ScrollReveal>
               <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8">
                 {t('ecosystem.label')}
@@ -319,7 +319,7 @@ export default function Home() {
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] text-black mb-10" style={{ letterSpacing: '-0.05em' }}>
                 {t('ecosystem.headline')}
               </h2>
-              <p className="text-[clamp(18px,2vw,24px)] font-light text-black/60 max-w-4xl mx-auto leading-relaxed mb-16">
+              <p className="text-[clamp(18px,2vw,24px)] font-light text-slate-600 max-w-4xl mx-auto leading-relaxed mb-16">
                 {t('ecosystem.subheadline')}
               </p>
             </ScrollReveal>
@@ -327,13 +327,13 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-12">
               <ScrollReveal delay={0.1}>
                 <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                  <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
+                  <div className="mt-12 mb-4 text-[14px] font-bold tracking-[0.2em] uppercase text-amber-700 mb-6">
                     {t('ecosystem.synergies.number')}
                   </div>
-                  <h4 className="text-[20px] font-bold mb-3 text-black">
+                  <h4 className="text-3xl md:text-[20px] font-bold mb-3 text-black leading-tight">
                     {t('ecosystem.synergies.title')}
                   </h4>
-                  <p className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <p className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('ecosystem.synergies.description')}
                   </p>
                 </div>
@@ -341,13 +341,13 @@ export default function Home() {
 
               <ScrollReveal delay={0.2}>
                 <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                  <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
+                  <div className="mt-12 mb-4 text-[14px] font-bold tracking-[0.2em] uppercase text-amber-700 mb-6">
                     {t('ecosystem.intelligence.number')}
                   </div>
-                  <h4 className="text-[20px] font-bold mb-3 text-black">
+                  <h4 className="text-3xl md:text-[20px] font-bold mb-3 text-black leading-tight">
                     {t('ecosystem.intelligence.title')}
                   </h4>
-                  <p className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <p className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('ecosystem.intelligence.description')}
                   </p>
                 </div>
@@ -355,13 +355,13 @@ export default function Home() {
 
               <ScrollReveal delay={0.3}>
                 <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                  <div className="text-[14px] font-bold tracking-[0.2em] uppercase text-black/40 mb-4">
+                  <div className="mt-12 mb-4 text-[14px] font-bold tracking-[0.2em] uppercase text-amber-700 mb-6">
                     {t('ecosystem.standards.number')}
                   </div>
-                  <h4 className="text-[20px] font-bold mb-3 text-black">
+                  <h4 className="text-3xl md:text-[20px] font-bold mb-3 text-black leading-tight">
                     {t('ecosystem.standards.title')}
                   </h4>
-                  <p className="text-[15px] font-light text-black/60 leading-relaxed">
+                  <p className="text-[15px] font-light text-slate-600 leading-relaxed">
                     {t('ecosystem.standards.description')}
                   </p>
                 </div>
@@ -372,7 +372,7 @@ export default function Home() {
 
         {/* CTA - Minimal */}
         <section id="contacto" className="py-32 bg-black text-white text-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal>
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] mb-12" style={{ letterSpacing: '-0.05em' }}>
                 {t('cta.headline')}

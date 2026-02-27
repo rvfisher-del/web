@@ -41,12 +41,12 @@ export default function GlassPillHeader() {
         }`}
       >
       <div className="px-8 py-4 flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - Always visible on all screens */}
         <div className="flex-shrink-0">
           <img
-            src="/images/logos/logo-grupo-globe.png"
+            src="/images/favicons/favicon-grupo-globe.svg"
             alt="Grupo Globe"
-            className="h-12 w-auto brightness-0 invert opacity-90 transition-all duration-300"
+            className="h-8 md:h-12 w-auto brightness-0 invert opacity-90 transition-all duration-300"
           />
         </div>
 
