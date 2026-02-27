@@ -25,7 +25,7 @@ export default function CinematicHero() {
             onLoadedData={() => setVideoLoaded(true)}
             onError={() => setVideoError(true)}
           >
-            <source src="https://uglt1ui3grpqnmsq.public.blob.vercel-storage.com/hero-loop.mp4" type="video/mp4" />
+            <source src="https://uglt1ui3grpqnmsq.public.blob.vercel-storage.com/hero-loop-1772222272733.mp4" type="video/mp4" />
           </video>
         ) : (
           // Fallback to image if video not available
