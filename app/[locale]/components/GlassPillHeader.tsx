@@ -34,7 +34,7 @@ export default function GlassPillHeader() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-6 left-1/2 -translate-x-1/2 z-[999] max-w-5xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-xl shadow-2xl transition-all duration-500 ${
+        className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 max-w-5xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-xl shadow-2xl transition-all duration-500 ${
           isScrolled 
             ? 'w-[85%]' 
             : 'w-[90%]'
@@ -90,7 +90,7 @@ export default function GlassPillHeader() {
       initial={{ opacity: 0, scaleY: 0 }}
       animate={{ opacity: 1, scaleY: 1 }}
       transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-24 left-1/2 -translate-x-1/2 z-[90]"
+      className="fixed top-24 left-1/2 -translate-x-1/2 z-40"
       style={{ transformOrigin: 'top' }}
     >
       <div className="w-px h-40 bg-white/20" />

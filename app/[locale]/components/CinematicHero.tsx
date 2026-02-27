@@ -12,7 +12,7 @@ export default function CinematicHero() {
   return (
     <section className="relative h-screen w-full overflow-hidden py-40">
       {/* Cinematic Video Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         {!videoError ? (
           <video
             autoPlay
@@ -65,8 +65,9 @@ export default function CinematicHero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="text-7xl lg:text-9xl font-black uppercase tracking-tighter mb-0"
+              className="font-black uppercase tracking-tighter mb-0"
               style={{ 
+                fontSize: 'clamp(3rem, 8vw, 9rem)',
                 letterSpacing: '-0.05em',
                 lineHeight: '0.9',
                 textShadow: '0 10px 30px rgba(0,0,0,0.8), 0 0 40px rgba(255,255,255,0.2)',
@@ -83,8 +84,9 @@ export default function CinematicHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="text-lg font-light italic text-slate-400 mt-4"
+              className="font-light italic text-slate-400 mt-4"
               style={{ 
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
                 letterSpacing: '0.02em',
                 lineHeight: '1.6'
               }}

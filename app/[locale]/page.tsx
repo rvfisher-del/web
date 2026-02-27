@@ -20,7 +20,7 @@ export default function Home() {
       {/* Film Grain Texture */}
       <FilmGrain />
       
-      <div className="bg-white">
+      <div className="bg-white relative z-10">
         {/* Glass Pill Header */}
         <GlassPillHeader />
 
@@ -154,7 +154,7 @@ export default function Home() {
             {/* Theme 1: Energy Transition */}
             <ScrollReveal>
               <div className="grid lg:grid-cols-2 gap-20 items-center">
-                <div className="relative h-[600px] aspect-video overflow-hidden">
+                <div className="relative aspect-video overflow-hidden">
                   <img 
                     src="/images/hero/opening-image.png" 
                     alt="Energy Transition" 
@@ -202,7 +202,7 @@ export default function Home() {
                     {t('themes.modular.link')} <span>→</span>
                   </a>
                 </div>
-                <div className="relative h-[600px] aspect-video overflow-hidden order-1 lg:order-2">
+                <div className="relative aspect-video overflow-hidden order-1 lg:order-2">
                   <img 
                     src="/images/geographic/chile-new.jpg" 
                     alt="Modular Construction" 
@@ -216,7 +216,7 @@ export default function Home() {
             {/* Theme 3: Essential Services */}
             <ScrollReveal>
               <div className="grid lg:grid-cols-2 gap-20 items-center">
-                <div className="relative h-[600px] aspect-video overflow-hidden">
+                <div className="relative aspect-video overflow-hidden">
                   <img 
                     src="/images/geographic/canada-canadian-forest.jpg" 
                     alt="Essential Services" 
@@ -252,7 +252,7 @@ export default function Home() {
             <ScrollReveal>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 {/* Image Side */}
-                <div className="relative h-[600px] overflow-hidden">
+                <div className="relative aspect-video overflow-hidden">
                   <img 
                     src="/images/geographic/canada-canadian-forest.jpg" 
                     alt="Canadian Standards" 

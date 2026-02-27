@@ -87,10 +87,27 @@ export default function LuxuryPortfolio() {
           <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-white/40 mb-8">
             {t('portfolio.label')}
           </div>
-          <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] text-white mb-10" style={{ letterSpacing: '-0.05em' }}>
-            {t('portfolio.headline')}
-          </h2>
-          <p className="text-[clamp(18px,2vw,24px)] font-light text-white/60 max-w-3xl mx-auto leading-relaxed">
+          {/* Secondary Scrim with Gradient Shelf for Maximum Legibility */}
+          <div className="relative inline-block">
+            {/* Dark Gradient Shelf Behind Text */}
+            <div 
+              className="absolute inset-0 -inset-x-12 -inset-y-6"
+              style={{
+                background: 'linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.6), transparent)',
+              }}
+            />
+            {/* Secondary Scrim with Backdrop Blur */}
+            <div className="relative bg-slate-900/40 backdrop-blur-md px-12 py-6 rounded-lg">
+              <h2 
+                className="text-[clamp(40px,6vw,72px)] leading-[1.1] mb-10" 
+                style={{ letterSpacing: '-0.05em' }}
+              >
+                <span className="font-black text-white">Seis empresas. </span>
+                <span className="font-black text-amber-500">Un estándar.</span>
+              </h2>
+            </div>
+          </div>
+          <p className="text-[clamp(18px,2vw,24px)] font-light text-white/60 max-w-3xl mx-auto leading-relaxed mt-10">
             {t('portfolio.subheadline')}
           </p>
         </motion.div>
