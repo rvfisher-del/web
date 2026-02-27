@@ -54,7 +54,16 @@ export default function LuxuryPortfolio() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="empresas" className="relative py-32 bg-black">
+    <section id="empresas" className="relative pt-64 pb-32 bg-black">
+      {/* Industrial Grid Texture */}
+      <div 
+        className="absolute inset-0 opacity-5 pointer-events-none"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 0.5px, transparent 0.5px), linear-gradient(90deg, rgba(255,255,255,0.1) 0.5px, transparent 0.5px)',
+          backgroundSize: '50px 50px'
+        }}
+      />
+      
       {/* Anchor Line - From Hero */}
       <motion.div
         initial={{ opacity: 0, scaleY: 0 }}
@@ -103,14 +112,16 @@ export default function LuxuryPortfolio() {
               }}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="group relative h-[400px] overflow-hidden border"
+              className="group relative h-[400px] overflow-hidden"
               style={{
                 backgroundColor: hoveredIndex === i ? company.brandColor : '#0a0a0a',
                 opacity: hoveredIndex === null ? 1 : hoveredIndex === i ? 1 : 0.4,
-                borderColor: hoveredIndex === i ? company.brandColor : 'rgba(255,255,255,0.1)',
+                border: hoveredIndex === i ? `0.5px solid ${company.brandColor}` : '0.5px solid rgba(255,255,255,0.1)',
+                boxShadow: hoveredIndex === i 
+                  ? `0 20px 50px rgba(0,0,0,0.3), 0 0 20px ${company.brandColor}` 
+                  : 'none',
                 zIndex: hoveredIndex === i ? 10 : 1,
                 transform: hoveredIndex === i ? 'translateY(-10px)' : 'translateY(0)',
-                boxShadow: hoveredIndex === i ? '0 20px 50px rgba(0,0,0,0.3)' : 'none',
                 transition: 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
               }}
             >

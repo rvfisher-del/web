@@ -69,26 +69,29 @@ export default function CinematicHero() {
               GRUPO GLOBE
             </motion.div>
 
-            {/* ARCHITECTURAL HEADLINE with COLOR BREAK */}
+            {/* HARDENED CANADIAN POWER HEADLINE */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl lg:text-8xl font-black tracking-tighter mb-12 shadow-[0_10px_30px_rgba(0,0,0,0.8)]"
+              className="text-6xl lg:text-8xl font-black mb-6"
               style={{ 
-                lineHeight: '0.9'
+                letterSpacing: '-0.06em',
+                lineHeight: '0.9',
+                textShadow: '0 10px 30px rgba(0,0,0,0.8), 0 0 40px rgba(255,255,255,0.2)',
+                fontFamily: "'Inter', -apple-system, sans-serif"
               }}
             >
               <span className="text-white">EL ESTÁNDAR</span>
               <br />
-              <span className="text-slate-200 italic">CANADIENSE.</span>
+              <span className="text-red-600">CANADIENSE.</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-3xl lg:text-4xl font-light text-slate-300 mb-4"
+              className="text-3xl lg:text-4xl font-light text-slate-300"
               style={{ 
                 letterSpacing: '0.05em',
                 lineHeight: '1.6'
@@ -101,11 +104,11 @@ export default function CinematicHero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.2, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-16"
+              className="mt-20"
             >
               <a
                 href="#empresas"
-                className="inline-block bg-white text-black px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white/90 transition-all duration-300 rounded-sm"
+                className="inline-block bg-red-600 text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-red-700 transition-all duration-300 rounded-sm shadow-[0_0_40px_rgba(220,38,38,0.3)]"
               >
                 Descubrir Empresas
               </a>
