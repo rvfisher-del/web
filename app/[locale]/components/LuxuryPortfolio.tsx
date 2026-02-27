@@ -100,10 +100,10 @@ export default function LuxuryPortfolio() {
             <div className="relative bg-slate-900/40 backdrop-blur-md px-12 py-6 rounded-lg">
               <h2 
                 className="text-[clamp(40px,6vw,72px)] leading-[1.1] mb-10" 
-                style={{ letterSpacing: '-0.05em' }}
+                style={{ letterSpacing: '-0.05em', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
               >
-                <span className="font-black text-white">Seis empresas. </span>
-                <span className="font-black text-amber-500">Un estándar.</span>
+                <span className="font-extrabold text-white">Seis empresas. </span>
+                <span className="font-extrabold text-amber-500">Un estándar.</span>
               </h2>
             </div>
           </div>
@@ -154,12 +154,12 @@ export default function LuxuryPortfolio() {
               </div>
 
               <div className="relative z-10 h-full flex flex-col items-center justify-center p-12 text-center">
-                {/* Logo - Monochrome to Color Discovery */}
-                <div className="mb-8 transition-all duration-500">
+                {/* Logo - Monochrome to Color Discovery - ANCHORED */}
+                <div className="mb-8 transition-all duration-500 h-16 flex items-center justify-center">
                   <img
                     src={`/images/logos/${company.logo}`}
                     alt={company.name}
-                    className="h-16 w-auto object-contain transition-all duration-500"
+                    className="max-h-16 w-auto object-contain transition-all duration-500"
                     style={{
                       filter: hoveredIndex === i 
                         ? 'none' 

@@ -41,12 +41,13 @@ export default function GlassPillHeader() {
         }`}
       >
       <div className="px-8 py-4 flex justify-between items-center">
-        {/* Logo - Always visible on all screens */}
-        <div className="flex-shrink-0">
+        {/* Logo - Always visible on all screens with SAFETY PADDING */}
+        <div className="flex-shrink-0 px-3 py-2">
           <img
-            src="/images/favicons/favicon-grupo-globe.svg"
+            src="/images/logos/logo-grupo-globe-hd.png"
             alt="Grupo Globe"
-            className="h-8 md:h-12 w-auto brightness-0 invert opacity-90 transition-all duration-300"
+            className="h-8 md:h-10 w-auto brightness-0 invert opacity-90 transition-all duration-300"
+            style={{ imageRendering: '-webkit-optimize-contrast' }}
           />
         </div>
 
