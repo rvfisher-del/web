@@ -54,7 +54,19 @@ export default function LuxuryPortfolio() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="empresas" className="py-32 bg-black">
+    <section id="empresas" className="relative py-32 bg-black">
+      {/* Anchor Line - From Hero */}
+      <motion.div
+        initial={{ opacity: 0, scaleY: 0 }}
+        whileInView={{ opacity: 1, scaleY: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute top-0 left-1/2 -translate-x-1/2"
+        style={{ transformOrigin: 'top' }}
+      >
+        <div className="w-px h-24 bg-white/20" />
+      </motion.div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -140,12 +152,15 @@ export default function LuxuryPortfolio() {
                 </div>
 
                 {/* Tagline */}
-                <h3 className="text-[20px] font-bold tracking-tight text-white mb-4">
+                <h3 className="text-xl font-bold tracking-tight text-white mb-4">
                   {t(`portfolio.companies.${company.key}.tagline`)}
                 </h3>
 
-                {/* Description */}
-                <p className="text-[14px] font-light text-white/70 leading-relaxed mb-8 max-w-xs">
+                {/* Description - Limited to 2 lines */}
+                <p 
+                  className="text-[14px] font-light text-white/70 mb-8 max-w-xs line-clamp-2"
+                  style={{ lineHeight: '1.6' }}
+                >
                   {t(`portfolio.companies.${company.key}.description`)}
                 </p>
 

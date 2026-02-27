@@ -48,7 +48,15 @@ export default function CinematicHero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Precision Scrim - Radial gradient behind text */}
+        <div 
+          className="absolute inset-0 flex items-center justify-center pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle, rgba(0,0,0,0.7) 0%, transparent 70%)'
+          }}
+        />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,8 +70,12 @@ export default function CinematicHero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="text-7xl lg:text-9xl font-black text-white leading-none mb-12 drop-shadow-2xl"
-            style={{ letterSpacing: '-0.05em' }}
+            className="text-7xl lg:text-9xl font-black text-white mb-12"
+            style={{ 
+              letterSpacing: '-0.05em',
+              lineHeight: '0.9',
+              textShadow: '0 10px 30px rgba(0,0,0,0.8)'
+            }}
           >
             EL ESTÁNDAR<br />CANADIENSE.
           </motion.h1>
@@ -72,7 +84,10 @@ export default function CinematicHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-3xl lg:text-4xl font-light text-white/90 mb-4 drop-shadow-xl"
+            className="text-3xl lg:text-4xl font-light text-slate-300 mb-4"
+            style={{ 
+              letterSpacing: '0.05em'
+            }}
           >
             No la excepción.
           </motion.p>
@@ -92,6 +107,17 @@ export default function CinematicHero() {
           </motion.div>
         </div>
       </div>
+
+      {/* Anchor Line - Connects Hero to Empresas */}
+      <motion.div
+        className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        initial={{ opacity: 0, scaleY: 0 }}
+        animate={{ opacity: 1, scaleY: 1 }}
+        transition={{ duration: 1.2, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
+        style={{ transformOrigin: 'top' }}
+      >
+        <div className="w-px h-32 bg-white/20" />
+      </motion.div>
 
       {/* Scroll Indicator */}
       <motion.div

@@ -29,16 +29,17 @@ export default function GlassPillHeader() {
   };
 
   return (
-    <motion.header
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed top-6 left-1/2 -translate-x-1/2 z-[100] rounded-full border border-white/10 backdrop-blur-2xl shadow-2xl transition-all duration-500 ${
-        isScrolled 
-          ? 'w-[85%] max-w-5xl bg-white/10' 
-          : 'w-[95%] max-w-6xl bg-white/5'
-      }`}
-    >
+    <>
+      <motion.header
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        className={`fixed top-6 left-1/2 -translate-x-1/2 z-[100] rounded-full border border-white/10 backdrop-blur-2xl shadow-2xl transition-all duration-500 ${
+          isScrolled 
+            ? 'w-[85%] max-w-5xl bg-white/10' 
+            : 'w-[95%] max-w-6xl bg-white/5'
+        }`}
+      >
       <div className="px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -83,5 +84,17 @@ export default function GlassPillHeader() {
         </nav>
       </div>
     </motion.header>
+
+    {/* Anchor Line - Header to Hero */}
+    <motion.div
+      initial={{ opacity: 0, scaleY: 0 }}
+      animate={{ opacity: 1, scaleY: 1 }}
+      transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      className="fixed top-24 left-1/2 -translate-x-1/2 z-[90]"
+      style={{ transformOrigin: 'top' }}
+    >
+      <div className="w-px h-40 bg-white/20" />
+    </motion.div>
+    </>
   );
 }
