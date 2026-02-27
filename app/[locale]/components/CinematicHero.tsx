@@ -37,12 +37,9 @@ export default function CinematicHero() {
           />
         )}
         
-        {/* Dark Veil Overlay */}
+        {/* Blackout Overlay - Stronger darkness for text legibility */}
         <div 
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8))'
-          }}
+          className="absolute inset-0 bg-gradient-to-b from-slate-950/60 to-slate-950/90"
         />
       </div>
 
@@ -70,14 +67,14 @@ export default function CinematicHero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="text-7xl lg:text-9xl font-black text-white mb-12"
+            className="text-6xl lg:text-8xl font-black text-white mb-12"
             style={{ 
               letterSpacing: '-0.05em',
               lineHeight: '0.9',
-              textShadow: '0 10px 30px rgba(0,0,0,0.8)'
+              textShadow: '0 4px 12px rgba(0,0,0,0.9)'
             }}
           >
-            EL ESTÁNDAR<br />CANADIENSE.
+            EL ESTÁNDAR<br /><span className="italic">CANADIENSE.</span>
           </motion.h1>
 
           <motion.p
@@ -108,7 +105,7 @@ export default function CinematicHero() {
         </div>
       </div>
 
-      {/* Anchor Line - Connects Hero to Empresas */}
+      {/* Industrial Connector - Hero to Empresas */}
       <motion.div
         className="absolute bottom-0 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0, scaleY: 0 }}
@@ -116,7 +113,7 @@ export default function CinematicHero() {
         transition={{ duration: 1.2, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
         style={{ transformOrigin: 'top' }}
       >
-        <div className="w-px h-32 bg-white/20" />
+        <div className="w-px h-64 bg-white/20" />
       </motion.div>
 
       {/* Scroll Indicator */}

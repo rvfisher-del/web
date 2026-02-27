@@ -103,12 +103,11 @@ export default function LuxuryPortfolio() {
               }}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="group relative h-[400px] overflow-hidden"
+              className="group relative h-[400px] overflow-hidden border"
               style={{
                 backgroundColor: hoveredIndex === i ? company.brandColor : '#0a0a0a',
                 opacity: hoveredIndex === null ? 1 : hoveredIndex === i ? 1 : 0.4,
-                borderWidth: '1px',
-                borderColor: hoveredIndex === i ? company.brandColor : 'rgba(255,255,255,0.05)',
+                borderColor: hoveredIndex === i ? company.brandColor : 'rgba(255,255,255,0.1)',
                 zIndex: hoveredIndex === i ? 10 : 1,
                 transform: hoveredIndex === i ? 'translateY(-10px)' : 'translateY(0)',
                 boxShadow: hoveredIndex === i ? '0 20px 50px rgba(0,0,0,0.3)' : 'none',
@@ -164,16 +163,19 @@ export default function LuxuryPortfolio() {
                   {t(`portfolio.companies.${company.key}.description`)}
                 </p>
 
-                {/* CTA */}
+                {/* Elegant Arrow CTA - Appears on hover */}
                 {company.url !== '#' && (
                   <a
                     href={company.url}
                     target={company.url.startsWith('http') ? '_blank' : undefined}
                     rel={company.url.startsWith('http') ? 'noopener noreferrer' : 'prefetch'}
-                    className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase text-white border border-white/30 px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+                    className="inline-flex items-center gap-2 text-[28px] text-white/0 group-hover:text-white/90 transition-all duration-500"
+                    style={{
+                      transform: hoveredIndex === i ? 'translateX(0)' : 'translateX(-10px)',
+                      transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
+                    }}
                   >
-                    {t('portfolio.learnMore')}
-                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    →
                   </a>
                 )}
                 {company.url === '#' && (
