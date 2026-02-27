@@ -10,7 +10,7 @@ export default function CinematicHero() {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden py-40">
       {/* Cinematic Video Background */}
       <div className="absolute inset-0">
         {!videoError ? (
@@ -50,33 +50,24 @@ export default function CinematicHero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 h-full flex items-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           
-          {/* TEXT-BOX GLASSMORPHISM - The Shield */}
+          {/* Industrial Left-Aligned Hero Text */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl"
+            className="max-w-4xl"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-8"
-            >
-              GRUPO GLOBE
-            </motion.div>
-
-            {/* HARDENED CANADIAN POWER HEADLINE */}
+            {/* Dominant Title - The Volume */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl lg:text-8xl font-black mb-6"
+              transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="text-7xl lg:text-9xl font-black uppercase tracking-tighter mb-0"
               style={{ 
-                letterSpacing: '-0.06em',
+                letterSpacing: '-0.05em',
                 lineHeight: '0.9',
                 textShadow: '0 10px 30px rgba(0,0,0,0.8), 0 0 40px rgba(255,255,255,0.2)',
                 fontFamily: "'Inter', -apple-system, sans-serif"
@@ -84,64 +75,37 @@ export default function CinematicHero() {
             >
               <span className="text-white">EL ESTÁNDAR</span>
               <br />
-              <span className="text-red-600">CANADIENSE.</span>
+              <span className="text-white">CANADIENSE</span>
             </motion.h1>
 
+            {/* Subtle Tagline - The Whisper */}
             <motion.p
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-3xl lg:text-4xl font-light text-slate-300"
+              transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="text-lg font-light italic text-slate-400 mt-4"
               style={{ 
-                letterSpacing: '0.05em',
+                letterSpacing: '0.02em',
                 lineHeight: '1.6'
               }}
             >
-              No la excepción.
+              Construyendo valor desde la precisión, <br />
+              no desde la excepción.
             </motion.p>
 
+            {/* Vertical Tracing Line - The Bridge */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.2, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-20"
+              initial={{ opacity: 0, scaleY: 0 }}
+              animate={{ opacity: 1, scaleY: 1 }}
+              transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-12 ml-0"
+              style={{ transformOrigin: 'top' }}
             >
-              <a
-                href="#empresas"
-                className="inline-block bg-red-600 text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-red-700 transition-all duration-300 rounded-sm shadow-[0_0_40px_rgba(220,38,38,0.3)]"
-              >
-                Descubrir Empresas
-              </a>
+              <div className="w-px h-32 bg-white/10" />
             </motion.div>
           </motion.div>
         </div>
       </div>
-
-      {/* Industrial Connector - Hero to Empresas */}
-      <motion.div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0, scaleY: 0 }}
-        animate={{ opacity: 1, scaleY: 1 }}
-        transition={{ duration: 1.2, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
-        style={{ transformOrigin: 'top' }}
-      >
-        <div className="w-px h-64 bg-white/20" />
-      </motion.div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2"
-        animate={{
-          y: [0, 10, 0],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="w-px h-16 bg-white/30" />
-      </motion.div>
     </section>
   );
 }

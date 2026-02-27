@@ -107,10 +107,10 @@ export default function MassiveFooter() {
             </ul>
           </div>
 
-          {/* Column 3: Estándar B-Corp */}
+          {/* Column 3: Legal */}
           <div>
             <h4 className="text-[13px] font-black tracking-[0.2em] uppercase text-white mb-8">
-              Estándar B-Corp
+              Legal
             </h4>
             <ul className="space-y-4">
               <li>
@@ -216,6 +216,16 @@ export default function MassiveFooter() {
                 {t('footer.copyright')}
               </p>
             </div>
+          </div>
+          
+          {/* High-End Monospace Signature */}
+          <div className="mt-16 pt-8 border-t border-white/5 text-center">
+            <p 
+              className="text-[11px] text-white/30 tracking-[0.1em]"
+              style={{ fontFamily: "'JetBrains Mono', 'Courier New', monospace" }}
+            >
+              BUILT BY GRUPO GLOBE · ENGINEERED WITH PRECISION
+            </p>
           </div>
         </div>
       </div>
