@@ -10,9 +10,9 @@
   },
   "hero": {
     "label": "GRUPO GLOBE",
-    "headline": "Construyendo valor duradero en industrias críticas",
-    "subheadline": "Una holding canadiense que aplica estándares operacionales rigurosos a energía, minería, bienes raíces, salud y servicios industriales en América del Norte y del Sur.",
-    "tagline": "El estándar canadiense. No la excepción.",
+    "headline": "EL ESTÁNDAR CANADIENSE",
+    "subheadline": "Seis empresas industriales. Un estándar inquebrantable.",
+    "tagline": "Cero improvisación.",
     "ctaPrimary": "Nuestras Empresas",
     "ctaSecondary": "Conocer Más",
     "scroll": "Desplazar"
@@ -20,87 +20,92 @@
   "metrics": {
     "companies": {
       "number": "6",
-      "label": "Empresas",
-      "description": "Portfolio operando"
+      "label": "Empresas Operando",
+      "description": "Cada una con estándares canadienses certificados"
     },
     "sectors": {
       "number": "5",
-      "label": "Sectores",
-      "description": "Industrias estratégicas"
+      "label": "Sectores Críticos",
+      "description": "Energía, construcción, servicios industriales, equipos, logística"
     },
     "countries": {
       "number": "2",
-      "label": "Países",
-      "description": "Canadá y Chile"
+      "label": "Países, 1 Estándar",
+      "description": "De Vancouver a Santiago: mismo rigor, misma disciplina"
     },
     "experience": {
       "number": "20+",
-      "label": "Años",
-      "description": "Experiencia operacional"
+      "label": "Años de Precisión",
+      "description": "Miles de proyectos sin improvisar"
     }
   },
   "about": {
     "label": "NUESTRA FILOSOFÍA",
     "headline": "Nos enamoramos de problemas, no de soluciones",
-    "subheadline": "En lugar de buscar empresas para adquirir, identificamos desafíos críticos en industrias esenciales—luego construimos o nos asociamos con las operaciones que pueden resolverlos con precisión y consistencia.",
+    "subheadline": "No compramos empresas por oportunidad financiera. Identificamos desafíos críticos donde el fracaso cuesta vidas, tiempo o millones—luego construimos las operaciones que los resuelven con precisión canadiense.",
+    "tagline": "No buscamos crecer rápido. Buscamos resolver bien.",
     "principle1": {
       "number": "01",
-      "title": "Rigor Operacional",
-      "description": "Estándares canadienses aplicados en todo nuestro portafolio: procesos documentados, trazabilidad completa, cero improvisación."
+      "title": "Documentación Total",
+      "description": "Todo proceso documentado. Todo resultado trazable. Cero memoria institucional en cabezas—todo en sistemas."
     },
     "principle2": {
       "number": "02",
-      "title": "Experiencia Industrial",
-      "description": "Profunda experiencia operacional en cada sector, con gestión práctica y conocimiento técnico específico del sector."
+      "title": "Mantenimiento Preventivo > Reparación Reactiva",
+      "description": "Predecimos fallos antes que ocurran. Reemplazamos partes según calendario, no según crisis."
     },
     "principle3": {
       "number": "03",
-      "title": "Valor Duradero",
-      "description": "Construyendo negocios para el largo plazo, con prácticas sustentables e impacto medible en las comunidades."
+      "title": "Certificaciones, No Promesas",
+      "description": "ISO 9001, CSA, OHSAS 18001. No decimos \"hacemos las cosas bien\"—lo certificamos con terceros."
     }
   },
   "themes": {
     "energy": {
       "label": "ENERGÍA",
-      "headline": "Energizando Operaciones Críticas",
-      "description": "Cuando la producción no puede detenerse, nuestros sistemas de energía siguen funcionando sin interrupciones. Energía confiable para operaciones mineras, instalaciones industriales y sitios remotos en América del Norte y del Sur.",
-      "link": "Globe Power"
+      "headline": "Cuando una mina pierde energía, pierde $50,000 por hora.",
+      "description": "Nuestros sistemas no se detienen. Generación redundante, mantenimiento preventivo certificado, uptime del 99.8% en operaciones 24/7 desde el desierto de Atacama hasta Yukon.",
+      "tagline": "",
+      "link": "Ver Globe Power"
     },
     "modular": {
       "label": "CONSTRUCCIÓN MODULAR",
-      "headline": "Redefiniendo la Velocidad de Construcción",
-      "description": "Infraestructura industrial entregada en días, no meses. Soluciones modulares certificadas que reducen los tiempos en un 60% sin comprometer la calidad o los estándares de seguridad.",
-      "link": "Globe Modular"
+      "headline": "Una oficina tradicional tarda 6 meses. La nuestra, 24 horas.",
+      "description": "Edificios modulares certificados CSA que llegan al sitio 100% terminados: cableado eléctrico, HVAC, certificaciones de seguridad. Solo anclamos y conectamos.",
+      "tagline": "60% menos tiempo. 100% del estándar.",
+      "link": "Ver Globe Modular"
     },
     "services": {
-      "label": "SERVICIOS CRÍTICOS",
-      "headline": "Cuando el Tiempo Muerto No es una Opción",
-      "description": "Desde infraestructura hospitalaria hasta equipos mineros, mantenemos sistemas críticos que no pueden fallar. Mantenimiento preventivo, respuesta rápida, confiabilidad completa.",
-      "link": "Globe Services"
+      "label": "MANTENIMIENTO CRÍTICO",
+      "headline": "Cuando el ascensor del hospital falla, vidas están en riesgo.",
+      "description": "Mantenemos equipos críticos en hospitales, minas y plantas industriales con contratos de respuesta <2 horas, técnicos certificados por fabricante, y piezas en stock local.",
+      "tagline": "No esperamos que algo se rompa. Prevenimos que se rompa.",
+      "link": "Ver Globe Services"
     }
   },
   "standards": {
-    "label": "ESTÁNDARES CANADIENSES",
-    "headline": "La disciplina silenciosa de hacer las cosas bien",
-    "subheadline": "Los estándares canadienses no son sobre marketing—son sobre rigor operacional, documentación completa y la disciplina de mantener la excelencia incluso cuando nadie está mirando.",
+    "label": "EL ESTÁNDAR CANADIENSE EN ACCIÓN",
+    "headline": "Nadie aplaude cuando hacemos las cosas bien. Ese es el punto.",
+    "subheadline": "Los estándares canadienses no existen para ganar premios de marketing. Existen para que un generador arranque a las 3 AM cuando la temperatura es -40°C. Para que una estructura modular resista un terremoto. Para que un técnico sepa exactamente qué hacer sin tener que improvisar.",
     "precision": {
-      "title": "Precisión",
-      "description": "Resultados medibles, procesos documentados, trazabilidad completa desde la planificación hasta la ejecución."
+      "title": "Precisión Medible",
+      "description": "No decimos \"alta calidad.\" Medimos tolerancias en milímetros, tiempos de respuesta en minutos, uptime en porcentajes de tres decimales."
     },
     "consistency": {
-      "title": "Consistencia",
-      "description": "El mismo alto estándar aplicado en cada proyecto, cada sitio, cada interacción."
+      "title": "Consistencia Sistémica",
+      "description": "El mismo checklist de 47 puntos se ejecuta en Vancouver y Santiago. El mismo proceso de mantenimiento preventivo se aplica a cientos de equipos. Cero variación por \"estilo personal.\""
     },
     "integrity": {
-      "title": "Integridad",
-      "description": "Hacer lo que prometimos, cuando lo prometimos, según el estándar al que nos comprometimos."
+      "title": "Integridad Contractual",
+      "description": "Si dijimos 24 horas, entregamos en 24 horas. Si prometimos 99.8% uptime, entregamos 99.8% uptime. El contrato no es aspiracional—es el mínimo."
     },
-    "footer": "Este es el estándar que define cada empresa Globe. No la excepción—la expectativa."
+    "footer": "Este no es nuestro marketing. Es nuestro sistema operativo."
   },
   "portfolio": {
     "label": "NUESTRO PORTAFOLIO",
     "headline": "Seis empresas. Un estándar.",
-    "subheadline": "Cada empresa opera independientemente con profunda experiencia sectorial, mientras se beneficia de estándares operacionales compartidos y sinergias cruzadas del portafolio.",
+    "subheadline": "Cada empresa opera con autonomía sectorial completa—pero todas comparten los mismos estándares canadienses, la misma disciplina operacional, la misma obsesión por hacer las cosas bien.",
+    "tagline": "Independencia estratégica. Rigor compartido.",
     "learnMore": "Conocer Más",
     "companies": {
       "power": {
@@ -137,29 +142,35 @@
   },
   "ecosystem": {
     "label": "EL ECOSISTEMA GLOBE",
-    "headline": "Más fuertes juntos",
-    "subheadline": "Cada empresa Globe se beneficia de ser parte de una red más grande—experiencia operacional compartida, insights intersectoriales e inteligencia colectiva que nos permite identificar y actuar en oportunidades que otros no pueden ver.",
+    "headline": "Seis empresas que se refuerzan mutuamente",
+    "subheadline": "Mientras la competencia compite, nosotros colaboramos. Globe Power alimenta los sitios de Globe Modular. Globe Services mantiene los equipos de Globe Flota. Globe Lift Parts provee repuestos para Globe Services.",
+    "tagline": "No son empresas independientes. Son un sistema.",
     "synergies": {
       "number": "01",
-      "title": "Sinergias Intersectoriales",
-      "description": "Globe Power provee energía para los sitios de construcción de Globe Modular. Globe Services mantiene equipos para las operaciones de Globe Flota."
+      "title": "Círculos Cerrados de Valor",
+      "description": "Cuando Globe Modular construye un campamento minero, Globe Power instala la energía, Globe Services firma el contrato de mantenimiento, y Globe Flota transporta el personal. El cliente obtiene un proveedor. Nosotros eliminamos cuatro interfaces."
     },
     "intelligence": {
       "number": "02",
-      "title": "Inteligencia Compartida",
-      "description": "Insights operacionales e inteligencia de mercado fluyen entre empresas, permitiendo toma de decisiones más rápida y mejores resultados."
+      "title": "Aprendizaje Acelerado",
+      "description": "Un problema de corrosión en equipos mineros de Globe Services informa el diseño de generadores en Globe Power. Una innovación de seguridad en Globe Modular se adopta en Globe Flota en 30 días, no 30 meses."
     },
     "standards": {
       "number": "03",
-      "title": "Estándares Unificados",
-      "description": "Estándares operacionales canadienses aplicados consistentemente en todas las empresas, asegurando calidad y confiabilidad en cada punto de contacto."
-    }
+      "title": "Riesgo Distribuido",
+      "description": "Cuando la minería cae, la construcción hospitalaria sube. Cuando energía está lenta, servicios críticos está ocupada. Seis empresas en cinco sectores = resiliencia estructural."
+    },
+    "footer": "Un problema en una empresa es una lección para seis."
   },
   "cta": {
-    "headline": "Asóciese con empresas que resuelven problemas reales",
-    "subheadline": "Ya sea que seas un emprendedor construyendo un negocio que transforma su sector, un inversionista buscando valor duradero, o talento buscando trabajar donde las decisiones importan—queremos saber de ti.",
-    "ctaPrimary": "Contáctenos",
-    "ctaSecondary": "Oportunidades de Carrera"
+    "headline": "¿Su empresa opera en una industria donde el fracaso cuesta millones?",
+    "subheadline": "Si construye, mantiene o opera infraestructura crítica—y busca escalar sin perder el control operacional—queremos conocerlo.",
+    "founders": "Para fundadores: Escalamos su operación sin diluir su estándar.",
+    "investors": "Para inversionistas: Portafolios industriales con flujo de caja real y riesgo diversificado.",
+    "talent": "Para talento técnico: Trabajo donde la precisión importa más que la velocidad.",
+    "ctaPrimary": "Agende una Llamada",
+    "ctaSecondary": "Descargue el Deck",
+    "ctaTertiary": "Ver Posiciones Abiertas"
   },
   "footer": {
     "description": "Construyendo valor duradero en industrias críticas con estándares operacionales canadienses.",
