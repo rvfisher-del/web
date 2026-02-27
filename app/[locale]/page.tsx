@@ -28,7 +28,7 @@ export default function Home() {
         <CinematicHero />
 
         {/* Key Statistics - Premium Minimal */}
-        <section className="py-32 bg-white">
+        <section className="py-48 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal>
               <div className="grid md:grid-cols-4 gap-16 text-center">
@@ -82,7 +82,7 @@ export default function Home() {
         </section>
 
         {/* About - Investment Approach */}
-        <section id="nosotros" className="py-32 bg-gradient-to-br from-slate-50 to-white">
+        <section id="nosotros" className="py-48 bg-gradient-to-br from-slate-50 to-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal className="text-center mb-20">
               <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8">
@@ -149,7 +149,7 @@ export default function Home() {
         <ValuesCircle />
 
         {/* Strategic Themes - Minimal Treatment */}
-        <section className="py-32 bg-black text-white">
+        <section className="py-48 bg-black text-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-32">
             {/* Theme 1: Energy Transition */}
             <ScrollReveal>
@@ -250,7 +250,7 @@ export default function Home() {
         </section>
 
         {/* Canadian Standard - Minimal */}
-        <section id="estandar" className="py-32 bg-slate-950 text-white">
+        <section id="estandar" className="py-48 bg-slate-950 text-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -303,7 +303,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <p className="text-[14px] font-light text-white/50 italic pt-4">
+                  <p className="text-[14px] font-light text-white/50 pt-4">
                     {t('standards.footer')}
                   </p>
                 </div>
@@ -313,7 +313,7 @@ export default function Home() {
         </section>
 
         {/* Ecosystem - Minimal */}
-        <section id="sectores" className="py-32 bg-white">
+        <section id="sectores" className="py-48 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
             <ScrollReveal>
               <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8">
@@ -374,7 +374,7 @@ export default function Home() {
         </section>
 
         {/* CTA - Minimal */}
-        <section id="contacto" className="py-32 bg-black text-white text-center">
+        <section id="contacto" className="py-48 bg-black text-white text-center">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <ScrollReveal>
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] mb-12" style={{ letterSpacing: '-0.05em' }}>
