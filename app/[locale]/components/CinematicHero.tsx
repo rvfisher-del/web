@@ -37,70 +37,79 @@ export default function CinematicHero() {
           />
         )}
         
-        {/* Blackout Overlay - Stronger darkness for text legibility */}
+        {/* LAYER 1: Deep Scrim - Global darkening */}
+        <div className="absolute inset-0 bg-slate-950/50" />
+        
+        {/* LAYER 2: Deep Scrim - Bottom-heavy gradient nest */}
         <div 
-          className="absolute inset-0 bg-gradient-to-b from-slate-950/60 to-slate-950/90"
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to top, rgba(2, 6, 23, 0.8) 0%, transparent 100%)'
+          }}
         />
       </div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
-        {/* Precision Scrim - Radial gradient behind text */}
-        <div 
-          className="absolute inset-0 flex items-center justify-center pointer-events-none"
-          style={{
-            background: 'radial-gradient(circle, rgba(0,0,0,0.7) 0%, transparent 70%)'
-          }}
-        />
-
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          
+          {/* TEXT-BOX GLASSMORPHISM - The Shield */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-8"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl"
           >
-            GRUPO GLOBE
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl lg:text-8xl font-black text-white mb-12"
-            style={{ 
-              letterSpacing: '-0.05em',
-              lineHeight: '0.9',
-              textShadow: '0 4px 12px rgba(0,0,0,0.9)'
-            }}
-          >
-            EL ESTÁNDAR<br /><span className="italic">CANADIENSE.</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-3xl lg:text-4xl font-light text-slate-300 mb-4"
-            style={{ 
-              letterSpacing: '0.05em'
-            }}
-          >
-            No la excepción.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, delay: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-16"
-          >
-            <a
-              href="#empresas"
-              className="inline-block bg-white text-black px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white/90 transition-all duration-300 rounded-sm"
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-8"
             >
-              Descubrir Empresas
-            </a>
+              GRUPO GLOBE
+            </motion.div>
+
+            {/* ARCHITECTURAL HEADLINE with COLOR BREAK */}
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="text-6xl lg:text-8xl font-black tracking-tighter mb-12 shadow-[0_10px_30px_rgba(0,0,0,0.8)]"
+              style={{ 
+                lineHeight: '0.9'
+              }}
+            >
+              <span className="text-white">EL ESTÁNDAR</span>
+              <br />
+              <span className="text-slate-200 italic">CANADIENSE.</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="text-3xl lg:text-4xl font-light text-slate-300 mb-4"
+              style={{ 
+                letterSpacing: '0.05em',
+                lineHeight: '1.6'
+              }}
+            >
+              No la excepción.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.2, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-16"
+            >
+              <a
+                href="#empresas"
+                className="inline-block bg-white text-black px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white/90 transition-all duration-300 rounded-sm"
+              >
+                Descubrir Empresas
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </div>
