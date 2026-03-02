@@ -6,7 +6,7 @@ export default function MassiveFooter() {
   const t = useTranslations();
 
   return (
-    <footer className="relative bg-slate-950 text-white py-32 overflow-hidden">
+    <footer className="relative bg-slate-950 !text-white py-32 overflow-hidden">
       {/* Giant 'G' Watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div 

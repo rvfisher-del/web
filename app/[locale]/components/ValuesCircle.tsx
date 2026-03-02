@@ -19,7 +19,7 @@ export default function ValuesCircle() {
       className="relative py-48 bg-white overflow-hidden"
     >
       {/* Maximum Breathing Room */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="w-screen flex flex-col items-center justify-center text-center py-24">
         
         {/* Rotating Circle */}
         <motion.div
@@ -84,7 +84,7 @@ export default function ValuesCircle() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8"
+          className="text-[11px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8 mx-auto"
         >
           VISIÓN 360° DEL VALOR
         </motion.div>
@@ -95,7 +95,7 @@ export default function ValuesCircle() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[clamp(32px,5vw,56px)] font-black leading-[1.2] tracking-tighter text-black mb-8"
+          className="text-[clamp(32px,5vw,56px)] font-black leading-[1.2] tracking-tighter text-black mb-8 mx-auto max-w-3xl"
         >
           De la energía que alimenta la mina, hasta el mantenimiento que mantiene los equipos operando
         </motion.h2>
@@ -106,7 +106,7 @@ export default function ValuesCircle() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[18px] font-light text-black/60 leading-relaxed max-w-2xl mx-auto mb-8"
+          className="text-[18px] font-light text-black/60 leading-relaxed max-w-2xl mx-auto mb-8 mt-10"
         >
           No perseguimos ganancias de un trimestre. Construimos empresas que operan décadas—con impacto medible en empleo, seguridad y comunidades.
         </motion.p>
@@ -117,7 +117,7 @@ export default function ValuesCircle() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[20px] font-bold text-black"
+          className="text-[20px] font-bold text-black mx-auto"
         >
           Las industrias críticas no tienen días libres. Nosotros tampoco.
         </motion.p>

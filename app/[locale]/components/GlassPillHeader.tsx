@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function GlassPillHeader() {
@@ -34,53 +35,46 @@ export default function GlassPillHeader() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 max-w-5xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-xl shadow-2xl transition-all duration-500 ${
+        style={{ zIndex: 9999 }}
+        className={`fixed top-6 left-1/2 -translate-x-1/2 max-w-6xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
           isScrolled 
             ? 'w-[85%]' 
             : 'w-[90%]'
         }`}
       >
-      <div className="px-8 py-4 flex justify-between items-center">
-        {/* Logo - Always visible on all screens with SAFETY PADDING */}
-        <div className="flex-shrink-0 px-3 py-2">
+      <div className="px-14 py-4 flex justify-between items-center w-full h-28">
+        {/* Logo - Clickable Home Button */}
+        <Link href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
           <img
-            src="/images/logos/logo-grupo-globe-hd.png"
+            src="/images/logos/logo-official.png"
             alt="Grupo Globe"
-            className="h-8 md:h-10 w-auto brightness-0 invert opacity-90 transition-all duration-300"
-            style={{ imageRendering: '-webkit-optimize-contrast' }}
+            height={96}
+            width="auto"
+            className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
           />
-        </div>
+        </Link>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-10">
+        {/* Navigation - Always Visible */}
+        <nav className="flex items-center gap-6 md:gap-10 pr-12">
+          <Link
+            href="/"
+            className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
+          >
+            INICIO
+          </Link>
           <a
             href="#empresas"
             onClick={(e) => smoothScroll(e, '#empresas')}
-            className="text-[12px] font-bold tracking-[0.15em] uppercase text-white/80 hover:text-white transition-colors duration-300"
+            className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
           >
-            {t('navigation.companies')}
+            EMPRESAS
           </a>
-          <a
-            href="#nosotros"
-            onClick={(e) => smoothScroll(e, '#nosotros')}
-            className="text-[12px] font-bold tracking-[0.15em] uppercase text-white/80 hover:text-white transition-colors duration-300"
-          >
-            {t('navigation.about')}
-          </a>
-          <a
-            href="#valores"
-            onClick={(e) => smoothScroll(e, '#valores')}
-            className="text-[12px] font-bold tracking-[0.15em] uppercase text-white/80 hover:text-white transition-colors duration-300"
-          >
-            Valores
-          </a>
-          <LanguageSwitcher />
           <a
             href="#contacto"
             onClick={(e) => smoothScroll(e, '#contacto')}
-            className="bg-white/20 backdrop-blur-sm border border-white/30 text-white px-6 py-2.5 text-[11px] font-bold tracking-[0.15em] uppercase rounded-full hover:bg-white/30 transition-all duration-300"
+            className="bg-white/20 backdrop-blur-sm border border-white/30 text-white px-4 md:px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-white/30 transition-all duration-300"
           >
-            {t('navigation.contact')}
+            CONTACTO
           </a>
         </nav>
       </div>

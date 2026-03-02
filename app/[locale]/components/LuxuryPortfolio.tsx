@@ -76,37 +76,24 @@ export default function LuxuryPortfolio() {
         <div className="w-px h-24 bg-white/20" />
       </motion.div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+      <div className="relative w-full flex flex-col items-center justify-center text-center py-24 bg-transparent z-10 mt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <div className="text-[11px] font-bold tracking-[0.3em] uppercase text-white/40 mb-8">
             {t('portfolio.label')}
           </div>
-          {/* Secondary Scrim with Gradient Shelf for Maximum Legibility */}
-          <div className="relative inline-block">
-            {/* Dark Gradient Shelf Behind Text */}
-            <div 
-              className="absolute inset-0 -inset-x-12 -inset-y-6"
-              style={{
-                background: 'linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.6), transparent)',
-              }}
-            />
-            {/* Secondary Scrim with Backdrop Blur */}
-            <div className="relative bg-slate-900/40 backdrop-blur-md px-12 py-6 rounded-lg">
-              <h2 
-                className="text-[clamp(40px,6vw,72px)] leading-[1.1] mb-10" 
-                style={{ letterSpacing: '-0.05em', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
-              >
-                <span className="font-extrabold text-white">Seis empresas. </span>
-                <span className="font-extrabold text-amber-500">Un estándar.</span>
-              </h2>
-            </div>
-          </div>
+          <h2 
+            className="text-[clamp(40px,6vw,72px)] leading-[1.1] mb-10" 
+            style={{ letterSpacing: '-0.05em', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
+          >
+            <span className="font-black text-white">Seis empresas. </span>
+            <span className="font-black text-amber-500">Un estándar.</span>
+          </h2>
           <p className="text-[clamp(18px,2vw,24px)] font-light text-white/60 max-w-3xl mx-auto leading-relaxed mt-10">
             {t('portfolio.subheadline')}
           </p>
@@ -114,7 +101,7 @@ export default function LuxuryPortfolio() {
       </div>
 
       {/* Zero-Gap Gallery Grid with Monochrome-to-Color */}
-      <div className="w-full">
+      <div className="w-full mt-40 relative z-0">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
           {companies.map((company, i) => (
             <motion.div

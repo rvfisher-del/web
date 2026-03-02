@@ -51,21 +51,21 @@ export default function CinematicHero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center text-center">
           
-          {/* Industrial Left-Aligned Hero Text */}
+          {/* Industrial Centered Hero Text */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
+            className="max-w-4xl mx-auto bg-gradient-to-b from-black/70 via-black/40 to-transparent p-12 rounded-3xl"
           >
             {/* Dominant Title - The Volume */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="font-black tracking-tighter mb-0"
+              className="font-black tracking-tighter mb-0 mx-auto text-center"
               style={{ 
                 fontSize: 'clamp(3rem, 8vw, 9rem)',
                 letterSpacing: '-0.05em',
@@ -77,15 +77,15 @@ export default function CinematicHero() {
               <span className="text-white">{t('hero.headline')}</span>
             </motion.h1>
 
-            {/* Branded Badge/Tagline - Smaller, Subtle */}
+            {/* Branded Badge/Tagline - Canadian Standards */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="font-light uppercase text-slate-400/80 mt-6"
+              className="font-semibold uppercase tracking-[0.15em] mt-12 mx-auto text-center"
               style={{ 
-                fontSize: 'clamp(0.875rem, 1.5vw, 1.125rem)',
-                letterSpacing: '0.15em',
+                fontSize: 'clamp(1.05rem, 1.8vw, 1.35rem)',
+                color: '#BF2F38',
                 lineHeight: '1.6'
               }}
             >
@@ -97,10 +97,10 @@ export default function CinematicHero() {
               initial={{ opacity: 0, scaleY: 0 }}
               animate={{ opacity: 1, scaleY: 1 }}
               transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-12 ml-0"
+              className="mt-12 mx-auto"
               style={{ transformOrigin: 'top' }}
             >
-              <div className="w-px h-32 bg-white/10" />
+              <div className="w-px h-32 bg-white/10 mx-auto" />
             </motion.div>
           </motion.div>
         </div>

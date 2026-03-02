@@ -1,4 +1,5 @@
 /* OVERFLOW FIX - ABSOLUTE PRIORITY */
+/* Cache bust v2.3 - 2026-03-02 18:17 - Scale fixes: py-20 themes, max-w-3xl manifesto, text-white restored */
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -8,8 +9,7 @@ html, body {
 
 /* BERYL CENTERING - ABSOLUTE PRIORITY */
 html, body {
-  background-color: white !important;
-  color: #0f172a !important; /* slate-900 */
+  background-color: white;
 }
 
 main {
@@ -22,7 +22,7 @@ main {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
-@import "./services-luxury.css";
+/* @import "./services-luxury.css"; */ /* DISABLED - Was forcing body { color: var(--neutral-900) } globally */
 
 /* EMERGENCY GLOBAL OVERRIDE */
 main, section, header, footer {
@@ -36,4 +36,14 @@ main, section, header, footer {
   margin-right: auto !important;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
+}
+
+/* LUXURY MAGAZINE LINE-HEIGHT */
+p {
+  line-height: 1.8 !important;
+}
+
+/* NUMBERED SECTION SPACING */
+.section-number {
+  margin-top: 8rem !important;
 }
