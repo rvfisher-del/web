@@ -1,11 +1,11 @@
 import { useTranslations } from 'next-intl';
-import GlassPillHeader from './components/GlassPillHeader';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import CinematicHero from './components/CinematicHero';
 import LuxuryPortfolio from './components/LuxuryPortfolio';
 import ValuesCircle from './components/ValuesCircle';
 import ScrollReveal from './components/ScrollReveal';
 import FilmGrain from './components/FilmGrain';
-import MassiveFooter from './components/MassiveFooter';
 
 export default function Home() {
   const t = useTranslations();
@@ -22,7 +22,7 @@ export default function Home() {
       
       <div className="bg-white relative z-10">
         {/* Glass Pill Header */}
-        <GlassPillHeader />
+        <Header />
 
         {/* Cinematic Video Hero */}
         <CinematicHero />
@@ -424,7 +424,7 @@ export default function Home() {
         </section>
 
         {/* Massive Industrial Footer */}
-        <MassiveFooter />
+        <Footer />
       </div>
     </>
   );

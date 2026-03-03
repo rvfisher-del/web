@@ -4,9 +4,8 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import LanguageSwitcher from './LanguageSwitcher';
 
-export default function GlassPillHeader() {
+export default function Header() {
   const t = useTranslations();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -46,7 +45,7 @@ export default function GlassPillHeader() {
         {/* Logo - Clickable Home Button */}
         <Link href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
           <img
-            src="/images/logos/logo-official.png"
+            src="/brand/logo-official.png"
             alt="Grupo Globe"
             height={96}
             width="auto"

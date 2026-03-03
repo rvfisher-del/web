@@ -14,14 +14,28 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://grupo-globe-nextjs.vercel.app'),
-  title: 'Grupo Globe',
-  description: 'Building enduring value in critical industries across North and South America',
+  title: {
+    default: "Grupo Globe | Canadian Standards in Critical Industries",
+    template: "%s | Grupo Globe"
+  },
+  description: "Solving high-stakes industrial challenges with zero improvisation. Expertise in Power, Modular, Services, and Lift Parts.",
+  keywords: ["Canadian Standards", "Industrial", "Power", "Modular", "Services", "Lift Parts"],
   icons: {
     icon: '/images/favicons/favicon-grupo-globe.svg',
   },
   openGraph: {
+    title: "Grupo Globe | Canadian Standards in Critical Industries",
+    description: "Solving high-stakes industrial challenges with zero improvisation.",
+    url: "https://grupo-globe-nextjs.vercel.app",
+    siteName: "Grupo Globe",
+    locale: "es_CL",
+    type: "website",
     images: ['/images/logos/logo-grupo-globe.png'],
   },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export function generateStaticParams() {
