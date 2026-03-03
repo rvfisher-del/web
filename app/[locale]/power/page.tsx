@@ -72,23 +72,38 @@ export default function PowerPage() {
               Energía industrial para operaciones que no pueden detenerse.
             </p>
 
-            {/* Downtime Manifesto - Centered */}
-            <div className="max-w-3xl mx-auto text-center mt-16">
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl">
-                <h3 className="text-2xl font-bold text-white mb-6">El Costo del Tiempo Perdido</h3>
-                <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
-                  <div className="border-l-4 border-[#3A5B1E] pl-6 text-left">
-                    <p className="font-semibold text-white mb-2">Minería</p>
-                    <p>Costo de downtime: <span className="text-[#91A56E] font-bold">$50,000 - $200,000 USD/hora</span></p>
-                  </div>
-                  <div className="border-l-4 border-[#3A5B1E] pl-6 text-left">
-                    <p className="font-semibold text-white mb-2">Retail</p>
-                    <p>Uptime necesario: <span className="text-[#91A56E] font-bold">&gt;99.5%</span> en operaciones retail</p>
-                  </div>
-                  <div className="border-l-4 border-[#3A5B1E] pl-6 text-left">
-                    <p className="font-semibold text-white mb-2">Real Estate</p>
-                    <p>Ahorro típico: <span className="text-[#91A56E] font-bold">15-30%</span> en costos energéticos</p>
-                  </div>
+            {/* Financial Impact Dashboard - High-Density Stats Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
+              {/* Card 1 - Mining */}
+              <div className="bg-white/5 backdrop-blur-md border border-white/10 border-t-2 border-t-[#3A5B1E] px-8 py-10 rounded-lg relative">
+                <div className="absolute top-4 right-4 text-[#3A5B1E] text-xl font-bold">+</div>
+                <div className="text-4xl font-black text-white mb-2">
+                  $200K/HR
+                </div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#91A56E]">
+                  DOWNTIME MINERO
+                </div>
+              </div>
+
+              {/* Card 2 - Retail */}
+              <div className="bg-white/5 backdrop-blur-md border border-white/10 border-t-2 border-t-[#3A5B1E] px-8 py-10 rounded-lg relative">
+                <div className="absolute top-4 right-4 text-[#3A5B1E] text-xl font-bold">+</div>
+                <div className="text-4xl font-black text-white mb-2">
+                  &gt;99.5%
+                </div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#91A56E]">
+                  UPTIME RETAIL
+                </div>
+              </div>
+
+              {/* Card 3 - Real Estate */}
+              <div className="bg-white/5 backdrop-blur-md border border-white/10 border-t-2 border-t-[#3A5B1E] px-8 py-10 rounded-lg relative">
+                <div className="absolute top-4 right-4 text-[#3A5B1E] text-xl font-bold">+</div>
+                <div className="text-4xl font-black text-white mb-2">
+                  15-30%
+                </div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#91A56E]">
+                  AHORRO REAL ESTATE
                 </div>
               </div>
             </div>
