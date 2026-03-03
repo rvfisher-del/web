@@ -1,14 +1,8 @@
-import type { Metadata } from 'next';
-import PowerPageClient from './PowerPageClient';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Globe Power | El Músculo Silencioso del Grupo',
-  description: 'Verde Profundo. Energía clara y ordenada para operaciones críticas. El músculo silencioso del grupo Globe.',
-};
+import { motion } from 'framer-motion';
 
-export default function PowerPage() {
-  return <PowerPageClient />;
-}
+export default function PowerPageClient() {
   return (
     <>
       <div className="bg-white">
