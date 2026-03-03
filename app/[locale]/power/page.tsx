@@ -1,28 +1,66 @@
 import type { Metadata } from 'next';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Globe Power | Energía Industrial Confiable',
-  description: 'Eficiencia y continuidad eléctrica de grado minero. Sistemas de energía para operaciones críticas donde el tiempo perdido cuesta millones.',
+  title: 'Globe Power | El Músculo Silencioso del Grupo',
+  description: 'Verde Profundo. Energía clara y ordenada para operaciones críticas. El músculo silencioso del grupo Globe.',
 };
 
 export default function PowerPage() {
   return (
     <>
       <div className="bg-white">
-        {/* Global Header */}
-        <Header />
+        {/* Power-Specific Glass Pill Header */}
+        <header className="fixed top-6 left-1/2 -translate-x-1/2 max-w-6xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[90%]" style={{ zIndex: 9999 }}>
+          <div className="px-14 py-4 flex justify-between items-center w-full h-32">
+            {/* Power Logo */}
+            <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
+              <img
+                src="/images/logos/power-logo-clean.png"
+                alt="Globe Power"
+                height={96}
+                width="auto"
+                className="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+            </a>
 
-        {/* Hero Section */}
+            {/* Navigation */}
+            <nav className="flex items-center gap-6 md:gap-10 pr-12">
+              <a href="/" className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
+                INICIO
+              </a>
+              <a href="#soluciones" className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
+                SOLUCIONES
+              </a>
+              <a href="#contacto" className="bg-[#3A5B1E]/80 backdrop-blur-sm border border-white/30 text-white px-4 md:px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#3A5B1E] transition-all duration-300">
+                CONTACTO
+              </a>
+            </nav>
+          </div>
+        </header>
+
+        {/* Hero Section with Video Background */}
         <section className="relative min-h-screen flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-          {/* Dark overlay for better text contrast */}
-          <div className="absolute inset-0 bg-black/40" />
+          {/* Video Background - Using existing video with green overlay */}
+          <div className="absolute inset-0 z-0">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover opacity-60"
+            >
+              <source src="/videos/hero-loop-compressed.mp4" type="video/mp4" />
+            </video>
+            {/* Verde Profundo Overlay */}
+            <div className="absolute inset-0 bg-[#3A5B1E]/30" />
+            <div className="absolute inset-0 bg-black/40" />
+          </div>
           
           <div className="relative z-10 max-w-7xl mx-auto text-center">
             <div className="mb-8">
-              <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#BF2F38] mb-4 block">
-                Globe Power
+              <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#91A56E] mb-4 block">
+                Globe Power — Verde Profundo
               </span>
             </div>
             
@@ -30,8 +68,8 @@ export default function PowerPage() {
               Hacemos visible lo que otros esconden.
             </h1>
             
-            <p className="text-[clamp(18px,2vw,24px)] font-light text-[#BF2F38] mb-12 leading-relaxed max-w-3xl mx-auto">
-              Eficiencia y Continuidad Eléctrica de Grado Minero.
+            <p className="text-[clamp(18px,2vw,24px)] font-light text-[#91A56E] mb-12 leading-relaxed max-w-3xl mx-auto">
+              Globe Power: El músculo silencioso y ordenado del grupo. Energía clara para el futuro.
             </p>
 
             {/* Downtime Manifesto - Centered */}
@@ -39,17 +77,17 @@ export default function PowerPage() {
               <div className="bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl">
                 <h3 className="text-2xl font-bold text-white mb-6">El Costo del Tiempo Perdido</h3>
                 <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
-                  <div className="border-l-4 border-[#BF2F38] pl-6 text-left">
+                  <div className="border-l-4 border-[#3A5B1E] pl-6 text-left">
                     <p className="font-semibold text-white mb-2">Minería</p>
-                    <p>Costo de downtime: <span className="text-[#BF2F38] font-bold">$50,000 - $200,000 USD/hora</span></p>
+                    <p>Costo de downtime: <span className="text-[#91A56E] font-bold">$50,000 - $200,000 USD/hora</span></p>
                   </div>
-                  <div className="border-l-4 border-[#BF2F38] pl-6 text-left">
+                  <div className="border-l-4 border-[#3A5B1E] pl-6 text-left">
                     <p className="font-semibold text-white mb-2">Retail</p>
-                    <p>Uptime necesario: <span className="text-[#BF2F38] font-bold">&gt;99.5%</span> en operaciones retail</p>
+                    <p>Uptime necesario: <span className="text-[#91A56E] font-bold">&gt;99.5%</span> en operaciones retail</p>
                   </div>
-                  <div className="border-l-4 border-[#BF2F38] pl-6 text-left">
+                  <div className="border-l-4 border-[#3A5B1E] pl-6 text-left">
                     <p className="font-semibold text-white mb-2">Real Estate</p>
-                    <p>Ahorro típico: <span className="text-[#BF2F38] font-bold">15-30%</span> en costos energéticos</p>
+                    <p>Ahorro típico: <span className="text-[#91A56E] font-bold">15-30%</span> en costos energéticos</p>
                   </div>
                 </div>
               </div>
@@ -58,11 +96,11 @@ export default function PowerPage() {
         </section>
 
         {/* The Big Three - 01, 02, 03 Grid */}
-        <section className="py-48 bg-white">
+        <section id="soluciones" className="py-48 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
-              <span className="text-xs font-bold tracking-[0.3em] uppercase text-black/40 mb-4 block">
-                ARQUITECTURA COMPLETA
+              <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#8F8B84] mb-4 block">
+                ARQUITECTURA COMPLETA — VERDE PROFUNDO
               </span>
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
                 Tres Pilares.<br/>Una Solución Completa.
@@ -74,8 +112,8 @@ export default function PowerPage() {
 
             <div className="grid md:grid-cols-3 gap-12">
               {/* 01 - Suministro */}
-              <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl mb-6 text-[#BF2F38] font-bold">01</div>
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-6xl mb-6 text-[#3A5B1E] font-bold">01</div>
                 <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-4">
                   Suministro
                 </h3>
@@ -84,23 +122,23 @@ export default function PowerPage() {
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Subestaciones propias</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Infraestructura redundante</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Mantenimiento preventivo incluido</span>
                   </li>
                 </ul>
               </div>
 
               {/* 02 - Eficiencia */}
-              <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl mb-6 text-[#BF2F38] font-bold">02</div>
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-6xl mb-6 text-[#3A5B1E] font-bold">02</div>
                 <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-4">
                   Eficiencia
                 </h3>
@@ -109,23 +147,23 @@ export default function PowerPage() {
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Análisis de consumo real</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Identificación de pérdidas</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Plan de optimización a medida</span>
                   </li>
                 </ul>
               </div>
 
               {/* 03 - Analítica */}
-              <div className="bg-white p-10 border-l-4 border-black hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl mb-6 text-[#BF2F38] font-bold">03</div>
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-6xl mb-6 text-[#3A5B1E] font-bold">03</div>
                 <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-4">
                   Analítica
                 </h3>
@@ -134,15 +172,15 @@ export default function PowerPage() {
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Dashboard 24/7</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Alertas predictivas</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
-                    <span className="text-[#BF2F38] text-xl flex-shrink-0">✓</span>
+                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
                     <span>Reporting mensual transparente</span>
                   </li>
                 </ul>
@@ -151,31 +189,69 @@ export default function PowerPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-32 bg-gradient-to-br from-slate-950 to-slate-900 text-white text-center">
+        {/* CTA Section - Verde Profundo */}
+        <section id="contacto" className="py-32 bg-gradient-to-br from-[#3A5B1E] via-[#2d4617] to-[#3A5B1E] text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] mb-8" style={{ letterSpacing: '-0.05em' }}>
               ¿Tu operación necesita energía confiable?
             </h2>
-            <p className="text-xl text-slate-300 leading-relaxed mb-12">
+            <p className="text-xl text-[#91A56E] leading-relaxed mb-12">
               Conversemos sobre cómo Globe Power puede ser tu socio energético de largo plazo.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a href="#contacto" className="bg-[#BF2F38] text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#9a2529] transition-all duration-300 rounded-md">
+              <a href="mailto:power@grupoGlobe.com" className="bg-white text-[#3A5B1E] px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#91A56E] hover:text-white transition-all duration-300 rounded-md">
                 Solicitar Consulta
               </a>
-              <a href="mailto:power@grupoGlobe.com" className="bg-transparent border-2 border-white text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-300 rounded-md">
+              <a href="mailto:power@grupoGlobe.com" className="bg-transparent border-2 border-white text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-[#3A5B1E] transition-all duration-300 rounded-md">
                 Contactar Ahora
               </a>
             </div>
-            <p className="text-slate-400 mt-8">
+            <p className="text-[#8F8B84] mt-8">
               Email: <a href="mailto:power@grupoGlobe.com" className="text-white hover:underline">power@grupoGlobe.com</a> | Manager: Alvaro Portilla
             </p>
           </div>
         </section>
 
-        {/* Global Footer */}
-        <Footer />
+        {/* Power-Specific Footer */}
+        <footer className="bg-slate-950 text-white py-16">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+              <div>
+                <img
+                  src="/images/logos/power-logo-clean.png"
+                  alt="Globe Power"
+                  className="h-10 w-auto mb-4 opacity-80"
+                />
+                <p className="text-[#91A56E] font-medium">El músculo silencioso del grupo.</p>
+              </div>
+              <div>
+                <h4 className="text-sm font-bold uppercase tracking-wide mb-4 text-[#91A56E]">Soluciones</h4>
+                <ul className="space-y-2">
+                  <li><a href="#soluciones" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Suministro</a></li>
+                  <li><a href="#soluciones" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Eficiencia</a></li>
+                  <li><a href="#soluciones" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Analítica</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-sm font-bold uppercase tracking-wide mb-4 text-[#91A56E]">Grupo Globe</h4>
+                <ul className="space-y-2">
+                  <li><a href="/" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Inicio</a></li>
+                  <li><a href="/#empresas" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Empresas</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-sm font-bold uppercase tracking-wide mb-4 text-[#91A56E]">Contacto</h4>
+                <ul className="space-y-2">
+                  <li><a href="mailto:power@grupoGlobe.com" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">power@grupoGlobe.com</a></li>
+                  <li><span className="text-white/70 text-sm">Alvaro Portilla</span></li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <p className="text-sm text-white/60 text-center">© 2026 Globe Power. Verde Profundo. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
