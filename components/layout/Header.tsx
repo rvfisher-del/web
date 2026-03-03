@@ -35,10 +35,10 @@ export default function Header() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         style={{ zIndex: 9999 }}
-        className={`fixed top-6 left-1/2 -translate-x-1/2 max-w-6xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
+        className={`fixed top-6 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
           isScrolled 
-            ? 'w-[85%]' 
-            : 'w-[90%]'
+            ? 'w-[90%]' 
+            : 'w-[95%]'
         }`}
       >
       <div className="px-14 py-4 flex justify-between items-center w-full h-32">
@@ -54,23 +54,23 @@ export default function Header() {
         </Link>
 
         {/* Navigation - Always Visible */}
-        <nav className="flex items-center gap-6 md:gap-10 pr-12">
+        <nav className="flex items-center gap-4 md:gap-6 pr-12">
           <Link
             href="/"
-            className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
+            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
           >
             INICIO
           </Link>
           <a
             href="#empresas"
             onClick={(e) => smoothScroll(e, '#empresas')}
-            className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
+            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
           >
             EMPRESAS
           </a>
           <a
             href="mailto:talento@grupoglobe.cl"
-            className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group"
+            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group whitespace-nowrap"
           >
             TRABAJA CON NOSOTROS
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3A5B1E] group-hover:w-full transition-all duration-300" />
