@@ -50,7 +50,7 @@ export default function PowerPage() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             >
-              <source src="/videos/power-hero-verde-profundo.mp4" type="video/mp4" />
+              <source src="https://kfli3thlaotlfeup.public.blob.vercel-storage.com/Video_Creation_Feedback_and_Generation.mp4" type="video/mp4" />
             </video>
             {/* Verde Profundo Overlay */}
             <div className="absolute inset-0 bg-[#3A5B1E]/30" />
