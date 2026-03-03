@@ -12,7 +12,7 @@ export default function ServicesPageClient() {
             {/* Services Logo */}
             <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
               <img
-                src="/images/logos/globe-logo-clean.png"
+                src="/images/logos/services-logo-clean.png"
                 alt="Globe Services"
                 height={96}
                 width="auto"
@@ -697,7 +697,7 @@ export default function ServicesPageClient() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
               <div>
                 <img
-                  src="/images/logos/globe-logo-clean.png"
+                  src="/images/logos/services-logo-clean.png"
                   alt="Globe Services"
                   className="h-10 w-auto mb-4 opacity-80"
                 />
