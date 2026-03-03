@@ -2,8 +2,20 @@ import type { Metadata } from 'next';
 import PowerPageClient from './PowerPageClient';
 
 export const metadata: Metadata = {
-  title: 'Globe Power | El Músculo Silencioso del Grupo',
-  description: 'Verde Profundo. Energía clara y ordenada para operaciones críticas. El músculo silencioso del grupo Globe.',
+  title: 'Globe Power — A Portilla Company',
+  description: 'Eficiencia y continuidad eléctrica de grado minero. El músculo silencioso de la industria.',
+  openGraph: {
+    title: 'Globe Power — A Portilla Company',
+    description: 'Eficiencia y continuidad eléctrica de grado minero. El músculo silencioso de la industria.',
+    type: 'website',
+    locale: 'es_CL',
+    siteName: 'Grupo Globe',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Globe Power — A Portilla Company',
+    description: 'Eficiencia y continuidad eléctrica de grado minero. El músculo silencioso de la industria.',
+  },
 };
 
 export default function PowerPage() {
