@@ -50,7 +50,7 @@ export default function PowerPage() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             >
-              <source src="/videos/hero-loop-compressed.mp4" type="video/mp4" />
+              <source src="/videos/power-industrial-4k.mp4" type="video/mp4" />
             </video>
             {/* Verde Profundo Overlay */}
             <div className="absolute inset-0 bg-[#3A5B1E]/30" />
