@@ -442,7 +442,7 @@ export default function PowerPageClient() {
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-white mb-6">
-                Grid of Expertise
+                Excelencia Operativa
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
                 Servicios técnicos completos para operaciones críticas sin compromisos.
@@ -644,7 +644,6 @@ export default function PowerPageClient() {
                   alt="Globe Power"
                   className="h-10 w-auto mb-4 opacity-80"
                 />
-                <p className="text-[#91A56E] font-medium">El músculo silencioso del grupo.</p>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#8F8B84] font-bold mt-4">
                   Una empresa de <a href="/" className="text-[#8F8B84] hover:text-white transition-colors">Grupo Globe</a>.
                 </p>
@@ -673,7 +672,9 @@ export default function PowerPageClient() {
               </div>
             </div>
             <div className="mt-12 pt-8 border-t border-white/10">
-              <p className="text-sm text-white/60 text-center">© 2026 Globe Power. Verde Profundo. Todos los derechos reservados.</p>
+              <p className="text-sm text-[#8F8B84] text-center">
+                © 2026 Grupo Globe. Todos los derechos reservados.
+              </p>
             </div>
           </div>
         </footer>
