@@ -59,12 +59,22 @@ export default function ServicesPageClient() {
           
           <div className="relative z-10 max-w-7xl mx-auto text-center">
             <h1 className="text-[clamp(36px,5vw,64px)] font-black leading-[1.1] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
-              Excelencia operativa en cada detalle.
+              Donde se resuelve con criterio y técnica.
             </h1>
             
-            <p className="text-[clamp(18px,2vw,24px)] font-light text-[#D4957D] mb-12 leading-relaxed max-w-3xl mx-auto">
-              Mantenimiento, Reparaciones y Gestión de modernización.
+            <p className="text-[clamp(18px,2vw,24px)] font-light text-[#D4957D] mb-8 leading-relaxed max-w-3xl mx-auto">
+              Equipos reales, tiempos concretos y compromiso serio. Globe Services no improvisa. Aplica protocolos claros, con foco en seguridad, continuidad y precisión.
             </p>
+
+            {/* Customer Quote */}
+            <div className="max-w-2xl mx-auto mb-12 px-6 py-4 border-l-4 border-[#BA6347] bg-white/5 backdrop-blur-sm">
+              <p className="text-[#D4957D] text-base leading-relaxed italic">
+                "Yo necesito que me respondan siempre, sin vueltas. No puedo quedar mal con 200 vecinos por culpa del ascensor."
+              </p>
+              <p className="text-white/60 text-sm mt-2">
+                — Administrador, Edificio Las Condes
+              </p>
+            </div>
 
             {/* Service Excellence Dashboard - High-Density Stats Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
@@ -130,98 +140,98 @@ export default function ServicesPageClient() {
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#8F8B84] mb-4 block">
-                ARQUITECTURA COMPLETA — TERRACOTTA CLARA
+                ARQUITECTURA COMPLETA — SERVICIO PROFESIONAL
               </span>
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
-                Tres Pilares. <br/>Una Solución Completa.
+                Servicio digno, sin adornos ni excusas.
               </h2>
               <p className="text-[clamp(18px,2vw,24px)] font-light text-slate-600 leading-relaxed max-w-3xl mx-auto">
-                Mantenimiento, Logística y Gestión integrados en una sola operación. Todo lo que necesitas para mantener tu infraestructura funcionando sin interrupciones.
+                Dignificar el servicio: no vendemos mantención barata, sino continuidad crítica y seguridad. Opera con estándar canadiense, pero resuelve en terreno chileno.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-12">
-              {/* 01 - Mantención Integral */}
+              {/* 01 - Continuidad Crítica Sin Excusas */}
               <div className="bg-white p-10 border-l-4 border-[#BA6347] hover:shadow-xl transition-all duration-300">
                 <div className="text-6xl mb-6 text-[#BA6347] font-bold">01</div>
                 <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-4">
-                  Mantención Integral
+                  Continuidad Crítica Sin Excusas
                 </h3>
                 <p className="text-[15px] font-light text-slate-600 leading-relaxed mb-6">
-                  Facilities & Assets. Mantenimiento preventivo y correctivo de infraestructura crítica.
+                  No puedes quedar mal con tus vecinos, inquilinos o equipo operativo por culpa de un ascensor, HVAC o sistema eléctrico. Globe Services responde siempre, sin vueltas. Equipos reales, tiempos concretos y compromiso serio.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Sistemas HVAC</span>
+                    <span>Respuesta &lt;2 horas, sin excusas</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Equipos industriales</span>
+                    <span>Equipos certificados en terreno</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Infraestructura eléctrica</span>
+                    <span>Protocolos claros, no improvisación</span>
                   </li>
                 </ul>
                 <p className="text-sm text-[#BA6347] font-semibold">
-                  → Lo que significa: cero interrupciones operativas por fallas de equipamiento.
+                  → Lo que significa: tus operaciones nunca se detienen por fallas de equipamiento. Puedes dormir tranquilo.
                 </p>
               </div>
 
-              {/* 02 - Logística y Soporte */}
+              {/* 02 - Estándar Canadiense en Terreno Chileno */}
               <div className="bg-white p-10 border-l-4 border-[#BA6347] hover:shadow-xl transition-all duration-300">
                 <div className="text-6xl mb-6 text-[#BA6347] font-bold">02</div>
                 <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-4">
-                  Logística y Soporte
+                  Estándar Canadiense en Terreno Chileno
                 </h3>
                 <p className="text-[15px] font-light text-slate-600 leading-relaxed mb-6">
-                  Operational flow. Gestión de repuestos, inventarios y cadena de suministro técnica.
+                  Planifica con método y compliance, pero sabe improvisar responsablemente cuando la faena lo exige. Opera con estándar canadiense, pero resuelve en terreno chileno: desierto, altura, edificios antiguos y regulaciones locales.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Stock de repuestos críticos</span>
+                    <span>Protocolos industriales canadienses</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Gestión de proveedores</span>
+                    <span>Adaptación a realidad chilena (altura, clima, normativa)</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Optimización de inventarios</span>
+                    <span>Método + improvisación responsable</span>
                   </li>
                 </ul>
                 <p className="text-sm text-[#BA6347] font-semibold">
-                  → Lo que significa: disponibilidad inmediata de componentes cuando los necesitas.
+                  → Lo que significa: precisión técnica con flexibilidad operativa. Lo mejor de ambos mundos.
                 </p>
               </div>
 
-              {/* 03 - Gestión de Proyectos */}
+              {/* 03 - Compromiso End-to-End */}
               <div className="bg-white p-10 border-l-4 border-[#BA6347] hover:shadow-xl transition-all duration-300">
                 <div className="text-6xl mb-6 text-[#BA6347] font-bold">03</div>
                 <h3 className="text-3xl md:text-[24px] font-bold tracking-tight text-black leading-tight mb-4">
-                  Gestión de Proyectos
+                  Compromiso End-to-End
                 </h3>
                 <p className="text-[15px] font-light text-slate-600 leading-relaxed mb-6">
-                  Turnkey solutions. Proyectos de modernización y mejora continua llave en mano.
+                  Cree en el paso a paso, pero acompaña end-to-end: diagnóstico, implementación, mantenimiento y mejora continua. Persigue velocidad y costos, sin sacrificar seguridad, trazabilidad y vida útil.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Retrofits industriales</span>
+                    <span>Diagnóstico → Implementación → Mantenimiento → Mejora continua</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Upgrades de sistemas</span>
+                    <span>Trazabilidad completa de intervenciones</span>
                   </li>
                   <li className="flex items-start gap-3 text-slate-700">
                     <span className="text-[#BA6347] text-xl flex-shrink-0">✓</span>
-                    <span>Proyectos de eficiencia</span>
+                    <span>Reportes técnicos traducidos para comités y gerencias</span>
                   </li>
                 </ul>
                 <p className="text-sm text-[#BA6347] font-semibold">
-                  → Lo que significa: modernización sin detener operaciones.
+                  → Lo que significa: no solo arreglamos problemas hoy — prevenimos los de mañana.
                 </p>
               </div>
             </div>
@@ -240,6 +250,9 @@ export default function ServicesPageClient() {
               <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-[#BA6347] mb-6">
                 Nuestras Dimensiones Operativas
               </h2>
+              <p className="text-xl text-[#8F8B84] leading-relaxed max-w-3xl mx-auto">
+                Habla en lenguaje técnico, pero traduce a claro y útil para quien decide: comités, gerencias, conserjes.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -255,20 +268,20 @@ export default function ServicesPageClient() {
                   Mantenimiento Preventivo
                 </h3>
                 <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
-                  Programas estructurados de mantenimiento para HVAC, equipos industriales y sistemas críticos. Detectamos problemas antes de que se conviertan en paradas operativas.
+                  Programas estructurados de mantenimiento para HVAC, equipos industriales y sistemas críticos. Detectamos problemas antes de que se conviertan en paradas operativas. Reportes claros para comités y administradores.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Inspecciones programadas</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Inspecciones programadas con protocolo canadiense</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Diagnóstico predictivo</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Diagnóstico predictivo con tecnología infrarroja</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Reportes de estado 24/7</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Reportes técnicos traducidos para comités</span>
                   </li>
                 </ul>
               </motion.div>
@@ -285,12 +298,12 @@ export default function ServicesPageClient() {
                   Gestión de Repuestos
                 </h3>
                 <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
-                  Stock estratégico de componentes críticos y gestión de cadena de suministro para minimizar tiempos de espera. Disponibilidad inmediata cuando más importa.
+                  Stock estratégico de componentes críticos y gestión de cadena de suministro para minimizar tiempos de espera. Disponibilidad inmediata cuando más importa. No quedas mal con tus vecinos por culpa de un repuesto.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Inventario crítico on-site</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Inventario crítico on-site o &lt;24h</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
@@ -298,7 +311,7 @@ export default function ServicesPageClient() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Logística express &lt;24h</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Logística express para emergencias</span>
                   </li>
                 </ul>
               </motion.div>
@@ -315,20 +328,20 @@ export default function ServicesPageClient() {
                   Modernización
                 </h3>
                 <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
-                  Proyectos de retrofits y upgrades que mejoran eficiencia sin interrumpir operaciones. Transformación técnica con continuidad operativa garantizada.
+                  Proyectos de retrofits y upgrades que mejoran eficiencia sin interrumpir operaciones. Transformación técnica con continuidad operativa garantizada. Gestión llave en mano con certificaciones incluidas.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Retrofits llave en mano</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Retrofits llave en mano sin detener operaciones</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Upgrades de sistemas legacy</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Upgrades de sistemas legacy con estándar canadiense</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
-                    <span className="text-[#8F8B84] text-sm leading-relaxed">Certificaciones técnicas incluidas</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Certificaciones técnicas incluidas (SEC, normativa local)</span>
                   </li>
                 </ul>
               </motion.div>
@@ -349,7 +362,7 @@ export default function ServicesPageClient() {
                 Portfolio de Servicios Técnicos
               </h2>
               <p className="text-xl text-[#8F8B84] leading-relaxed max-w-3xl mx-auto">
-                Soluciones completas para cada necesidad operativa.
+                Soluciones completas para cada necesidad operativa. Opera con estándar canadiense, pero resuelve en terreno chileno.
               </p>
             </div>
 
@@ -364,19 +377,19 @@ export default function ServicesPageClient() {
                   <ul className="space-y-2 text-sm text-[#8F8B84]">
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Mantenimiento preventivo chillers y unidades manejadoras</span>
+                      <span>Mantenimiento preventivo chillers y unidades manejadoras con protocolo canadiense</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Limpieza y sanitización de ductos</span>
+                      <span>Limpieza y sanitización de ductos según normativa local</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Optimización de consumo energético</span>
+                      <span>Optimización de consumo energético (auditorías incluidas)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Monitoreo de temperatura y humedad 24/7</span>
+                      <span>Monitoreo de temperatura y humedad 24/7 con alertas</span>
                     </li>
                   </ul>
                 </div>
@@ -389,19 +402,19 @@ export default function ServicesPageClient() {
                   <ul className="space-y-2 text-sm text-[#8F8B84]">
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Inspección termográfica de tableros</span>
+                      <span>Inspección termográfica de tableros con tecnología infrarroja</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Mantención de sistemas UPS</span>
+                      <span>Mantención de sistemas UPS con protocolo industrial</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Corrección de factor de potencia</span>
+                      <span>Corrección de factor de potencia (ahorro energético)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Certificación SEC de instalaciones</span>
+                      <span>Certificación SEC de instalaciones con trazabilidad completa</span>
                     </li>
                   </ul>
                 </div>
@@ -414,19 +427,19 @@ export default function ServicesPageClient() {
                   <ul className="space-y-2 text-sm text-[#8F8B84]">
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Bombas y sistemas de presión</span>
+                      <span>Bombas y sistemas de presión (minería, edificios, industria)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Compresores de aire industrial</span>
+                      <span>Compresores de aire industrial (mantenimiento preventivo)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Sistemas de elevación (ascensores, montacargas)</span>
+                      <span>Sistemas de elevación: ascensores, montacargas (certificación SEC)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Equipamiento de proceso crítico</span>
+                      <span>Equipamiento de proceso crítico con soporte 24/7</span>
                     </li>
                   </ul>
                 </div>
@@ -439,19 +452,19 @@ export default function ServicesPageClient() {
                   <ul className="space-y-2 text-sm text-[#8F8B84]">
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Coordinación de proveedores multisite</span>
+                      <span>Coordinación de proveedores multisite con protocolo único</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Dashboard de gestión operativa</span>
+                      <span>Dashboard de gestión operativa para comités y gerencias</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Reportes ejecutivos mensuales</span>
+                      <span>Reportes ejecutivos mensuales traducidos a claro y útil</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#BA6347] flex-shrink-0">→</span>
-                      <span>Compliance y auditorías técnicas</span>
+                      <span>Compliance y auditorías técnicas con estándar canadiense</span>
                     </li>
                   </ul>
                 </div>
@@ -489,7 +502,7 @@ export default function ServicesPageClient() {
                 Excelencia Operativa
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
-                Servicios técnicos completos para operaciones que exigen disponibilidad continua.
+                Servicios técnicos completos para operaciones que exigen disponibilidad continua. Compromiso end-to-end: diagnóstico, implementación, mantenimiento y mejora continua.
               </p>
             </div>
 
@@ -500,24 +513,24 @@ export default function ServicesPageClient() {
                   Preventivo
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Inspecciones programadas y mantenimiento preventivo para evitar paradas inesperadas.
+                  Inspecciones programadas y mantenimiento preventivo para evitar paradas inesperadas. Protocolos claros con estándar canadiense adaptado a terreno chileno.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Programas personalizados</span>
+                    <span>Programas personalizados por tipo de activo</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Diagnóstico predictivo</span>
+                    <span>Diagnóstico predictivo con tecnología infrarroja</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Reportes técnicos detallados</span>
+                    <span>Reportes técnicos detallados para comités</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Alertas tempranas</span>
+                    <span>Alertas tempranas antes de fallas críticas</span>
                   </li>
                 </ul>
               </div>
@@ -528,24 +541,24 @@ export default function ServicesPageClient() {
                   Correctivo
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Respuesta rápida ante fallas con técnicos certificados y repuestos disponibles.
+                  Respuesta rápida ante fallas con técnicos certificados y repuestos disponibles. No quedas mal con tus vecinos por culpa de un ascensor.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Respuesta &lt;2 horas</span>
+                    <span>Respuesta &lt;2 horas, sin excusas</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Técnicos especializados</span>
+                    <span>Técnicos especializados con certificación canadiense</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Stock de emergencia</span>
+                    <span>Stock de emergencia on-site o &lt;24h</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Soporte 24/7/365</span>
+                    <span>Soporte 24/7/365 con protocolo de escalamiento</span>
                   </li>
                 </ul>
               </div>
@@ -556,24 +569,24 @@ export default function ServicesPageClient() {
                   Logística
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Gestión completa de repuestos, proveedores e inventarios críticos.
+                  Gestión completa de repuestos, proveedores e inventarios críticos. Disponibilidad inmediata cuando más importa.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Inventario on-site</span>
+                    <span>Inventario on-site o &lt;24h con proveedores certificados</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Proveedores certificados</span>
+                    <span>Red de proveedores con trazabilidad completa</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Entrega express &lt;24h</span>
+                    <span>Entrega express &lt;24h para componentes críticos</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Gestión de garantías</span>
+                    <span>Gestión de garantías y vida útil de activos</span>
                   </li>
                 </ul>
               </div>
@@ -584,24 +597,24 @@ export default function ServicesPageClient() {
                   Proyectos
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Retrofits, upgrades y modernización de sistemas con continuidad operativa.
+                  Retrofits, upgrades y modernización de sistemas con continuidad operativa. Gestión llave en mano con certificaciones incluidas.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Gestión llave en mano</span>
+                    <span>Gestión llave en mano con protocolo industrial</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Sin interrupción operativa</span>
+                    <span>Sin interrupción operativa (faenas nocturnas si es necesario)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Certificaciones incluidas</span>
+                    <span>Certificaciones incluidas (SEC, normativa local)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Garantía extendida</span>
+                    <span>Garantía extendida con mantenimiento preventivo</span>
                   </li>
                 </ul>
               </div>
@@ -630,7 +643,7 @@ export default function ServicesPageClient() {
             {/* Proof Section */}
             <div className="mt-12 border-t border-[#BA6347]/20 pt-8">
               <p className="text-sm text-[#8F8B84] text-center">
-                Clientes actuales: Industrial (5 plantas), Retail (18 tiendas), Inmobiliario (12 edificios clase A)
+                Clientes actuales: Industrial (5 plantas mineras), Retail (18 tiendas clase A), Inmobiliario (12 edificios corporativos), Hospitalidad (4 hoteles 5 estrellas).
               </p>
             </div>
           </div>
@@ -640,10 +653,10 @@ export default function ServicesPageClient() {
         <section id="contacto" className="py-32 bg-gradient-to-br from-[#BA6347] via-[#A8563C] to-[#BA6347] text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] mb-8" style={{ letterSpacing: '-0.05em' }}>
-              ¿Tu infraestructura necesita soporte confiable?
+              ¿No puedes quedar mal con tus vecinos por culpa de un ascensor?
             </h2>
             <p className="text-xl text-[#D4957D] leading-relaxed mb-8">
-              Conversemos sobre cómo Globe Services puede mantener tus operaciones funcionando sin interrupciones.
+              Conversemos sobre cómo Globe Services puede mantener tus operaciones funcionando sin interrupciones. Servicio digno, sin adornos ni excusas.
             </p>
 
             {/* Risk Reversal Benefits */}
@@ -651,22 +664,22 @@ export default function ServicesPageClient() {
               <ul className="space-y-3 text-[#D4957D]">
                 <li className="flex items-start gap-3">
                   <span className="text-white text-lg flex-shrink-0">→</span>
-                  <span>Evaluación técnica sin costo</span>
+                  <span>Evaluación técnica sin costo (visita en terreno incluida)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-white text-lg flex-shrink-0">→</span>
-                  <span>Propuesta en 5 días hábiles</span>
+                  <span>Propuesta en 5 días hábiles con protocolo detallado</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-white text-lg flex-shrink-0">→</span>
-                  <span>Sin compromiso de contrato</span>
+                  <span>Sin compromiso de contrato (prueba piloto disponible)</span>
                 </li>
               </ul>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a href="mailto:services@grupoGlobe.com" className="bg-white text-[#BA6347] px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#D4957D] hover:text-white transition-all duration-300 rounded-md">
-                Solicitar Consulta
+                Solicitar Evaluación Técnica
               </a>
               <a href="mailto:services@grupoGlobe.com" className="bg-transparent border-2 border-white text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-[#BA6347] transition-all duration-300 rounded-md">
                 Contactar Ahora
