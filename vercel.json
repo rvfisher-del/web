@@ -40,23 +40,5 @@
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/servicios",
-      "destination": "https://globe-services-nextjs.vercel.app"
-    },
-    {
-      "source": "/servicios/:path*",
-      "destination": "https://globe-services-nextjs.vercel.app/:path*"
-    },
-    {
-      "source": "/power",
-      "destination": "https://globe-power-nextjs.vercel.app"
-    },
-    {
-      "source": "/power/:path*",
-      "destination": "https://globe-power-nextjs.vercel.app/:path*"
-    }
   ]
 }
