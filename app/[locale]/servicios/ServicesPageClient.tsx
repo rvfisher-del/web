@@ -699,10 +699,10 @@ export default function ServicesPageClient() {
                 <img
                   src="/images/logos/services-logo-clean.png"
                   alt="Globe Services"
-                  className="h-10 w-auto mb-4 opacity-80"
+                  className="h-[60px] w-auto mb-4 opacity-80"
                 />
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#8F8B84] font-bold mt-4">
-                  Una empresa de <a href="/" className="text-[#8F8B84] hover:text-white transition-colors">Grupo Globe</a>.
+                  Una empresa de <a href="/" className="hover:text-white transition-colors">Grupo Globe</a>.
                 </p>
               </div>
               <div>
