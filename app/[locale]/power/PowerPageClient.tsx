@@ -645,27 +645,30 @@ export default function PowerPageClient() {
                   className="h-10 w-auto mb-4 opacity-80"
                 />
                 <p className="text-[#91A56E] font-medium">El músculo silencioso del grupo.</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-[#8F8B84] font-bold mt-4">
+                  Una empresa de <a href="/" className="text-[#8F8B84] hover:text-white transition-colors">Grupo Globe</a>.
+                </p>
               </div>
               <div>
                 <h4 className="text-sm font-bold uppercase tracking-wide mb-4 text-[#91A56E]">Soluciones</h4>
                 <ul className="space-y-2">
-                  <li><a href="#soluciones" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Suministro</a></li>
-                  <li><a href="#soluciones" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Eficiencia</a></li>
-                  <li><a href="#soluciones" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Analítica</a></li>
+                  <li><a href="#soluciones" className="text-[#8F8B84] hover:text-white transition-colors text-sm">Suministro</a></li>
+                  <li><a href="#soluciones" className="text-[#8F8B84] hover:text-white transition-colors text-sm">Eficiencia</a></li>
+                  <li><a href="#soluciones" className="text-[#8F8B84] hover:text-white transition-colors text-sm">Analítica</a></li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-sm font-bold uppercase tracking-wide mb-4 text-[#91A56E]">Grupo Globe</h4>
                 <ul className="space-y-2">
-                  <li><a href="/" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Inicio</a></li>
-                  <li><a href="/#empresas" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">Empresas</a></li>
+                  <li><a href="/" className="text-[#8F8B84] hover:text-white transition-colors text-sm">Inicio</a></li>
+                  <li><a href="/#empresas" className="text-[#8F8B84] hover:text-white transition-colors text-sm">Empresas</a></li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-sm font-bold uppercase tracking-wide mb-4 text-[#91A56E]">Contacto</h4>
                 <ul className="space-y-2">
-                  <li><a href="mailto:power@grupoGlobe.com" className="text-white/70 hover:text-[#91A56E] transition-colors text-sm">power@grupoGlobe.com</a></li>
-                  <li><span className="text-white/70 text-sm">Alvaro Portilla</span></li>
+                  <li><a href="mailto:power@grupoGlobe.com" className="text-[#8F8B84] hover:text-white transition-colors text-sm">power@grupoGlobe.com</a></li>
+                  <li><span className="text-[#8F8B84] text-sm">Alvaro Portilla</span></li>
                 </ul>
               </div>
             </div>
