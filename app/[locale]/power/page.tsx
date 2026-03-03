@@ -1,5 +1,8 @@
+'use client';
+
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export const metadata: Metadata = {
   title: 'Globe Power | El Músculo Silencioso del Grupo',
@@ -40,7 +43,7 @@ export default function PowerPage() {
         </header>
 
         {/* Hero Section with Video Background */}
-        <section className="relative min-h-screen flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+        <section className="relative min-h-[90vh] flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
           {/* Video Background - Using existing video with green overlay */}
           <div className="absolute inset-0 z-0">
             <video
@@ -108,7 +111,28 @@ export default function PowerPage() {
               </div>
             </div>
           </div>
+
+          {/* Pulse Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
+            <svg 
+              className="w-8 h-8 text-white animate-bounce" 
+              style={{ animationDuration: '2000ms' }}
+              fill="none" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
         </section>
+
+        {/* Ghost Thread - Vertical Connector */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
 
         {/* The Big Three - 01, 02, 03 Grid */}
         <section id="soluciones" className="py-48 bg-white">
@@ -213,6 +237,11 @@ export default function PowerPage() {
           </div>
         </section>
 
+        {/* Ghost Thread - Vertical Connector */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
         {/* Section 1: Vertical Pillar - Nuestras Dimensiones Operativas */}
         <section className="py-32 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -224,7 +253,13 @@ export default function PowerPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {/* Card 1: INFRAESTRUCTURA */}
-              <div className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
+                className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300"
+              >
                 <h3 className="text-2xl font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
                   Infraestructura
                 </h3>
@@ -245,10 +280,16 @@ export default function PowerPage() {
                     <span className="text-[#8F8B84] text-sm leading-relaxed">Mantenimiento preventivo 24/7</span>
                   </li>
                 </ul>
-              </div>
+              </motion.div>
 
               {/* Card 2: INTELIGENCIA */}
-              <div className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300"
+              >
                 <h3 className="text-2xl font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
                   Inteligencia
                 </h3>
@@ -269,10 +310,16 @@ export default function PowerPage() {
                     <span className="text-[#8F8B84] text-sm leading-relaxed">Reportes ejecutivos mensuales</span>
                   </li>
                 </ul>
-              </div>
+              </motion.div>
 
               {/* Card 3: OPTIMIZACIÓN */}
-              <div className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300"
+              >
                 <h3 className="text-2xl font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
                   Optimización
                 </h3>
@@ -293,10 +340,15 @@ export default function PowerPage() {
                     <span className="text-[#8F8B84] text-sm leading-relaxed">Ahorro típico: 15-30% anual (verificado en clientes retail y minería)</span>
                   </li>
                 </ul>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
+
+        {/* Ghost Thread - Vertical Connector */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
 
         {/* Section 2: Utilivisor Killer - Submetering Data Block */}
         <section className="py-32 bg-white">
@@ -392,6 +444,11 @@ export default function PowerPage() {
             </div>
           </div>
         </section>
+
+        {/* Ghost Thread - Vertical Connector */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
 
         {/* Section 3: Technical Detail - 4-Column Grid Footer */}
         <section className="py-32 bg-slate-900 text-white">
