@@ -69,6 +69,13 @@ export default function Header() {
             EMPRESAS
           </a>
           <a
+            href="mailto:talento@grupoglobe.cl"
+            className="px-4 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group"
+          >
+            TRABAJA CON NOSOTROS
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3A5B1E] group-hover:w-full transition-all duration-300" />
+          </a>
+          <a
             href="#contacto"
             onClick={(e) => smoothScroll(e, '#contacto')}
             className="bg-white/20 backdrop-blur-sm border border-white/30 text-white px-4 md:px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-white/30 transition-all duration-300"
