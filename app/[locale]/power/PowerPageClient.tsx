@@ -129,7 +129,7 @@ export default function PowerPageClient() {
                 ARQUITECTURA COMPLETA — VERDE PROFUNDO
               </span>
               <h2 className="text-[clamp(40px,6vw,72px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
-                Tres Pilares.<br/>Una Solución Completa.
+                Tres Pilares. <br/>Una Solución Completa.
               </h2>
               <p className="text-[clamp(18px,2vw,24px)] font-light text-slate-600 leading-relaxed max-w-3xl mx-auto">
                 Suministro, Eficiencia y Analítica integrados en una sola operación. Todo lo que necesitas para mantener la energía sin interrupciones.
@@ -345,7 +345,7 @@ export default function PowerPageClient() {
                 Transparencia Total en el Consumo
               </h2>
               <p className="text-xl text-[#8F8B84] leading-relaxed max-w-3xl mx-auto">
-                Transparencia total en el consumo. Entienda su uso energético para operar con máxima rentabilidad.
+                Entienda su uso energético para operar con máxima rentabilidad.
               </p>
             </div>
 
