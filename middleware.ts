@@ -17,6 +17,7 @@ export default createMiddleware({
 
 export const config = {
   // Match only internationalized pathnames
-  // Exclude /servicios, /power, and /sitemap.xml paths and static assets
-  matcher: ['/', '/(en|es)/:path*', '/((?!servicios|power|sitemap|api|_next/static|_next/image|images|favicon.ico).*)']
+  // Exclude /servicios and /sitemap.xml paths and static assets
+  // REMOVED power from exclusions - now handled by locale routing
+  matcher: ['/', '/(en|es)/:path*', '/((?!servicios|sitemap|api|_next/static|_next/image|images|favicon.ico).*)']
 };
