@@ -189,6 +189,334 @@ export default function PowerPage() {
           </div>
         </section>
 
+        {/* Section 1: Vertical Pillar - Nuestras Dimensiones Operativas */}
+        <section className="py-32 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
+                Nuestras Dimensiones Operativas
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Card 1: INFRAESTRUCTURA */}
+              <div className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
+                  Infraestructura
+                </h3>
+                <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
+                  Generación de respaldo automático, sistemas de transferencia y subestaciones propias para operaciones críticas sin interrupciones.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Grupos electrógenos industriales</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Transferencias automáticas &lt;3 seg</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Mantenimiento preventivo 24/7</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Card 2: INTELIGENCIA */}
+              <div className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
+                  Inteligencia
+                </h3>
+                <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
+                  Monitoreo en tiempo real, análisis predictivo y dashboards ejecutivos con datos verificables para toma de decisiones informadas.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Telemetría continua multisite</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Alertas predictivas automáticas</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Reportes ejecutivos mensuales</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Card 3: OPTIMIZACIÓN */}
+              <div className="bg-gradient-to-b from-transparent to-[#3A5B1E]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
+                  Optimización
+                </h3>
+                <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
+                  Reducción medible de costos operativos mediante auditorías energéticas, corrección de factor de potencia y gestión de demanda.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Corrección factor de potencia</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Gestión de demanda peak/off-peak</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#3A5B1E] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Ahorro típico: 15-30% anual</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 2: Utilivisor Killer - Submetering Data Block */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-16">
+              <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-[#3A5B1E] mb-6">
+                Transparencia Total en el Consumo
+              </h2>
+              <p className="text-xl text-[#8F8B84] leading-relaxed max-w-3xl mx-auto">
+                Transparencia total en el consumo. Entienda su uso energético para operar con máxima rentabilidad.
+              </p>
+            </div>
+
+            {/* High-Density Data Table */}
+            <div className="bg-slate-50 border border-slate-200 rounded-lg overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-[#3A5B1E] text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">Ubicación</th>
+                      <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">Medidor</th>
+                      <th className="px-6 py-4 text-right text-xs font-bold uppercase tracking-wider">kWh Mes Actual</th>
+                      <th className="px-6 py-4 text-right text-xs font-bold uppercase tracking-wider">kWh Mes Anterior</th>
+                      <th className="px-6 py-4 text-right text-xs font-bold uppercase tracking-wider">Variación</th>
+                      <th className="px-6 py-4 text-right text-xs font-bold uppercase tracking-wider">Costo/kWh</th>
+                      <th className="px-6 py-4 text-right text-xs font-bold uppercase tracking-wider">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-slate-200">
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-medium text-[#3A5B1E]">Torre Norte - Piso 3</td>
+                      <td className="px-6 py-4 text-sm text-[#8F8B84]">SM-103A</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">24,567</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">23,890</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-semibold">+2.8%</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">$0.142</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-bold">$3,488.51</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-medium text-[#3A5B1E]">Retail Ground Floor</td>
+                      <td className="px-6 py-4 text-sm text-[#8F8B84]">SM-GF-01</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">38,921</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">41,203</td>
+                      <td className="px-6 py-4 text-sm text-right text-green-600 font-semibold">-5.5%</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">$0.138</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-bold">$5,371.10</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-medium text-[#3A5B1E]">Data Center - Nivel B1</td>
+                      <td className="px-6 py-4 text-sm text-[#8F8B84]">SM-DC-B1</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">67,450</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">66,789</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-semibold">+1.0%</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">$0.145</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-bold">$9,780.25</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-medium text-[#3A5B1E]">HVAC Sistema Central</td>
+                      <td className="px-6 py-4 text-sm text-[#8F8B84]">SM-HVAC-01</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">52,134</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">54,908</td>
+                      <td className="px-6 py-4 text-sm text-right text-green-600 font-semibold">-5.1%</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#8F8B84] font-mono">$0.140</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-bold">$7,298.76</td>
+                    </tr>
+                    <tr className="bg-slate-100 font-bold">
+                      <td className="px-6 py-4 text-sm text-[#3A5B1E]" colSpan={2}>TOTAL EDIFICIO</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-mono">183,072</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-mono">186,790</td>
+                      <td className="px-6 py-4 text-sm text-right text-green-600">-2.0%</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E]">—</td>
+                      <td className="px-6 py-4 text-sm text-right text-[#3A5B1E] font-bold">$25,938.62</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Submetering Benefits */}
+              <div className="grid md:grid-cols-3 gap-6 p-8 bg-white border-t border-slate-200">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#3A5B1E] mb-2">100%</div>
+                  <div className="text-sm uppercase tracking-wide text-[#8F8B84]">Transparencia</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#3A5B1E] mb-2">Real-Time</div>
+                  <div className="text-sm uppercase tracking-wide text-[#8F8B84]">Monitoreo 24/7</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#3A5B1E] mb-2">15-30%</div>
+                  <div className="text-sm uppercase tracking-wide text-[#8F8B84]">Ahorro Promedio</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3: Technical Detail - 4-Column Grid Footer */}
+        <section className="py-32 bg-slate-900 text-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-white mb-6">
+                Grid of Expertise
+              </h2>
+              <p className="text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
+                Servicios técnicos completos para operaciones críticas sin compromisos.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Column A: Mantenimiento */}
+              <div className="bg-slate-800/50 border border-slate-700 p-8 rounded-lg">
+                <h3 className="text-lg font-bold uppercase tracking-tight text-[#3A5B1E] mb-4">
+                  Mantenimiento
+                </h3>
+                <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
+                  Generadores industriales, HVAC crítico y sistemas auxiliares con mantenimiento preventivo programado.
+                </p>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Grupos electrógenos</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Sistemas HVAC</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Transferencias automáticas</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>UPS y respaldo</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column B: Montaje & Retrofits */}
+              <div className="bg-slate-800/50 border border-slate-700 p-8 rounded-lg">
+                <h3 className="text-lg font-bold uppercase tracking-tight text-[#3A5B1E] mb-4">
+                  Montaje & Retrofits
+                </h3>
+                <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
+                  Instalación de infraestructura nueva y modernización de sistemas existentes sin interrupciones operativas.
+                </p>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Subestaciones propias</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Tableros MT/BT</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Modernización sistemas legacy</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Certificación SEC</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column C: Emergencias 24/7 */}
+              <div className="bg-slate-800/50 border border-slate-700 p-8 rounded-lg">
+                <h3 className="text-lg font-bold uppercase tracking-tight text-[#3A5B1E] mb-4">
+                  Emergencias 24/7
+                </h3>
+                <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
+                  Respuesta inmediata ante fallas críticas con técnicos certificados disponibles las 24 horas.
+                </p>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Tiempo respuesta &lt;60 min</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Repuestos críticos en stock</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Técnicos SEC certificados</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>SLA garantizado</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column D: Gestión de Sistemas Críticos */}
+              <div className="bg-slate-800/50 border border-slate-700 p-8 rounded-lg">
+                <h3 className="text-lg font-bold uppercase tracking-tight text-[#3A5B1E] mb-4">
+                  Gestión de Sistemas Críticos
+                </h3>
+                <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
+                  Administración completa de infraestructura energética para operaciones que no pueden detenerse.
+                </p>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Data centers tier 2/3</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Operaciones mineras</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Retail multisite</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#3A5B1E] flex-shrink-0">→</span>
+                    <span>Industrial continuo</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Technical Highlight Bar */}
+            <div className="mt-16 grid md:grid-cols-4 gap-6 p-8 bg-[#3A5B1E]/20 border border-[#3A5B1E]/30 rounded-lg">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#3A5B1E] mb-2">&lt;3 seg</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Transferencia Automática</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#3A5B1E] mb-2">99.7%</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Uptime Garantizado</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#3A5B1E] mb-2">&lt;60 min</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Respuesta Emergencias</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#3A5B1E] mb-2">24/7/365</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Monitoreo Continuo</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section - Verde Profundo */}
         <section id="contacto" className="py-32 bg-gradient-to-br from-[#3A5B1E] via-[#2d4617] to-[#3A5B1E] text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
