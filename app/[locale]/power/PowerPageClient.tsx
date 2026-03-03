@@ -54,13 +54,7 @@ export default function PowerPageClient() {
           </div>
           
           <div className="relative z-10 max-w-7xl mx-auto text-center">
-            <div className="mb-8">
-              <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#91A56E] mb-4 block">
-                Globe Power — Verde Profundo
-              </span>
-            </div>
-            
-            <h1 className="text-[clamp(36px,5vw,64px)] font-black leading-[1.1] text-white mb-8" style={{ letterSpacing: '-0.05em' }}>
+            <h1 className="text-[clamp(36px,5vw,64px)] font-black leading-[1.1] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
               Hacemos visible lo que otros esconden.
             </h1>
             
