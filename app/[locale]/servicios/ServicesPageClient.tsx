@@ -9,7 +9,7 @@ export default function ServicesPageClient() {
         {/* Services-Specific Glass Pill Header */}
         <header className="fixed top-6 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[95%]" style={{ zIndex: 9999 }}>
           <div className="px-14 py-4 flex justify-between items-center w-full h-32">
-            {/* Services Logo - TODO: Create services-logo-clean.png */}
+            {/* Services Logo */}
             <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
               <img
                 src="/images/logos/globe-logo-clean.png"
@@ -41,20 +41,20 @@ export default function ServicesPageClient() {
 
         {/* Hero Section with Video Background */}
         <section className="relative min-h-[90vh] flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-          {/* Video Background - Using existing video with terracotta overlay */}
+          {/* Video Background - Subtle terracotta accent */}
           <div className="absolute inset-0 z-0">
             <video
               autoPlay
               loop
               muted
-              playsInline
+              playsInLine
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             >
               <source src="https://kfli3thlaotlfeup.public.blob.vercel-storage.com/Video_Creation_Feedback_and_Generation.mp4" type="video/mp4" />
             </video>
-            {/* Terracotta Clara Overlay */}
-            <div className="absolute inset-0 bg-[#BA6347]/30" />
-            <div className="absolute inset-0 bg-black/40" />
+            {/* Subtle terracotta accent + black gradient */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/70" />
+            <div className="absolute inset-0 bg-[#BA6347]/10" />
           </div>
           
           <div className="relative z-10 max-w-7xl mx-auto text-center">
