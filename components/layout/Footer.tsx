@@ -203,7 +203,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-6">
               <img 
-                src="/brand/logo-official.png" 
+                src="/brand/logo.png" 
                 alt="Grupo Globe" 
                 className="h-12 w-auto brightness-0 invert opacity-60" 
               />

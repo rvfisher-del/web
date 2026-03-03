@@ -1,0 +1,20 @@
+MASTER SOURCE OF TRUTH - GRUPO GLOBE
+
+This directory (/Users/node/Desktop/marketing/grupo-globe-nextjs) is the ONLY official source for the Grupo Globe Next.js project.
+
+DO NOT USE:
+- /Users/node/Desktop/ARCHIVED_OLD_VERSION_DO_NOT_USE (old skeleton version)
+- Any other grupo-globe-nextjs directories
+
+PRODUCTION URL:
+- https://grupo-globe-nextjs.vercel.app
+
+LAST VERIFIED: 2026-03-03 10:07 GMT-3
+
+FEATURES:
+- Cinematic video hero with Vercel blob storage
+- Glass pill header with h-24 logo
+- Brand vault at /public/brand/logo-official.png
+- Canadian Industrial design standard
+
+This is the ONLY folder connected to production.

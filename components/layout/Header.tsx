@@ -45,7 +45,7 @@ export default function Header() {
         {/* Logo - Clickable Home Button */}
         <Link href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
           <img
-            src="/brand/logo-official.png"
+            src="/brand/logo.png"
             alt="Grupo Globe"
             height={96}
             width="auto"
