@@ -31,13 +31,11 @@ export default function Header() {
 
   const homeLink = getHomeLink();
 
-  // Check if we're in the /servicios subdirectory
+  // Detect current division
   const isServiciosRoute = pathname?.startsWith('/servicios');
-
-  // Active state detection for SERVICIOS menu
-  const isServicesActive = pathname?.startsWith('/servicios');
-  const isPowerActive = pathname?.startsWith('/power');
-  const isServiciosMenuActive = isServicesActive || isPowerActive;
+  const isPowerRoute = pathname?.startsWith('/power');
+  const isModularRoute = pathname?.startsWith('/modular');
+  const isHomePage = pathname === '/' || pathname === '/es' || pathname === '/en';
 
   // Handle INICIO click to prevent reload when already on division home
   const handleInicioClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -58,51 +56,49 @@ export default function Header() {
     }
   };
 
-  const serviceLinks = [
+  const serviciosLinks = [
     {
-      section: 'Globe Services',
-      items: [
-        {
-          title: 'Modernización de Ascensores',
-          href: '/servicios/modernizacion-ascensores',
-          description: 'Retrofits técnicos y estéticos'
-        },
-        {
-          title: 'Certificación 20.297',
-          href: '/servicios/certificacion-normativa-20297',
-          description: 'Cumplimiento normativo SEC'
-        },
-        {
-          title: 'Mantenimiento Preventivo',
-          href: '/servicios/mantenimiento-preventivo-ascensores',
-          description: 'Soporte 24/7 y respuesta <2H'
-        }
-      ]
+      title: 'Modernización de Ascensores',
+      href: '/servicios/modernizacion-ascensores',
+      description: 'Retrofits técnicos y estéticos'
     },
     {
-      section: 'Globe Power',
-      items: [
-        {
-          title: 'Subdistribución y Remarcación',
-          href: '/power/subdistribucion-remarcacion',
-          description: 'Transparencia total en medición'
-        },
-        {
-          title: 'Eficiencia Energética',
-          href: '/power/eficiencia-energetica',
-          description: 'ISO 50001 y reducción 15%'
-        },
-        {
-          title: 'Software y Reportería',
-          href: '/power/software-reporteria',
-          description: 'Power Digital en tiempo real'
-        },
-        {
-          title: 'Mantenimiento Eléctrico',
-          href: '/power/mantenimiento-electrico',
-          description: 'Mantenimiento 4.0 predictivo'
-        }
-      ]
+      title: 'Certificación 20.297',
+      href: '/servicios/certificacion-normativa-20297',
+      description: 'Cumplimiento normativo SEC'
+    },
+    {
+      title: 'Mantenimiento Preventivo',
+      href: '/servicios/mantenimiento-preventivo-ascensores',
+      description: 'Soporte 24/7 y respuesta <2H'
+    }
+  ];
+
+  const powerLinks = [
+    {
+      title: 'Subdistribución y Remarcación',
+      href: '/power/subdistribucion-remarcacion',
+      description: 'Transparencia total en medición'
+    },
+    {
+      title: 'Eficiencia Energética',
+      href: '/power/eficiencia-energetica',
+      description: 'ISO 50001 y reducción 15%'
+    },
+    {
+      title: 'Software y Reportería',
+      href: '/power/software-reporteria',
+      description: 'Power Digital en tiempo real'
+    },
+    {
+      title: 'Mantenimiento Eléctrico',
+      href: '/power/mantenimiento-electrico',
+      description: 'Mantenimiento 4.0 predictivo'
+    },
+    {
+      title: 'Generator Maintenance and Repairs',
+      href: '/power/generator-maintenance',
+      description: 'Generadores y reparaciones industriales'
     }
   ];
 
@@ -148,71 +144,113 @@ export default function Header() {
             POWER
           </Link>
 
-          {/* SERVICIOS Dropdown (Desktop) - Always visible */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
-          >
-            <Link
-              href="/servicios"
-              className={`px-3 text-xs font-bold tracking-[0.2em] uppercase transition-colors duration-300 flex items-center gap-1 ${
-                isServiciosMenuActive 
-                  ? 'text-[#BA6347]' 
-                  : 'text-white hover:text-white/80'
-              }`}
+          {/* SERVICIOS Dropdown (Desktop) - Only in /servicios */}
+          {isServiciosRoute && (
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
             >
-              SERVICIOS
-              <svg 
-                className={`w-3 h-3 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
+              <Link
+                href="/servicios"
+                className={`px-3 text-xs font-bold tracking-[0.2em] uppercase transition-colors duration-300 flex items-center gap-1 ${
+                  isServiciosRoute ? 'text-[#BA6347]' : 'text-white hover:text-white/80'
+                }`}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </Link>
-
-            {/* Desktop Dropdown */}
-            <AnimatePresence>
-              {isServicesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 mt-4 w-96 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl overflow-hidden"
+                SERVICIOS
+                <svg 
+                  className={`w-3 h-3 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
                 >
-                  {serviceLinks.map((section, sectionIndex) => (
-                    <div key={section.section} className={sectionIndex > 0 ? 'border-t border-white/10' : ''}>
-                      {/* Section Header */}
-                      <div className="px-6 py-3 bg-white/5">
-                        <span className="text-xs font-bold tracking-[0.2em] uppercase text-white/80">
-                          {section.section}
-                        </span>
-                      </div>
-                      
-                      {/* Section Items */}
-                      {section.items.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block px-6 py-4 text-white hover:bg-white/5 transition-all duration-300 border-l-0 hover:border-l-[5px] border-[#BA6347] group"
-                        >
-                          <div className="text-xs font-bold tracking-[0.15em] uppercase mb-1">
-                            {link.title}
-                          </div>
-                          <div className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
-                            {link.description}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+
+              {/* Dropdown */}
+              <AnimatePresence>
+                {isServicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-4 w-80 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl overflow-hidden"
+                  >
+                    {serviciosLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block px-6 py-4 text-white hover:bg-white/5 transition-all duration-300 border-l-0 hover:border-l-[5px] border-[#BA6347] group"
+                      >
+                        <div className="text-xs font-bold tracking-[0.15em] uppercase mb-1">
+                          {link.title}
+                        </div>
+                        <div className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
+                          {link.description}
+                        </div>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+
+          {/* SERVICIOS Dropdown (Desktop) - Only in /power */}
+          {isPowerRoute && (
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <Link
+                href="/power"
+                className={`px-3 text-xs font-bold tracking-[0.2em] uppercase transition-colors duration-300 flex items-center gap-1 ${
+                  isPowerRoute ? 'text-[#3A5B1E]' : 'text-white hover:text-white/80'
+                }`}
+              >
+                SERVICIOS
+                <svg 
+                  className={`w-3 h-3 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+
+              {/* Dropdown */}
+              <AnimatePresence>
+                {isServicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-4 w-80 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl overflow-hidden"
+                  >
+                    {powerLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block px-6 py-4 text-white hover:bg-white/5 transition-all duration-300 border-l-0 hover:border-l-[5px] border-[#3A5B1E] group"
+                      >
+                        <div className="text-xs font-bold tracking-[0.15em] uppercase mb-1">
+                          {link.title}
+                        </div>
+                        <div className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
+                          {link.description}
+                        </div>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
 
           <Link
             href="/modular"
@@ -301,62 +339,99 @@ export default function Header() {
                 POWER
               </Link>
 
-              {/* SERVICIOS Accordion (Mobile) - Always visible */}
-              <div className="border-b border-white/10">
-                <button
-                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 transition-colors"
-                >
-                  SERVICIOS
-                  <svg
-                    className={`w-4 h-4 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+              {/* SERVICIOS Accordion (Mobile) - Only in /servicios */}
+              {isServiciosRoute && (
+                <div className="border-b border-white/10">
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="w-full px-6 py-4 text-left flex justify-between items-center text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 transition-colors"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-
-                <AnimatePresence>
-                  {isMobileServicesOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden bg-white/5"
+                    SERVICIOS
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
                     >
-                      {serviceLinks.map((section) => (
-                        <div key={section.section} className="py-2">
-                          {/* Section Header */}
-                          <div className="px-8 py-2">
-                            <span className="text-[10px] font-bold tracking-wider uppercase text-white/60">
-                              {section.section}
-                            </span>
-                          </div>
-                          
-                          {/* Section Items */}
-                          {section.items.map((link) => (
-                            <Link
-                              key={link.href}
-                              href={link.href}
-                              onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                setIsMobileServicesOpen(false);
-                              }}
-                              className="block px-10 py-3 text-[11px] font-semibold text-white/80 hover:text-white hover:bg-white/5 transition-all border-l-0 hover:border-l-4 border-[#BA6347]"
-                            >
-                              <div className="uppercase tracking-wide mb-0.5">{link.title}</div>
-                              <div className="text-[9px] text-white/50">{link.description}</div>
-                            </Link>
-                          ))}
-                        </div>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden bg-white/5"
+                      >
+                        {serviciosLinks.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setIsMobileServicesOpen(false);
+                            }}
+                            className="block px-10 py-3 text-[11px] font-semibold text-white/80 hover:text-white hover:bg-white/5 transition-all border-l-0 hover:border-l-4 border-[#BA6347]"
+                          >
+                            <div className="uppercase tracking-wide mb-0.5">{link.title}</div>
+                            <div className="text-[9px] text-white/50">{link.description}</div>
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+
+              {/* SERVICIOS Accordion (Mobile) - Only in /power */}
+              {isPowerRoute && (
+                <div className="border-b border-white/10">
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="w-full px-6 py-4 text-left flex justify-between items-center text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 transition-colors"
+                  >
+                    SERVICIOS
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden bg-white/5"
+                      >
+                        {powerLinks.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setIsMobileServicesOpen(false);
+                            }}
+                            className="block px-10 py-3 text-[11px] font-semibold text-white/80 hover:text-white hover:bg-white/5 transition-all border-l-0 hover:border-l-4 border-[#3A5B1E]"
+                          >
+                            <div className="uppercase tracking-wide mb-0.5">{link.title}</div>
+                            <div className="text-[9px] text-white/50">{link.description}</div>
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
 
               <Link
                 href="/modular"
