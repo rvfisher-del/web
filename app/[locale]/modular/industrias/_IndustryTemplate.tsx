@@ -68,7 +68,9 @@ export default function IndustryPageTemplate({ industry }: IndustryPageProps) {
                 ← Volver a Globe Modular
               </a>
             </div>
-            <div className="text-6xl mb-8">{industry.icon}</div>
+            <div className="mb-8 flex justify-center">
+              <IndustrialIcon icon={industry.icon} size={48} />
+            </div>
             <h1 className="text-[clamp(36px,5vw,64px)] font-black leading-[1.1] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
               {industry.hero.headline}
             </h1>
@@ -242,10 +244,12 @@ export default function IndustryPageTemplate({ industry }: IndustryPageProps) {
                 <a
                   key={idx}
                   href={ind.url}
-                  className="bg-white p-6 rounded-lg border border-slate-200 hover:border-[#DC964E] hover:shadow-lg transition-all text-center"
+                  className="bg-white p-6 rounded-lg border border-slate-200 hover:border-[#DC964E] hover:shadow-lg transition-all text-center group"
                 >
-                  <div className="text-4xl mb-3">{ind.icon}</div>
-                  <h3 className="text-lg font-bold text-black">{ind.name}</h3>
+                  <div className="mb-3 flex justify-center">
+                    <IndustrialIcon icon={ind.icon} size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-black group-hover:text-[#DC964E] transition-colors">{ind.name}</h3>
                 </a>
               ))}
             </div>
