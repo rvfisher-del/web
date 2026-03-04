@@ -12,7 +12,7 @@ export default function ModularPageClient() {
         <ModularHeader />
 
         {/* Hero Section with Video Background Placeholder */}
-        <section className="relative min-h-[90vh] flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+        <section className="relative min-h-[90vh] flex items-center justify-center pt-64 pb-32 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
           {/* Video Background - Industrial modular construction */}
           <div className="absolute inset-0 z-0">
             <video
