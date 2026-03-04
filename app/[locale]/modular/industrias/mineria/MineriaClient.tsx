@@ -2,16 +2,19 @@
 
 import { motion } from 'framer-motion';
 import ModularHeader from '@/components/layout/ModularHeader';
+import IndustrialIcon from '@/components/ui/IndustrialIcon';
+import { Mountain, Hammer, Zap, Factory, Store, Heart, GraduationCap, Wheat } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
 export default function MineriaClient() {
-  const otherIndustries = [
-    { name: 'Construcción', icon: '🏗️', url: '/modular/industrias/construccion' },
-    { name: 'Energía', icon: '⚡', url: '/modular/industrias/energia' },
-    { name: 'Industrial', icon: '🏭', url: '/modular/industrias/industrial' },
-    { name: 'Retail', icon: '🛍️', url: '/modular/industrias/retail' },
-    { name: 'Salud', icon: '⚕️', url: '/modular/industrias/salud' },
-    { name: 'Educación', icon: '🎓', url: '/modular/industrias/educacion' },
-    { name: 'Agricultura', icon: '🌾', url: '/modular/industrias/agricultura' },
+  const otherIndustries: { name: string; icon: LucideIcon; url: string }[] = [
+    { name: 'Construcción', icon: Hammer, url: '/modular/industrias/construccion' },
+    { name: 'Energía', icon: Zap, url: '/modular/industrias/energia' },
+    { name: 'Industrial', icon: Factory, url: '/modular/industrias/industrial' },
+    { name: 'Retail', icon: Store, url: '/modular/industrias/retail' },
+    { name: 'Salud', icon: Heart, url: '/modular/industrias/salud' },
+    { name: 'Educación', icon: GraduationCap, url: '/modular/industrias/educacion' },
+    { name: 'Agricultura', icon: Wheat, url: '/modular/industrias/agricultura' },
   ];
 
   return (
@@ -32,7 +35,9 @@ export default function MineriaClient() {
                 ← Volver a Globe Modular
               </a>
             </div>
-            <div className="text-6xl mb-8">⛏️</div>
+            <div className="mb-8 flex justify-center">
+              <IndustrialIcon icon={Mountain} size={48} />
+            </div>
             <h1 className="text-[clamp(36px,5vw,64px)] font-black leading-[1.1] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
               Campamentos mineros que operan con método.
             </h1>
@@ -366,10 +371,12 @@ export default function MineriaClient() {
                 <a
                   key={idx}
                   href={industry.url}
-                  className="bg-white p-6 rounded-lg border border-slate-200 hover:border-[#DC964E] hover:shadow-lg transition-all text-center"
+                  className="bg-white p-6 rounded-lg border border-slate-200 hover:border-[#DC964E] hover:shadow-lg transition-all text-center group"
                 >
-                  <div className="text-4xl mb-3">{industry.icon}</div>
-                  <h3 className="text-lg font-bold text-black">{industry.name}</h3>
+                  <div className="mb-3 flex justify-center">
+                    <IndustrialIcon icon={industry.icon} size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-black group-hover:text-[#DC964E] transition-colors">{industry.name}</h3>
                 </a>
               ))}
             </div>
