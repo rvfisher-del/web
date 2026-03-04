@@ -36,12 +36,6 @@ export default function ModularPageClient() {
             <h1 className="text-[clamp(36px,5vw,64px)] font-black leading-[1.1] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
               Espacios modulares que operan con criterio.
             </h1>
-            
-            <div className="text-[clamp(18px,2vw,24px)] font-light text-[#DC964E] mb-16 leading-relaxed max-w-3xl mx-auto space-y-4">
-              <p>Para minería, construcción, energía e industria.</p>
-              <p>Ingeniería seria. Flexibilidad en terreno. Postventa certificada.</p>
-              <p>Globe Modular no improvisa.</p>
-            </div>
 
             {/* Stats Dashboard */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
