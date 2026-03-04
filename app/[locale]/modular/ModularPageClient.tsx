@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import ModularHeader from '@/components/layout/ModularHeader';
 import IndustrialIcon from '@/components/ui/IndustrialIcon';
-import { Mountain, Hammer, Zap, Factory, ShoppingBag, Heart, GraduationCap, Wheat } from 'lucide-react';
+import { Mountain, Hammer, Zap, Factory, Store, Heart, GraduationCap, Wheat, Layers, Key, Cog } from 'lucide-react';
 
 export default function ModularPageClient() {
   return (
@@ -273,7 +273,7 @@ export default function ModularPageClient() {
               {/* Card 5: Retail */}
               <div className="bg-white p-8 border border-slate-200 hover:border-t-2 hover:border-t-[#DC964E] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-5xl">🛍️</span>
+                  <IndustrialIcon icon={Store} size={24} />
                   <h3 className="text-2xl font-bold text-black">Retail</h3>
                 </div>
                 <p className="text-slate-600 mb-4 leading-relaxed">
@@ -311,7 +311,7 @@ export default function ModularPageClient() {
               {/* Card 6: Salud */}
               <div className="bg-white p-8 border border-slate-200 hover:border-t-2 hover:border-t-[#DC964E] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-5xl">⚕️</span>
+                  <IndustrialIcon icon={Heart} size={24} />
                   <h3 className="text-2xl font-bold text-black">Salud</h3>
                 </div>
                 <p className="text-slate-600 mb-4 leading-relaxed">
@@ -349,7 +349,7 @@ export default function ModularPageClient() {
               {/* Card 7: Educación */}
               <div className="bg-white p-8 border border-slate-200 hover:border-t-2 hover:border-t-[#DC964E] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-5xl">🎓</span>
+                  <IndustrialIcon icon={GraduationCap} size={24} />
                   <h3 className="text-2xl font-bold text-black">Educación</h3>
                 </div>
                 <p className="text-slate-600 mb-4 leading-relaxed">
@@ -387,7 +387,7 @@ export default function ModularPageClient() {
               {/* Card 8: Agricultura */}
               <div className="bg-white p-8 border border-slate-200 hover:border-t-2 hover:border-t-[#DC964E] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-5xl">🌾</span>
+                  <IndustrialIcon icon={Wheat} size={24} />
                   <h3 className="text-2xl font-bold text-black">Agricultura</h3>
                 </div>
                 <p className="text-slate-600 mb-4 leading-relaxed">
@@ -774,7 +774,10 @@ export default function ModularPageClient() {
               <div className="bg-white p-10 border border-slate-200 hover:border-[#DC964E] hover:shadow-xl transition-all">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black">Campamento Minero (400 personas, Atacama)</h3>
-                  <span className="text-sm text-slate-500">⛏️ Minería</span>
+                  <div className="flex items-center gap-2">
+                    <IndustrialIcon icon={Mountain} size={16} />
+                    <span className="text-sm text-slate-500">Minería</span>
+                  </div>
                 </div>
                 <div className="grid md:grid-cols-3 gap-2 text-sm text-slate-600 mb-6">
                   <div><strong>Cliente:</strong> Contratista EPCM para expansión minera</div>
@@ -828,7 +831,10 @@ export default function ModularPageClient() {
               <div className="bg-white p-10 border border-slate-200 hover:border-[#DC964E] hover:shadow-xl transition-all">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black">Oficinas Temporales Construcción (Santiago)</h3>
-                  <span className="text-sm text-slate-500">🏗️ Construcción</span>
+                  <div className="flex items-center gap-2">
+                    <IndustrialIcon icon={Hammer} size={16} />
+                    <span className="text-sm text-slate-500">Construcción</span>
+                  </div>
                 </div>
                 <div className="grid md:grid-cols-3 gap-2 text-sm text-slate-600 mb-6">
                   <div><strong>Cliente:</strong> Constructora de edificios residenciales</div>
@@ -880,7 +886,10 @@ export default function ModularPageClient() {
               <div className="bg-white p-10 border border-slate-200 hover:border-[#DC964E] hover:shadow-xl transition-all">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black">Bodega Industrial (Logística, Valparaíso)</h3>
-                  <span className="text-sm text-slate-500">🏭 Industrial</span>
+                  <div className="flex items-center gap-2">
+                    <IndustrialIcon icon={Factory} size={16} />
+                    <span className="text-sm text-slate-500">Industrial</span>
+                  </div>
                 </div>
                 <div className="grid md:grid-cols-3 gap-2 text-sm text-slate-600 mb-6">
                   <div><strong>Cliente:</strong> Empresa de logística y distribución</div>
