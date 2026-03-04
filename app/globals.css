@@ -1,3 +1,9 @@
+/* Import statements must come first - CSS spec requirement */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+/* @import "./services-luxury.css"; */ /* DISABLED - Was forcing body { color: var(--neutral-900) } globally */
+
 /* OVERFLOW FIX - ABSOLUTE PRIORITY */
 /* Cache bust v2.3 - 2026-03-02 18:17 - Scale fixes: py-20 themes, max-w-3xl manifesto, text-white restored */
 html, body {
@@ -18,11 +24,6 @@ main {
   margin-right: auto !important;
   padding: 0 2rem !important;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-@import "tailwindcss";
-/* @import "./services-luxury.css"; */ /* DISABLED - Was forcing body { color: var(--neutral-900) } globally */
 
 /* EMERGENCY GLOBAL OVERRIDE */
 main, section, header, footer {

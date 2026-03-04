@@ -1,8 +1,28 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 export default function PowerPageClient() {
+  const pathname = usePathname();
+
+  // Determine home link based on current path
+  const getHomeLink = () => {
+    if (pathname.includes('/servicios')) return '/servicios';
+    if (pathname.includes('/power')) return '/power';
+    return '/'; // default to root
+  };
+
+  const homeLink = getHomeLink();
+
+  // Handle INICIO click to prevent reload when already on division home
+  const handleInicioClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === homeLink) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className="bg-white">
@@ -22,7 +42,7 @@ export default function PowerPageClient() {
 
             {/* Navigation */}
             <nav className="flex items-center gap-4 md:gap-6 pr-12">
-              <a href="/" className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
+              <a href={homeLink} onClick={handleInicioClick} className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
                 INICIO
               </a>
               <a href="#ecosistema" className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">

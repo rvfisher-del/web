@@ -227,6 +227,257 @@ export default function ServicesPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#BA6347]/30" />
         </div>
 
+        {/* Section 1: Vertical Pillar - Nuestras Dimensiones Operativas */}
+        <section className="py-32 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-[#BA6347] mb-6">
+                Nuestras Dimensiones Operativas
+              </h2>
+              <p className="text-xl text-[#8F8B84] leading-relaxed max-w-3xl mx-auto">
+                Habla en lenguaje técnico, pero traduce a claro y útil para quien decide: comités, gerencias, conserjes.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Card 1: MANTENIMIENTO PREVENTIVO */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
+                className="bg-gradient-to-b from-transparent to-[#BA6347]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300"
+              >
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-[#BA6347] mb-6">
+                  Mantenimiento Preventivo
+                </h3>
+                <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
+                  Programas estructurados de mantenimiento para HVAC, equipos industriales y sistemas críticos. Detectamos problemas antes de que se conviertan en paradas operativas. Reportes claros para comités y administradores.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Inspecciones programadas con protocolo canadiense</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Diagnóstico predictivo con tecnología infrarroja</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Reportes técnicos traducidos para comités</span>
+                  </li>
+                </ul>
+              </motion.div>
+
+              {/* Card 2: GESTIÓN DE REPUESTOS */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                className="bg-gradient-to-b from-transparent to-[#BA6347]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300"
+              >
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-[#BA6347] mb-6">
+                  Gestión de Repuestos
+                </h3>
+                <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
+                  Stock estratégico de componentes críticos y gestión de cadena de suministro para minimizar tiempos de espera. Disponibilidad inmediata cuando más importa. No quedas mal con tus vecinos por culpa de un repuesto.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Inventario crítico on-site o &lt;24h</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Red de proveedores certificados</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Logística express para emergencias</span>
+                  </li>
+                </ul>
+              </motion.div>
+
+              {/* Card 3: MODERNIZACIÓN */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                className="bg-gradient-to-b from-transparent to-[#BA6347]/10 bg-white border border-slate-200 p-10 rounded-lg hover:shadow-xl transition-all duration-300"
+              >
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-[#BA6347] mb-6">
+                  Modernización
+                </h3>
+                <p className="text-base leading-relaxed text-[#8F8B84] mb-6">
+                  Proyectos de retrofits y upgrades que mejoran eficiencia sin interrumpir operaciones. Transformación técnica con continuidad operativa garantizada. Gestión llave en mano con certificaciones incluidas.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Retrofits llave en mano sin detener operaciones</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Upgrades de sistemas legacy con estándar canadiense</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#BA6347] text-lg flex-shrink-0 font-bold">•</span>
+                    <span className="text-[#8F8B84] text-sm leading-relaxed">Certificaciones técnicas incluidas (SEC, normativa local)</span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread - Vertical Connector */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#BA6347]/30" />
+        </div>
+
+        {/* Section 2: Service Portfolio - High-Density Detail Block */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-16">
+              <h2 className="text-[clamp(32px,4.5vw,48px)] font-bold uppercase tracking-tight text-[#BA6347] mb-6">
+                Portfolio de Servicios Técnicos
+              </h2>
+              <p className="text-xl text-[#8F8B84] leading-relaxed max-w-3xl mx-auto">
+                Soluciones completas para cada necesidad operativa. Opera con estándar canadiense, pero resuelve en terreno chileno.
+              </p>
+            </div>
+
+            {/* High-Density Service Grid */}
+            <div className="bg-slate-50 border border-slate-200 rounded-lg overflow-hidden p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* HVAC Systems */}
+                <div className="bg-white border border-slate-200 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold uppercase tracking-tight text-[#BA6347] mb-3">
+                    Sistemas HVAC
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#8F8B84]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Mantenimiento preventivo chillers y unidades manejadoras con protocolo canadiense</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Limpieza y sanitización de ductos según normativa local</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Optimización de consumo energético (auditorías incluidas)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Monitoreo de temperatura y humedad 24/7 con alertas</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Electrical Infrastructure */}
+                <div className="bg-white border border-slate-200 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold uppercase tracking-tight text-[#BA6347] mb-3">
+                    Infraestructura Eléctrica
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#8F8B84]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Inspección termográfica de tableros con tecnología infrarroja</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Mantención de sistemas UPS con protocolo industrial</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Corrección de factor de potencia (ahorro energético)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Certificación SEC de instalaciones con trazabilidad completa</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Industrial Equipment */}
+                <div className="bg-white border border-slate-200 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold uppercase tracking-tight text-[#BA6347] mb-3">
+                    Equipos Industriales
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#8F8B84]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Bombas y sistemas de presión (minería, edificios, industria)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Compresores de aire industrial (mantenimiento preventivo)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Sistemas de elevación: ascensores, montacargas (certificación SEC)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Equipamiento de proceso crítico con soporte 24/7</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Facilities Management */}
+                <div className="bg-white border border-slate-200 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold uppercase tracking-tight text-[#BA6347] mb-3">
+                    Gestión de Facilities
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#8F8B84]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Coordinación de proveedores multisite con protocolo único</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Dashboard de gestión operativa para comités y gerencias</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Reportes ejecutivos mensuales traducidos a claro y útil</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#BA6347] flex-shrink-0">→</span>
+                      <span>Compliance y auditorías técnicas con estándar canadiense</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Service Benefits */}
+              <div className="grid md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-slate-200">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#BA6347] mb-2">&lt;2H</div>
+                  <div className="text-sm uppercase tracking-wide text-[#8F8B84]">Respuesta Promedio</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#BA6347] mb-2">99.2%</div>
+                  <div className="text-sm uppercase tracking-wide text-[#8F8B84]">Tasa de Resolución</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#BA6347] mb-2">24/7/365</div>
+                  <div className="text-sm uppercase tracking-wide text-[#8F8B84]">Disponibilidad</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread - Vertical Connector */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#BA6347]/30" />
+        </div>
+
         {/* Section 3: Technical Detail - 4-Column Grid Footer */}
         <section className="py-32 bg-slate-900 text-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -235,7 +486,7 @@ export default function ServicesPageClient() {
                 Excelencia Operativa
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
-                Ciclo completo de mantención para ascensores y equipos de transporte vertical. Desde inspección mensual hasta modernización total, con disponibilidad 99.8% garantizada.
+                Servicios técnicos completos para operaciones que exigen disponibilidad continua. Compromiso end-to-end: diagnóstico, implementación, mantenimiento y mejora continua.
               </p>
             </div>
 
@@ -246,24 +497,24 @@ export default function ServicesPageClient() {
                   Preventivo
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Inspecciones mensuales programadas bajo protocolo canadiense para mantener tus ascensores operando sin interrupciones. Cero paradas inesperadas.
+                  Inspecciones programadas y mantenimiento preventivo para evitar paradas inesperadas. Protocolos claros con estándar canadiense adaptado a terreno chileno.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Lubricación y ajuste de componentes de seguridad</span>
+                    <span>Programas personalizados por tipo de activo</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Inspección termográfica de tableros de control</span>
+                    <span>Diagnóstico predictivo con tecnología infrarroja</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Reportes técnicos traducidos para comités</span>
+                    <span>Reportes técnicos detallados para comités</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Detección temprana de desgaste en cables y poleas</span>
+                    <span>Alertas tempranas antes de fallas críticas</span>
                   </li>
                 </ul>
               </div>
@@ -274,24 +525,24 @@ export default function ServicesPageClient() {
                   Correctivo
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Respuesta técnica en menos de 2 horas ante fallas. Técnicos especializados con repuestos críticos para restablecer servicio inmediatamente.
+                  Respuesta rápida ante fallas con técnicos certificados y repuestos disponibles. No quedas mal con tus vecinos por culpa de un ascensor.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Atención &lt;2 horas en emergencias de ascensores</span>
+                    <span>Respuesta &lt;2 horas, sin excusas</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Técnicos certificados en sistemas multimarca</span>
+                    <span>Técnicos especializados con certificación canadiense</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Diagnóstico rápido de controladores y variadores</span>
+                    <span>Stock de emergencia on-site o &lt;24h</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Soporte 24/7 con protocolo de escalamiento inmediato</span>
+                    <span>Soporte 24/7/365 con protocolo de escalamiento</span>
                   </li>
                 </ul>
               </div>
@@ -302,24 +553,24 @@ export default function ServicesPageClient() {
                   Logística
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Stock estratégico de repuestos multimarca para ascensores. Cables, poleas, puertas, controladores: disponibilidad inmediata o &lt;24h garantizada.
+                  Gestión completa de repuestos, proveedores e inventarios críticos. Disponibilidad inmediata cuando más importa.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Inventario crítico multimarca (Otis, Schindler, Kone, ThyssenKrupp)</span>
+                    <span>Inventario on-site o &lt;24h con proveedores certificados</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Red de proveedores certificados con trazabilidad SEC</span>
+                    <span>Red de proveedores con trazabilidad completa</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Entrega express &lt;24h para componentes de reemplazo</span>
+                    <span>Entrega express &lt;24h para componentes críticos</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Gestión de vida útil de cables y sistemas de seguridad</span>
+                    <span>Gestión de garantías y vida útil de activos</span>
                   </li>
                 </ul>
               </div>
@@ -330,24 +581,24 @@ export default function ServicesPageClient() {
                   Proyectos
                 </h3>
                 <p className="text-sm leading-relaxed text-[#8F8B84] mb-6">
-                  Modernización completa de ascensores sin detener tu edificio. Desde renovación estética hasta actualización de controladores con certificación SEC incluida.
+                  Retrofits, upgrades y modernización de sistemas con continuidad operativa. Gestión llave en mano con certificaciones incluidas.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Renovación de cabinas (iluminación LED, pisos, paneles)</span>
+                    <span>Gestión llave en mano con protocolo industrial</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Instalación de variadores de frecuencia para eficiencia</span>
+                    <span>Sin interrupción operativa (faenas nocturnas si es necesario)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Reemplazo de cables, poleas y sistemas de puertas</span>
+                    <span>Certificaciones incluidas (SEC, normativa local)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#BA6347] flex-shrink-0">→</span>
-                    <span>Certificación SEC llave en mano con cero riesgo legal</span>
+                    <span>Garantía extendida con mantenimiento preventivo</span>
                   </li>
                 </ul>
               </div>
@@ -357,26 +608,26 @@ export default function ServicesPageClient() {
             <div className="mt-16 grid md:grid-cols-4 gap-6 p-8 bg-[#BA6347]/20 border border-[#BA6347]/30 rounded-lg">
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#BA6347] mb-2">&lt;2H</div>
-                <div className="text-xs uppercase tracking-wide text-slate-400">Tiempo de Respuesta</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Respuesta Promedio</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#BA6347] mb-2">99.8%</div>
-                <div className="text-xs uppercase tracking-wide text-slate-400">Disponibilidad de Flota</div>
+                <div className="text-3xl font-bold text-[#BA6347] mb-2">99.2%</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Tasa de Resolución</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#BA6347] mb-2">24/7</div>
                 <div className="text-xs uppercase tracking-wide text-slate-400">Soporte Técnico</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#BA6347] mb-2">500+</div>
-                <div className="text-xs uppercase tracking-wide text-slate-400">Ascensores Bajo Mantención</div>
+                <div className="text-3xl font-bold text-[#BA6347] mb-2">15+</div>
+                <div className="text-xs uppercase tracking-wide text-slate-400">Años de Experiencia</div>
               </div>
             </div>
 
             {/* Proof Section */}
             <div className="mt-12 border-t border-[#BA6347]/20 pt-8">
               <p className="text-sm text-[#8F8B84] text-center">
-                Clientes actuales: 120+ edificios residenciales, 45 edificios corporativos clase A, 8 centros comerciales, 12 hoteles premium. Multimarca: Otis, Schindler, Kone, ThyssenKrupp, Mitsubishi.
+                Clientes actuales: Industrial (5 plantas mineras), Retail (18 tiendas clase A), Inmobiliario (12 edificios corporativos), Hospitalidad (4 hoteles 5 estrellas).
               </p>
             </div>
           </div>

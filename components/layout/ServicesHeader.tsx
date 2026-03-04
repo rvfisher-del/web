@@ -1,0 +1,269 @@
+'use client';
+
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+export default function ServicesHeader() {
+  const pathname = usePathname();
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+
+  // Determine home link based on current path
+  const getHomeLink = () => {
+    if (pathname.includes('/servicios')) return '/servicios';
+    if (pathname.includes('/power')) return '/power';
+    return '/'; // default to root
+  };
+
+  const homeLink = getHomeLink();
+
+  // Handle INICIO click to prevent reload when already on division home
+  const handleInicioClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === homeLink) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const serviceLinks = [
+    {
+      title: 'Modernización de Ascensores',
+      href: '/servicios/modernizacion-ascensores',
+      description: 'Retrofits técnicos y estéticos'
+    },
+    {
+      title: 'Certificación 20.297',
+      href: '/servicios/certificacion-normativa-20297',
+      description: 'Cumplimiento normativo SEC'
+    },
+    {
+      title: 'Mantenimiento Preventivo',
+      href: '/servicios/mantenimiento-preventivo-ascensores',
+      description: 'Soporte 24/7 y respuesta <2H'
+    }
+  ];
+
+  return (
+    <>
+      <header className="fixed top-6 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[95%]" style={{ zIndex: 9999 }}>
+        <div className="px-14 py-4 flex justify-between items-center w-full h-32">
+          {/* Services Logo */}
+          <Link href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
+            <img
+              src="/images/logos/services-logo-clean.png"
+              alt="Globe Services"
+              height={96}
+              width="auto"
+              className="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+            />
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-4 md:gap-6 pr-12">
+            <a
+              href={homeLink}
+              onClick={handleInicioClick}
+              className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
+            >
+              INICIO
+            </a>
+
+            {/* SERVICIOS Dropdown (Desktop) */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <Link
+                href="/servicios"
+                className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 flex items-center gap-1"
+              >
+                SERVICIOS
+                <svg 
+                  className={`w-3 h-3 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+
+              {/* Desktop Dropdown */}
+              <AnimatePresence>
+                {isServicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-4 w-80 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl overflow-hidden"
+                  >
+                    {serviceLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block px-6 py-4 text-white hover:bg-white/5 transition-all duration-300 border-l-0 hover:border-l-[5px] border-[#BA6347] group"
+                      >
+                        <div className="text-xs font-bold tracking-[0.2em] uppercase mb-1">
+                          {link.title}
+                        </div>
+                        <div className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
+                          {link.description}
+                        </div>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <a
+              href="mailto:talento@grupoglobe.cl"
+              className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group whitespace-nowrap"
+            >
+              TRABAJA CON NOSOTROS
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BA6347] group-hover:w-full transition-all duration-300" />
+            </a>
+            <a
+              href="#contacto"
+              className="bg-[#BA6347]/80 backdrop-blur-sm border border-white/30 text-white px-4 md:px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#BA6347] transition-all duration-300"
+            >
+              CONTACTO
+            </a>
+          </nav>
+
+          {/* Mobile Hamburger */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden pr-12 text-white"
+            aria-label="Toggle menu"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      {/* Mobile Menu Drawer */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9998] lg:hidden"
+            />
+
+            {/* Drawer */}
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+              className="fixed top-0 right-0 bottom-0 w-80 bg-slate-950 border-l border-white/10 shadow-2xl z-[9999] lg:hidden overflow-y-auto"
+            >
+              {/* Close Button */}
+              <div className="flex justify-end p-6">
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-white hover:text-white/80 transition-colors"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Mobile Navigation */}
+              <nav className="px-6 space-y-2">
+                <a
+                  href={homeLink}
+                  onClick={(e) => {
+                    handleInicioClick(e);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
+                >
+                  INICIO
+                </a>
+
+                {/* SERVICIOS Accordion (Mobile) */}
+                <div>
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
+                  >
+                    SERVICIOS
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-45' : ''}`}
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pl-4 mt-2 space-y-2">
+                          {serviceLinks.map((link) => (
+                            <Link
+                              key={link.href}
+                              href={link.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="block px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase text-white/80 hover:text-white hover:bg-white/5 rounded-md transition-all border-l-0 hover:border-l-[5px] border-[#BA6347]"
+                            >
+                              <div className="mb-1">{link.title}</div>
+                              <div className="text-[9px] text-white/60 normal-case tracking-normal font-normal">
+                                {link.description}
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                <a
+                  href="mailto:talento@grupoglobe.cl"
+                  className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
+                >
+                  TRABAJA CON NOSOTROS
+                </a>
+
+                <a
+                  href="#contacto"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white bg-[#BA6347]/20 hover:bg-[#BA6347]/30 rounded-md transition-colors text-center"
+                >
+                  CONTACTO
+                </a>
+              </nav>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
