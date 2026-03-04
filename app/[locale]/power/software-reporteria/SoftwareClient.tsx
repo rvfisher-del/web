@@ -184,7 +184,7 @@ export default function SoftwareClient() {
                 transition={{ duration: 0.6 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">📡</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">01</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Telemetría Activa
                 </h3>
@@ -204,7 +204,7 @@ export default function SoftwareClient() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">🤖</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">02</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Análisis Predictivo
                 </h3>
@@ -224,7 +224,7 @@ export default function SoftwareClient() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">📊</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">03</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Reportería Avanzada
                 </h3>
@@ -244,7 +244,7 @@ export default function SoftwareClient() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">☁️</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">04</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Integración Cloud
                 </h3>
@@ -276,7 +276,7 @@ export default function SoftwareClient() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Use Case 1 */}
               <div className="bg-slate-50 p-8 border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-6">🏢</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">01</div>
                 <h3 className="text-xl font-bold text-black mb-4">
                   Multi-Site Management
                 </h3>
@@ -290,7 +290,7 @@ export default function SoftwareClient() {
 
               {/* Use Case 2 */}
               <div className="bg-slate-50 p-8 border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-6">🚨</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">02</div>
                 <h3 className="text-xl font-bold text-black mb-4">
                   Anomaly Detection
                 </h3>
@@ -304,7 +304,7 @@ export default function SoftwareClient() {
 
               {/* Use Case 3 */}
               <div className="bg-slate-50 p-8 border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-6">💰</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">03</div>
                 <h3 className="text-xl font-bold text-black mb-4">
                   Budget Forecasting
                 </h3>

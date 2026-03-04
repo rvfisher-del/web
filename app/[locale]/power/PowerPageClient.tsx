@@ -144,7 +144,7 @@ export default function PowerPageClient() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-4">💸</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">01</div>
                 <h3 className="text-xl font-bold text-black mb-4">Cobros Ineficientes</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   La facturación por metro cuadrado, sin medición real por operador, ajustes manuales, errores e injusticias.
@@ -152,7 +152,7 @@ export default function PowerPageClient() {
               </div>
 
               <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-4">📊</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">02</div>
                 <h3 className="text-xl font-bold text-black mb-4">Falta de Control</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   Sin telemetría en tiempo real, los costos operativos aumentan por consumos anómalos no detectados.
@@ -160,7 +160,7 @@ export default function PowerPageClient() {
               </div>
 
               <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-4">💡</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">03</div>
                 <h3 className="text-xl font-bold text-black mb-4">Oportunidades Perdidas</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   Activos con más de 300 kW de consumo permanecen en régimen regulado, perdiendo la ventaja de negociar contratos competitivos.
@@ -168,7 +168,7 @@ export default function PowerPageClient() {
               </div>
 
               <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl mb-4">🔧</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">04</div>
                 <h3 className="text-xl font-bold text-black mb-4">Mantenimientos Correctivos</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   Reparar al romper es mucho más caro a largo plazo que el preventivo.

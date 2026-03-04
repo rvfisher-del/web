@@ -121,7 +121,7 @@ export default function MantenimientoClient() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div className="bg-red-50 p-10 border-l-4 border-red-600">
-                <div className="text-6xl mb-6">⚠️</div>
+                <div className="text-6xl font-bold text-red-600 mb-6">✗</div>
                 <h3 className="text-2xl font-bold text-black mb-6">Modelo Reactivo (Tradicional)</h3>
                 <ul className="space-y-4 text-slate-600">
                   <li className="flex items-start gap-3">
@@ -144,7 +144,7 @@ export default function MantenimientoClient() {
               </div>
 
               <div className="bg-[#3A5B1E]/5 p-10 border-l-4 border-[#3A5B1E]">
-                <div className="text-6xl mb-6">✅</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">✓</div>
                 <h3 className="text-2xl font-bold text-[#3A5B1E] mb-6">Mantenimiento 4.0 (Predictivo)</h3>
                 <ul className="space-y-4 text-slate-600">
                   <li className="flex items-start gap-3">
@@ -185,19 +185,19 @@ export default function MantenimientoClient() {
 
             <div className="flex flex-wrap justify-center items-center gap-6 max-w-6xl mx-auto">
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[250px]">
-                <div className="text-5xl mb-4">📊</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Telemetría Activa</div>
                 <p className="text-sm text-white/80">Monitoreo continuo de voltaje, corriente, temperatura</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">+</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[250px]">
-                <div className="text-5xl mb-4">🤖</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Decisiones Basadas en Datos</div>
                 <p className="text-sm text-white/80">AI identifica patrones anómalos y anticipa fallas</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">=</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[250px]">
-                <div className="text-5xl mb-4">⚡</div>
+                <div className="text-5xl font-bold mb-4">=</div>
                 <div className="font-bold text-xl mb-2">Mantenimiento Predictivo</div>
                 <p className="text-sm text-white/80">Intervención justo a tiempo, antes del problema</p>
               </div>
@@ -231,7 +231,7 @@ export default function MantenimientoClient() {
                 transition={{ duration: 0.6 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">🛡️</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">01</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Mantenimiento Preventivo
                 </h3>
@@ -262,7 +262,7 @@ export default function MantenimientoClient() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">🔮</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">02</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Mantenimiento Predictivo
                 </h3>
@@ -293,7 +293,7 @@ export default function MantenimientoClient() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">🚨</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">03</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Correctivo 24/7
                 </h3>
@@ -335,37 +335,37 @@ export default function MantenimientoClient() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-4xl mb-3">🏢</div>
+                <div className="text-4xl font-bold text-white mb-3">•</div>
                 <h3 className="font-bold text-lg mb-2">Salas Eléctricas</h3>
                 <p className="text-sm text-white/80">Tableros generales, CCM, barras</p>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-4xl mb-3">⚡</div>
+                <div className="text-4xl font-bold text-white mb-3">•</div>
                 <h3 className="font-bold text-lg mb-2">Transformadores</h3>
                 <p className="text-sm text-white/80">Secos y en aceite, hasta 2500 kVA</p>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-4xl mb-3">🔌</div>
+                <div className="text-4xl font-bold text-white mb-3">•</div>
                 <h3 className="font-bold text-lg mb-2">Tableros MT/BT</h3>
                 <p className="text-sm text-white/80">Media y baja tensión, protecciones</p>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-4xl mb-3">🔋</div>
+                <div className="text-4xl font-bold text-white mb-3">•</div>
                 <h3 className="font-bold text-lg mb-2">Generadores</h3>
                 <p className="text-sm text-white/80">Grupos electrógenos, UPS</p>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-4xl mb-3">💡</div>
+                <div className="text-4xl font-bold text-white mb-3">•</div>
                 <h3 className="font-bold text-lg mb-2">Iluminación</h3>
                 <p className="text-sm text-white/80">Sistemas normales y emergencia</p>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-4xl mb-3">🌍</div>
+                <div className="text-4xl font-bold text-white mb-3">•</div>
                 <h3 className="font-bold text-lg mb-2">Puesta a Tierra</h3>
                 <p className="text-sm text-white/80">Mediciones, correcciones, SPT</p>
               </div>

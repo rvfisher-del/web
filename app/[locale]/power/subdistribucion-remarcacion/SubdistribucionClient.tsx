@@ -121,7 +121,7 @@ export default function SubdistribucionClient() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div className="bg-red-50 p-10 border-l-4 border-red-600">
-                <div className="text-6xl mb-6">⚠️</div>
+                <div className="text-6xl font-bold text-red-600 mb-6">✗</div>
                 <h3 className="text-2xl font-bold text-black mb-6">Modelo Tradicional (Prorrateo m²)</h3>
                 <ul className="space-y-4 text-slate-600">
                   <li className="flex items-start gap-3">
@@ -144,7 +144,7 @@ export default function SubdistribucionClient() {
               </div>
 
               <div className="bg-[#3A5B1E]/5 p-10 border-l-4 border-[#3A5B1E]">
-                <div className="text-6xl mb-6">✅</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">✓</div>
                 <h3 className="text-2xl font-bold text-[#3A5B1E] mb-6">Medición SENTRON + Powermind</h3>
                 <ul className="space-y-4 text-slate-600">
                   <li className="flex items-start gap-3">
@@ -195,7 +195,7 @@ export default function SubdistribucionClient() {
                 transition={{ duration: 0.6 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">⚙️</div>
+                <div className="text-5xl font-bold text-[#3A5B1E] mb-6">⚙</div>
                 <h3 className="text-2xl font-bold text-black mb-6">Hardware SENTRON</h3>
                 <div className="space-y-4 text-slate-600">
                   <div>
@@ -220,7 +220,7 @@ export default function SubdistribucionClient() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-white p-10 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">💻</div>
+                <div className="text-5xl font-bold text-[#3A5B1E] mb-6">⚙</div>
                 <h3 className="text-2xl font-bold text-black mb-6">Software Powermind</h3>
                 <div className="space-y-4 text-slate-600">
                   <div>
@@ -257,25 +257,25 @@ export default function SubdistribucionClient() {
             {/* Flow Diagram */}
             <div className="flex flex-wrap justify-center items-center gap-6 mb-16 max-w-6xl mx-auto">
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[220px]">
-                <div className="text-5xl mb-4">⚡</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Consumo Real</div>
                 <p className="text-sm text-white/80">Cada operador consume según su uso</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">→</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[220px]">
-                <div className="text-5xl mb-4">📡</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Medición SENTRON</div>
                 <p className="text-sm text-white/80">Hardware Siemens captura datos precisos</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">→</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[220px]">
-                <div className="text-5xl mb-4">🤖</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Procesamiento Powermind</div>
                 <p className="text-sm text-white/80">Software consolida y analiza automáticamente</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">→</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[220px]">
-                <div className="text-5xl mb-4">📄</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Facturación Exacta</div>
                 <p className="text-sm text-white/80">Cada operador paga lo que consumió</p>
               </div>
@@ -305,7 +305,7 @@ export default function SubdistribucionClient() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-10 rounded-lg text-center">
-                <div className="text-6xl mb-6">📊</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">01</div>
                 <h3 className="text-2xl font-bold mb-4">Consumos Reales</h3>
                 <p className="text-white/90 leading-relaxed">
                   Asignamos consumos exactos a cada operador e inquilino con precisión superior al 99%
@@ -313,7 +313,7 @@ export default function SubdistribucionClient() {
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-10 rounded-lg text-center">
-                <div className="text-6xl mb-6">🚫</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">02</div>
                 <h3 className="text-2xl font-bold mb-4">Adiós al Prorrateo</h3>
                 <p className="text-white/90 leading-relaxed">
                   Eliminamos el modelo obsoleto de facturación por metro cuadrado
@@ -321,7 +321,7 @@ export default function SubdistribucionClient() {
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-10 rounded-lg text-center">
-                <div className="text-6xl mb-6">🤝</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">03</div>
                 <h3 className="text-2xl font-bold mb-4">Relación Mejorada</h3>
                 <p className="text-white/90 leading-relaxed">
                   Datos auditables y transparentes que generan confianza entre propietario y arrendatario

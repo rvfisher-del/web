@@ -121,7 +121,7 @@ export default function EficienciaClient() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div className="bg-slate-50 p-10 border-l-4 border-red-600">
-                <div className="text-6xl mb-6">❌</div>
+                <div className="text-6xl font-bold text-red-600 mb-6">✗</div>
                 <h3 className="text-2xl font-bold text-black mb-4">Régimen Regulado</h3>
                 <ul className="space-y-3 text-slate-600">
                   <li className="flex items-start gap-3">
@@ -140,7 +140,7 @@ export default function EficienciaClient() {
               </div>
 
               <div className="bg-[#3A5B1E]/5 p-10 border-l-4 border-[#3A5B1E]">
-                <div className="text-6xl mb-6">✅</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">✓</div>
                 <h3 className="text-2xl font-bold text-[#3A5B1E] mb-4">Mercado Libre + Eficiencia</h3>
                 <ul className="space-y-3 text-slate-600">
                   <li className="flex items-start gap-3">
@@ -177,19 +177,19 @@ export default function EficienciaClient() {
 
             <div className="flex flex-wrap justify-center items-center gap-6 max-w-6xl mx-auto">
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[250px]">
-                <div className="text-5xl mb-4">📊</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Telemetría en Tiempo Real</div>
                 <p className="text-sm text-white/80">Medición continua con hardware Siemens SENTRON</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">→</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[250px]">
-                <div className="text-5xl mb-4">🤖</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Análisis Predictivo</div>
                 <p className="text-sm text-white/80">AI-powered insights para decisiones inteligentes</p>
               </div>
               <div className="text-4xl text-[#3A5B1E]">→</div>
               <div className="bg-[#3A5B1E] text-white px-10 py-8 rounded-lg text-center flex-1 min-w-[250px]">
-                <div className="text-5xl mb-4">⚡</div>
+                <div className="text-5xl font-bold mb-4">→</div>
                 <div className="font-bold text-xl mb-2">Optimización Continua</div>
                 <p className="text-sm text-white/80">Mejoras permanentes en eficiencia operativa</p>
               </div>
@@ -223,7 +223,7 @@ export default function EficienciaClient() {
                 transition={{ duration: 0.6 }}
                 className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">🔍</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">01</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Auditorías Energéticas
                 </h3>
@@ -243,7 +243,7 @@ export default function EficienciaClient() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">⚙️</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">02</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   SGE (Sistema Gestión Energética)
                 </h3>
@@ -263,7 +263,7 @@ export default function EficienciaClient() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-5xl mb-6">📋</div>
+                <div className="text-6xl font-bold text-[#3A5B1E] mb-6">03</div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Reportes Ley Eficiencia Energética
                 </h3>
