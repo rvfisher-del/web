@@ -1,0 +1,5 @@
+Deployment triggered at 2026-03-04 12:47 GMT-3
+Fixes applied:
+1. Hero quote removed from ModularPageClient.tsx
+2. All emoji icons replaced with Lucide IndustrialIcon components
+3. Icons: Mountain, Hammer, Zap, Factory, Store, Heart, GraduationCap, Wheat
