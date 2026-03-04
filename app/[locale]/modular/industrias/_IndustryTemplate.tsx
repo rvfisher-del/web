@@ -3,11 +3,13 @@
 
 import { motion } from 'framer-motion';
 import ModularHeader from '@/components/layout/ModularHeader';
+import IndustrialIcon from '@/components/ui/IndustrialIcon';
+import { Mountain, Hammer, Zap, Factory, Store, Heart, GraduationCap, Wheat, LucideIcon } from 'lucide-react';
 
 interface IndustryPageProps {
   industry: {
     name: string;
-    icon: string;
+    icon: LucideIcon;
     slug: string;
     hero: {
       headline: string;
@@ -37,15 +39,15 @@ interface IndustryPageProps {
 }
 
 export default function IndustryPageTemplate({ industry }: IndustryPageProps) {
-  const otherIndustries = [
-    { name: 'Minería', icon: '⛏️', url: '/modular/industrias/mineria' },
-    { name: 'Construcción', icon: '🏗️', url: '/modular/industrias/construccion' },
-    { name: 'Energía', icon: '⚡', url: '/modular/industrias/energia' },
-    { name: 'Industrial', icon: '🏭', url: '/modular/industrias/industrial' },
-    { name: 'Retail', icon: '🛍️', url: '/modular/industrias/retail' },
-    { name: 'Salud', icon: '⚕️', url: '/modular/industrias/salud' },
-    { name: 'Educación', icon: '🎓', url: '/modular/industrias/educacion' },
-    { name: 'Agricultura', icon: '🌾', url: '/modular/industrias/agricultura' },
+  const otherIndustries: { name: string; icon: LucideIcon; url: string }[] = [
+    { name: 'Minería', icon: Mountain, url: '/modular/industrias/mineria' },
+    { name: 'Construcción', icon: Hammer, url: '/modular/industrias/construccion' },
+    { name: 'Energía', icon: Zap, url: '/modular/industrias/energia' },
+    { name: 'Industrial', icon: Factory, url: '/modular/industrias/industrial' },
+    { name: 'Retail', icon: Store, url: '/modular/industrias/retail' },
+    { name: 'Salud', icon: Heart, url: '/modular/industrias/salud' },
+    { name: 'Educación', icon: GraduationCap, url: '/modular/industrias/educacion' },
+    { name: 'Agricultura', icon: Wheat, url: '/modular/industrias/agricultura' },
   ].filter(ind => ind.name !== industry.name);
 
   return (
