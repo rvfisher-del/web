@@ -31,6 +31,9 @@ export default function Header() {
 
   const homeLink = getHomeLink();
 
+  // Check if we're in the /servicios subdirectory
+  const isServiciosRoute = pathname?.startsWith('/servicios');
+
   // Handle INICIO click to prevent reload when already on division home
   const handleInicioClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (pathname === homeLink) {
@@ -103,63 +106,72 @@ export default function Header() {
             INICIO
           </a>
 
-          {/* SERVICIOS Dropdown (Desktop) */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
+          <Link
+            href="/power"
+            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
           >
-            <Link
-              href="/servicios"
-              className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 flex items-center gap-1"
+            POWER
+          </Link>
+
+          {/* SERVICIOS Dropdown (Desktop) - Only show in /servicios subdirectory */}
+          {isServiciosRoute && (
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
             >
-              SERVICIOS
-              <svg 
-                className={`w-3 h-3 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
+              <Link
+                href="/servicios"
+                className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 flex items-center gap-1"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </Link>
-
-            {/* Desktop Dropdown */}
-            <AnimatePresence>
-              {isServicesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 mt-4 w-80 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl overflow-hidden"
+                SERVICIOS
+                <svg 
+                  className={`w-3 h-3 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
                 >
-                  {serviceLinks.map((link, index) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block px-6 py-4 text-white hover:bg-white/5 transition-all duration-300 border-l-0 hover:border-l-[5px] border-[#BA6347] group"
-                    >
-                      <div className="text-xs font-bold tracking-[0.2em] uppercase mb-1">
-                        {link.title}
-                      </div>
-                      <div className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
-                        {link.description}
-                      </div>
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
 
-          <a
-            href="mailto:talento@grupoglobe.cl"
-            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group whitespace-nowrap"
+              {/* Desktop Dropdown */}
+              <AnimatePresence>
+                {isServicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-4 w-80 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl overflow-hidden"
+                  >
+                    {serviceLinks.map((link, index) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block px-6 py-4 text-white hover:bg-white/5 transition-all duration-300 border-l-0 hover:border-l-[5px] border-[#BA6347] group"
+                      >
+                        <div className="text-xs font-bold tracking-[0.2em] uppercase mb-1">
+                          {link.title}
+                        </div>
+                        <div className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
+                          {link.description}
+                        </div>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+
+          <Link
+            href="/modular"
+            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
           >
-            TRABAJA CON NOSOTROS
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BA6347] group-hover:w-full transition-all duration-300" />
-          </a>
+            MODULAR
+          </Link>
+
           <a
             href="#contacto"
             onClick={(e) => smoothScroll(e, '#contacto')}
@@ -232,58 +244,69 @@ export default function Header() {
                 INICIO
               </a>
 
-              {/* SERVICIOS Accordion (Mobile) */}
-              <div>
-                <button
-                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
-                >
-                  SERVICIOS
-                  <svg 
-                    className={`w-4 h-4 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-45' : ''}`}
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                  </svg>
-                </button>
-
-                <AnimatePresence>
-                  {isMobileServicesOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="pl-4 mt-2 space-y-2">
-                        {serviceLinks.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={link.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="block px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase text-white/80 hover:text-white hover:bg-white/5 rounded-md transition-all border-l-0 hover:border-l-[5px] border-[#BA6347]"
-                          >
-                            <div className="mb-1">{link.title}</div>
-                            <div className="text-[9px] text-white/60 normal-case tracking-normal font-normal">
-                              {link.description}
-                            </div>
-                          </Link>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              <a
-                href="mailto:talento@grupoglobe.cl"
+              <Link
+                href="/power"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
               >
-                TRABAJA CON NOSOTROS
-              </a>
+                POWER
+              </Link>
+
+              {/* SERVICIOS Accordion (Mobile) - Only show in /servicios subdirectory */}
+              {isServiciosRoute && (
+                <div>
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
+                  >
+                    SERVICIOS
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-45' : ''}`}
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pl-4 mt-2 space-y-2">
+                          {serviceLinks.map((link) => (
+                            <Link
+                              key={link.href}
+                              href={link.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="block px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase text-white/80 hover:text-white hover:bg-white/5 rounded-md transition-all border-l-0 hover:border-l-[5px] border-[#BA6347]"
+                            >
+                              <div className="mb-1">{link.title}</div>
+                              <div className="text-[9px] text-white/60 normal-case tracking-normal font-normal">
+                                {link.description}
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+
+              <Link
+                href="/modular"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
+              >
+                MODULAR
+              </Link>
 
               <a
                 href="#contacto"
