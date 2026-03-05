@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import Header from '@/components/layout/Header';
+import Header from '../components/Header';
 import Footer from '@/components/layout/Footer';
 import CinematicHero from './components/CinematicHero';
 import LuxuryPortfolio from './components/LuxuryPortfolio';

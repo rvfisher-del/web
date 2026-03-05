@@ -2,15 +2,21 @@
 
 import { useState, useEffect } from 'react';
 
-interface HeaderProps {
-  scrolled: boolean;
-}
-
-export default function Header({ scrolled }: HeaderProps) {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [companiesDropdownOpen, setCompaniesDropdownOpen] = useState(false);
   const [powerSubmenuOpen, setPowerSubmenuOpen] = useState(false);
   const [powerPrefetched, setPowerPrefetched] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll state
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Prefetch /power route when hovering over Globe Power link
   const prefetchPower = () => {
