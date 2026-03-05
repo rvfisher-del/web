@@ -48,8 +48,9 @@ export default function PowerPageClient() {
                 TRABAJA CON NOSOTROS
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3A5B1E] group-hover:w-full transition-all duration-300" />
               </a>
-              <a href="#contacto" className="bg-[#3A5B1E]/80 backdrop-blur-sm border border-white/30 text-white px-4 md:px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#3A5B1E] transition-all duration-300">
-                CONTACTO
+              {/* NEW: Sticky Header CTA */}
+              <a href="#contacto" className="bg-[#3A5B1E]/80 backdrop-blur-sm border border-white/30 text-white px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#3A5B1E] transition-all duration-300">
+                AGENDA UNA CONSULTA
               </a>
             </nav>
           </div>
@@ -86,14 +87,16 @@ export default function PowerPageClient() {
               Cuidamos tu energía, todos los días.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <a href="#ecosistema" className="bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
-                Descubre Cómo
+            {/* CTA 1: Hero Primary + Secondary */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+              <a href="#contacto" className="bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
+                Agenda una Consultoría Técnica
               </a>
-              <a href="#contacto" className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-[#3A5B1E] transition-all duration-300 rounded-md">
-                Agenda Consultoría
+              <a href="#ecosistema" className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-[#3A5B1E] transition-all duration-300 rounded-md">
+                Ver la Solución
               </a>
             </div>
+            <p className="text-sm text-white/60 mb-16">Evaluación sin costo — Visita técnica incluida</p>
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -175,54 +178,13 @@ export default function PowerPageClient() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Ghost Thread */}
-        <div className="relative w-full h-24">
-          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
-        </div>
-
-        {/* SECTION 3: The Transformation */}
-        <section className="py-32 bg-gradient-to-br from-[#3A5B1E] to-[#2d4617] text-white">
-          <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <div className="text-center mb-16">
-              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] mb-8" style={{ letterSpacing: '-0.05em' }}>
-                La energía es el sistema operativo central de tu edificio
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div className="text-center md:text-left">
-                <div className="text-8xl font-black text-white/20 mb-4">ANTES</div>
-                <div className="text-4xl font-bold mb-4">Gasto Fijo</div>
-                <p className="text-lg text-white/80">Costo ciego sin visibilidad ni control</p>
-              </div>
-
-              <div className="text-center md:text-left">
-                <div className="text-8xl font-black text-[#91A56E] mb-4">AHORA</div>
-                <div className="text-4xl font-bold mb-4">Activo Estratégico</div>
-                <p className="text-lg text-white/80">Motor que impulsa eficiencia, sostenibilidad y rentabilidad</p>
-              </div>
-            </div>
-
-            <div className="mt-16 max-w-4xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
-                <ul className="space-y-4 text-lg">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#91A56E] text-2xl flex-shrink-0">✓</span>
-                    <span>Cuando se mide, gestiona y optimiza correctamente, la energía deja de ser un costo ciego.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#91A56E] text-2xl flex-shrink-0">✓</span>
-                    <span>Se transforma en el motor que impulsa la eficiencia, la sostenibilidad y la rentabilidad corporativa.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#91A56E] text-2xl flex-shrink-0">✓</span>
-                    <span>Globe Power convierte este potencial latente en resultados financieros concretos.</span>
-                  </li>
-                </ul>
-              </div>
+            {/* CTA 2: After Problem Section */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">Transformemos estos riesgos en oportunidades</h3>
+              <a href="#ecosistema" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
+                Ver la Solución
+              </a>
             </div>
           </div>
         </section>
@@ -232,7 +194,7 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 4: Four Pillars (with links to spokes) */}
+        {/* SECTION 3: Four Pillars (with links to spokes) */}
         <section id="ecosistema" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
@@ -313,6 +275,19 @@ export default function PowerPageClient() {
                 </span>
               </a>
             </div>
+
+            {/* CTA 3: After Ecosystem */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">¿Cómo se integra esto en tu operación?</h3>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
+                  Hablar con un Especialista en Integración
+                </a>
+                <a href="#tecnologia" className="inline-block bg-transparent border-2 border-black text-black px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-all duration-300 rounded-md">
+                  Ver Tecnología
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -321,85 +296,227 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 5: Trust Signals */}
+        {/* SECTION 4: Technology (Siemens Partnership) */}
+        <section id="tecnologia" className="py-32 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#8F8B84] mb-4 block">
+                ALIANZA EXCLUSIVA
+              </span>
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+                Rigor industrial y tecnológico en alianza exclusiva con Siemens
+              </h2>
+              <div className="flex justify-center mb-8">
+                <div className="bg-white px-8 py-4 rounded-lg shadow-lg border-2 border-[#3A5B1E]">
+                  <span className="text-2xl font-black text-slate-800">SIEMENS PARTNER</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+              {/* Hardware de Precisión */}
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
+                <h3 className="text-2xl font-bold text-black mb-6">Hardware de Precisión</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-bold text-lg text-black mb-2">SENTRON PAC 4220 & 7KT1661</h4>
+                    <p className="text-slate-600 text-sm">Precisión &gt;99% — Medición industrial en cada punto</p>
+                  </div>
+                  <ul className="space-y-2 text-slate-600 text-sm">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                      <span>Medición trifásica de alta precisión</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                      <span>Registro de consumo, potencia, factor de potencia</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                      <span>Conectividad Modbus TCP/RTU</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Software y Cloud */}
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
+                <h3 className="text-2xl font-bold text-black mb-6">Software y Cloud</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-bold text-lg text-black mb-2">Power Digital + Powercenter 3000</h4>
+                    <p className="text-slate-600 text-sm">Análisis predictivo, gestión en tiempo real, reportería avanzada</p>
+                  </div>
+                  <ul className="space-y-2 text-slate-600 text-sm">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                      <span>Dashboards en tiempo real</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                      <span>AI para detección temprana de anomalías</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                      <span>Integración AWS, Azure, Insights Hub</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* EMS + BMS Integration */}
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg md:col-span-2">
+                <h3 className="text-2xl font-bold text-black mb-6">Integración EMS + BMS</h3>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="font-bold text-lg text-black mb-2">EMS (Energy Management System)</h4>
+                    <p className="text-slate-600 text-sm">Analiza y optimiza consumo energético</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-lg text-black mb-2">BMS (Building Management System)</h4>
+                    <p className="text-slate-600 text-sm">Ejecuta y automatiza infraestructura edilicia</p>
+                  </div>
+                </div>
+                <div className="mt-6 p-6 bg-slate-50 rounded-lg">
+                  <p className="text-black font-bold mb-2">Resultado:</p>
+                  <p className="text-slate-600 text-sm">Gestor energético integrado. Eficiencia + mejora continua + cumplimiento ISO 50.001</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA 4: After Technology */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">Ve el sistema en acción</h3>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
+                  Solicita una Demo Técnica
+                </a>
+                <a href="mailto:aportilla@globepower.cl" className="inline-block bg-transparent border-2 border-black text-black px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-all duration-300 rounded-md">
+                  Descargar Especificaciones Técnicas
+                </a>
+              </div>
+              <p className="text-sm text-slate-600 mt-4">Presentación personalizada — 30 minutos</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 5: Transparency (Billing) */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+                Transparencia total que elimina cobros injustos y fricciones
+              </h2>
+            </div>
+
+            <div className="max-w-5xl mx-auto">
+              {/* Flow Diagram */}
+              <div className="grid md:grid-cols-4 gap-4 mb-12">
+                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
+                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">1</div>
+                  <h4 className="font-bold text-black mb-2">Consumo Real</h4>
+                  <p className="text-xs text-slate-600">Medición en tiempo real</p>
+                </div>
+                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
+                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">2</div>
+                  <h4 className="font-bold text-black mb-2">Medición SENTRON</h4>
+                  <p className="text-xs text-slate-600">Precisión &gt;99%</p>
+                </div>
+                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
+                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">3</div>
+                  <h4 className="font-bold text-black mb-2">Procesamiento Powermind</h4>
+                  <p className="text-xs text-slate-600">Cálculo exacto</p>
+                </div>
+                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
+                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">4</div>
+                  <h4 className="font-bold text-black mb-2">Facturación Exacta</h4>
+                  <p className="text-xs text-slate-600">Auditable y transparente</p>
+                </div>
+              </div>
+
+              {/* 3 Benefits */}
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">✓</div>
+                  <p className="font-bold text-black mb-2">Consumos Reales</p>
+                  <p className="text-sm text-slate-600">Asignamos consumos reales a cada operador e inquilino</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-6xl mb-4">✓</div>
+                  <p className="font-bold text-black mb-2">Sin Prorrateo</p>
+                  <p className="text-sm text-slate-600">Eliminamos el modelo de prorrateo por metro cuadrado</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-6xl mb-4">✓</div>
+                  <p className="font-bold text-black mb-2">Datos Auditables</p>
+                  <p className="text-sm text-slate-600">Mejoramos la relación propietario-arrendatario con transparencia total</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA 5: After Transparency */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">¿Cuánto estás perdiendo con el modelo actual?</h3>
+              <a href="#contacto" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
+                Solicita una Auditoría de Facturación Energética
+              </a>
+              <p className="text-sm text-slate-600 mt-4">Análisis gratuito — Identifica oportunidades en 48 horas</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 6: Maintenance 4.0 */}
         <section className="py-32 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
-                Resultados concretos respaldados por datos
+                El mantenimiento 4.0 es gestión de riesgos y continuidad operativa
               </h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                El mantenimiento ya no es una simple operación; es el pilar de la seguridad eléctrica.
+              </p>
             </div>
 
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-              <div className="text-center p-8 bg-white rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">+70</div>
-                <div className="text-sm text-slate-600">Activos gestionados</div>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-black mb-4">Telemetría Activa</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Anticipamos fallas antes de que ocurran mediante monitoreo continuo y alertas predictivas.
+                </p>
               </div>
-              <div className="text-center p-8 bg-white rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">+2000</div>
-                <div className="text-sm text-slate-600">Puntos de medición</div>
+
+              <div className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-black mb-4">Decisiones Basadas en Datos</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  De reactivo a predictivo. Los datos históricos y en tiempo real guían las intervenciones.
+                </p>
               </div>
-              <div className="text-center p-8 bg-white rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">99%</div>
-                <div className="text-sm text-slate-600">Uptime garantizado</div>
-              </div>
-              <div className="text-center p-8 bg-white rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">15%</div>
-                <div className="text-sm text-slate-600">Reducción consumo</div>
+
+              <div className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-black mb-4">Eficiencia Presupuestaria</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Realizamos los mantenimientos que los datos demandan, generando ahorro de 20% en presupuesto.
+                </p>
               </div>
             </div>
 
-            {/* Coverage & Partnership */}
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <h3 className="text-2xl font-bold text-black mb-6">Cobertura Nacional</h3>
-                <ul className="space-y-3 text-slate-600">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Santiago y Región Metropolitana</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Valparaíso, Viña del Mar, Concepción</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Todas las regiones de Chile</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Respuesta &lt;4H zonas remotas</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <h3 className="text-2xl font-bold text-black mb-6">Partnership Siemens</h3>
-                <div className="flex justify-center mb-6">
-                  <div className="bg-slate-50 px-6 py-3 rounded-lg">
-                    <span className="text-xl font-bold text-slate-800">Siemens Partner</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 text-slate-600">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Alianza exclusiva para SMB</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Hardware SENTRON certificado</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Software Power Digital</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                    <span>Soporte técnico internacional</span>
-                  </li>
-                </ul>
-              </div>
+            {/* CTA 6: After Maintenance 4.0 */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">¿Cuál es el nivel de riesgo de tu infraestructura eléctrica?</h3>
+              <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
+                Solicita una Evaluación de Riesgo
+              </a>
+              <p className="text-sm text-slate-600 mt-4">Inspección termográfica incluida — Sin costo</p>
             </div>
           </div>
         </section>
@@ -409,7 +526,287 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 6: CTA */}
+        {/* SECTION 7: Business Model */}
+        <section className="py-32 bg-gradient-to-br from-[#3A5B1E] to-[#2d4617] text-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] mb-6" style={{ letterSpacing: '-0.05em' }}>
+                Transformamos un gasto ciego en una nueva línea de ingresos
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+                <div className="text-5xl font-bold text-[#91A56E] mb-4">01</div>
+                <h3 className="text-xl font-bold mb-3">Comercialización Energética</h3>
+                <p className="text-white/80 text-sm">Comercializamos la energía de la mano de nuestros clientes, optimizando contratos y aprovechando oportunidades de mercado.</p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+                <div className="text-5xl font-bold text-[#91A56E] mb-4">02</div>
+                <h3 className="text-xl font-bold mb-3">Financiamiento de Equipamiento</h3>
+                <p className="text-white/80 text-sm">Financiamos el equipamiento y asumimos la gestión del facility eléctrico, liberando tu capital para tu core business.</p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+                <div className="text-5xl font-bold text-[#91A56E] mb-4">03</div>
+                <h3 className="text-xl font-bold mb-3">Ingresos Recuperados</h3>
+                <p className="text-white/80 text-sm">Generamos ingresos recuperados, reducimos costos operativos y liberamos flujo de caja para inversiones estratégicas.</p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+                <div className="text-5xl font-bold text-[#91A56E] mb-4">04</div>
+                <h3 className="text-xl font-bold mb-3">Beneficios Tributarios</h3>
+                <p className="text-white/80 text-sm">Beneficios tributarios y comerciales directos para el propietario del activo, maximizando el retorno de inversión.</p>
+              </div>
+            </div>
+
+            {/* CTA 7: After Business Model */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold mb-6">¿Cuánto podrías recuperar con este modelo?</h3>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" className="inline-block bg-white text-[#3A5B1E] px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#91A56E] hover:text-white transition-all duration-300 rounded-md">
+                  Calcula tu Potencial de Ahorro
+                </a>
+                <a href="mailto:aportilla@globepower.cl" className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-[#3A5B1E] transition-all duration-300 rounded-md">
+                  Ver Caso Financiero Real
+                </a>
+              </div>
+              <p className="text-sm text-white/60 mt-4">Respuesta en 24 horas — Proyección personalizada</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 8: Scale */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+                Estandarización y control absoluto para más de 70 activos
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-12">
+              <div className="text-center p-12 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E]">
+                <div className="text-7xl font-black text-[#3A5B1E] mb-4">+70</div>
+                <p className="text-lg font-bold text-black">Activos Gestionados</p>
+                <p className="text-sm text-slate-600 mt-2">De distintas industrias</p>
+              </div>
+              <div className="text-center p-12 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E]">
+                <div className="text-7xl font-black text-[#3A5B1E] mb-4">+2000</div>
+                <p className="text-lg font-bold text-black">Puntos de Medición</p>
+                <p className="text-sm text-slate-600 mt-2">Por activo en promedio</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white p-8 border-l-4 border-[#3A5B1E]">
+                <h3 className="text-xl font-bold text-black mb-4">Centralización Nacional</h3>
+                <p className="text-slate-600 text-sm">Centralización total del consumo energético a nivel nacional bajo un estándar único.</p>
+              </div>
+
+              <div className="bg-white p-8 border-l-4 border-[#3A5B1E]">
+                <h3 className="text-xl font-bold text-black mb-4">Homogeneización</h3>
+                <p className="text-slate-600 text-sm">Homogeneización de la calidad de servicio, la reportería y el control técnico en todo el portafolio.</p>
+              </div>
+
+              <div className="bg-white p-8 border-l-4 border-[#3A5B1E]">
+                <h3 className="text-xl font-bold text-black mb-4">Escalamiento Corporativo</h3>
+                <p className="text-slate-600 text-sm">Escalamiento del modelo corporativo asegurando visibilidad en tiempo real de todo el portafolio.</p>
+              </div>
+            </div>
+
+            {/* CTA 8: After Scale */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">¿Gestionas múltiples activos?</h3>
+              <a href="#contacto" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
+                Agenda una Consulta para Portafolio
+              </a>
+              <p className="text-sm text-slate-600 mt-4">Soluciones corporativas para +10 propiedades</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 9: Deployment */}
+        <section className="py-32 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+                Despliegue escalonado con cero impacto en la operación diaria
+              </h2>
+            </div>
+
+            {/* 5-Phase Timeline */}
+            <div className="grid md:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
+              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">1</div>
+                <h4 className="font-bold text-black mb-2">Planificación</h4>
+                <p className="text-xs text-slate-600">Consultoría técnica y evaluación de activo</p>
+              </div>
+              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">2</div>
+                <h4 className="font-bold text-black mb-2">Integración</h4>
+                <p className="text-xs text-slate-600">Diseño arquitectónico e instalación SENTRON</p>
+              </div>
+              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">3</div>
+                <h4 className="font-bold text-black mb-2">Monitoreo Inicial</h4>
+                <p className="text-xs text-slate-600">Puesta en marcha Power Digital y baseline</p>
+              </div>
+              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">4</div>
+                <h4 className="font-bold text-black mb-2">Escalamiento</h4>
+                <p className="text-xs text-slate-600">Expansión del modelo a nuevas propiedades</p>
+              </div>
+              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">5</div>
+                <h4 className="font-bold text-black mb-2">Despliegue Total</h4>
+                <p className="text-xs text-slate-600">Operación centralizada de todo el portafolio 24/7</p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-block bg-white px-8 py-4 rounded-lg border-2 border-[#3A5B1E]">
+                <p className="text-lg font-bold text-black">Mantenimiento de sistemas energéticos 24/7</p>
+              </div>
+            </div>
+
+            {/* CTA 9: After Deployment */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">Sin impacto operativo. Cero riesgo.</h3>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
+                  Comienza tu Evaluación
+                </a>
+                <a href="mailto:aportilla@globepower.cl" className="inline-block bg-transparent border-2 border-black text-black px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-all duration-300 rounded-md">
+                  Ver Cronograma de Implementación
+                </a>
+              </div>
+              <p className="text-sm text-slate-600 mt-4">Despliegue piloto disponible — Prueba antes de escalar</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 10: Metrics */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+                Métricas que respaldan nuestra eficiencia operativa
+              </h2>
+            </div>
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-16">
+              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-5xl font-black text-[#3A5B1E] mb-3">&gt;90%</div>
+                <div className="text-sm text-slate-600 font-bold">Cobertura de Instalación</div>
+                <div className="text-xs text-slate-500 mt-2">En edificios administrados</div>
+              </div>
+              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-5xl font-black text-[#3A5B1E] mb-3">99%</div>
+                <div className="text-sm text-slate-600 font-bold">Disponibilidad del Sistema</div>
+                <div className="text-xs text-slate-500 mt-2">Uptime continuo</div>
+              </div>
+              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-5xl font-black text-[#3A5B1E] mb-3">15%</div>
+                <div className="text-sm text-slate-600 font-bold">Reducción de Consumo</div>
+                <div className="text-xs text-slate-500 mt-2">No facturado (desperdicio)</div>
+              </div>
+              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-5xl font-black text-[#3A5B1E] mb-3">1H</div>
+                <div className="text-sm text-slate-600 font-bold">Tiempo de Respuesta</div>
+                <div className="text-xs text-slate-500 mt-2">Promedio consultas técnicas</div>
+              </div>
+              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
+                <div className="text-5xl font-black text-[#3A5B1E] mb-3">20%</div>
+                <div className="text-sm text-slate-600 font-bold">Ahorro en Mantenimiento</div>
+                <div className="text-xs text-slate-500 mt-2">Presupuesto anual</div>
+              </div>
+            </div>
+
+            {/* CTA 10: After Metrics */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">Alcanza estos niveles de eficiencia</h3>
+              <a href="#contacto" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
+                Comienza tu Evaluación Energética
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 11: Differentiation */}
+        <section className="py-32 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+                El único integrador en Chile que combina rigor industrial y soporte humano
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-6xl mb-6">🏭</div>
+                <h3 className="text-xl font-bold text-black mb-4">Rigor Industrial</h3>
+                <p className="text-slate-600 text-sm">Alianza exclusiva Siemens para SMB, garantizando calidad de clase mundial.</p>
+              </div>
+
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-6xl mb-6">👥</div>
+                <h3 className="text-xl font-bold text-black mb-4">Soporte Humano</h3>
+                <p className="text-slate-600 text-sm">Atención personalizada por especialistas. Sin bots, sin tickets perdidos.</p>
+              </div>
+
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-6xl mb-6">⚡</div>
+                <h3 className="text-xl font-bold text-black mb-4">Agilidad Tecnológica</h3>
+                <p className="text-slate-600 text-sm">Plataformas en la nube con IA para detección temprana de anomalías. Predictivo vs. reactivo.</p>
+              </div>
+
+              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
+                <div className="text-6xl mb-6">🌱</div>
+                <h3 className="text-xl font-bold text-black mb-4">Sostenibilidad Validada</h3>
+                <p className="text-slate-600 text-sm">Apoyo para certificaciones I-RECs y respaldo como empresa Sistema B.</p>
+              </div>
+            </div>
+
+            {/* CTA 11: After Differentiation */}
+            <div className="text-center mt-16 mb-12">
+              <h3 className="text-2xl font-bold text-black mb-6">Experiencia Globe Power vs. Contratistas Tradicionales</h3>
+              <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
+                Agenda una Reunión Comparativa
+              </a>
+              <p className="text-sm text-slate-600 mt-4">30 minutos — Te mostramos la diferencia</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ghost Thread */}
+        <div className="relative w-full h-24">
+          <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
+        </div>
+
+        {/* SECTION 12: Final CTA */}
         <section id="contacto" className="py-32 bg-gradient-to-br from-[#3A5B1E] via-[#2d4617] to-[#3A5B1E] text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] mb-8" style={{ letterSpacing: '-0.05em' }}>
@@ -419,23 +816,30 @@ export default function PowerPageClient() {
               Nuestra propuesta es una alianza a largo plazo para transformar la energía en el mayor activo de tus edificios.
             </p>
 
+            {/* CTA 12 & 13: Final Primary + Secondary */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <a href="mailto:aportilla@globepower.cl" className="bg-white text-[#3A5B1E] px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#91A56E] hover:text-white transition-all duration-300 rounded-md">
-                Agenda Consultoría Técnica
+                Agenda una Consultoría Estratégica
               </a>
               <a href="mailto:aportilla@globepower.cl" className="bg-transparent border-2 border-white text-white px-12 py-5 text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-[#3A5B1E] transition-all duration-300 rounded-md">
-                Solicitar Propuesta
+                Contactar Ahora
               </a>
             </div>
             
-            <div className="border-t border-white/20 pt-8">
-              <p className="text-white/80 mb-4">Contacto:</p>
-              <p className="text-lg font-bold text-white mb-2">Álvaro Portilla - Gerente Globe Power</p>
-              <p className="text-white/80">
-                <a href="mailto:aportilla@globepower.cl" className="hover:text-white transition-colors">aportilla@globepower.cl</a> | 
-                <a href="tel:+56957809131" className="hover:text-white transition-colors ml-2">+56 9 5780 9131</a>
-              </p>
-              <p className="text-white/60 mt-4">
+            {/* Contact Block - Prominent */}
+            <div className="border-t border-white/20 pt-8 pb-8">
+              <p className="text-white/80 mb-4 text-sm uppercase tracking-wide">Contacto Directo</p>
+              <p className="text-2xl font-bold text-white mb-4">Álvaro Portilla</p>
+              <p className="text-lg text-[#91A56E] mb-6">Gerente Globe Power</p>
+              <div className="space-y-2">
+                <p className="text-white">
+                  <a href="mailto:aportilla@globepower.cl" className="hover:text-[#91A56E] transition-colors font-bold">aportilla@globepower.cl</a>
+                </p>
+                <p className="text-white">
+                  <a href="tel:+56957809131" className="hover:text-[#91A56E] transition-colors font-bold">+56 9 5780 9131</a>
+                </p>
+              </div>
+              <p className="text-white/60 mt-6">
                 <a href="http://www.globepower.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">www.globepower.com</a>
               </p>
             </div>
@@ -447,6 +851,19 @@ export default function PowerPageClient() {
             </div>
           </div>
         </section>
+
+        {/* Floating WhatsApp Button - CTA 14 */}
+        <a 
+          href="https://wa.me/56957809131?text=Hola,%20quiero%20información%20sobre%20Globe%20Power" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 z-50"
+          aria-label="Contactar por WhatsApp"
+        >
+          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+        </a>
 
         {/* Power-Specific Footer */}
         <footer className="bg-slate-950 text-white py-16">
