@@ -48,7 +48,6 @@ export default function PowerPageClient() {
                 TRABAJA CON NOSOTROS
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3A5B1E] group-hover:w-full transition-all duration-300" />
               </a>
-              {/* NEW: Sticky Header CTA */}
               <a href="#contacto" className="bg-[#3A5B1E]/80 backdrop-blur-sm border border-white/30 text-white px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#3A5B1E] transition-all duration-300">
                 AGENDA UNA CONSULTA
               </a>
@@ -100,15 +99,15 @@ export default function PowerPageClient() {
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 border-t-2 border-t-[#3A5B1E] px-6 py-8 rounded-lg">
+              <div className="bg-white/5 backdrop-blur-md border border-white/10 px-6 py-8 rounded-lg">
                 <div className="text-3xl font-black text-white mb-2">+70</div>
                 <div className="text-xs font-bold uppercase tracking-widest text-[#91A56E]">ACTIVOS GESTIONADOS</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 border-t-2 border-t-[#3A5B1E] px-6 py-8 rounded-lg">
+              <div className="bg-white/5 backdrop-blur-md border border-white/10 px-6 py-8 rounded-lg">
                 <div className="text-3xl font-black text-white mb-2">99%</div>
                 <div className="text-xs font-bold uppercase tracking-widest text-[#91A56E]">UPTIME CONTINUO</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 border-t-2 border-t-[#3A5B1E] px-6 py-8 rounded-lg">
+              <div className="bg-white/5 backdrop-blur-md border border-white/10 px-6 py-8 rounded-lg">
                 <div className="text-3xl font-black text-white mb-2">15%</div>
                 <div className="text-xs font-bold uppercase tracking-widest text-[#91A56E]">REDUCCIÓN CONSUMO</div>
               </div>
@@ -136,7 +135,7 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 2: The Problem */}
+        {/* SECTION 2: The Problem — REDESIGNED 2x2 ASYMMETRIC GRID */}
         <section className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
@@ -145,42 +144,43 @@ export default function PowerPageClient() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">01</div>
-                <h3 className="text-xl font-bold text-black mb-4">Cobros Ineficientes</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  La facturación por metro cuadrado, sin medición real por operador, ajustes manuales, errores e injusticias.
+            {/* 2x2 Asymmetric Grid with Large Numbers */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-slate-50 p-12 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[120px] font-black text-[#3A5B1E] leading-none mb-4">01</div>
+                <h3 className="text-2xl font-bold text-black mb-4">Cobros Ineficientes</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  La facturación por metro cuadrado, sin medición real por operador, genera ajustes manuales, errores e injusticias.
                 </p>
               </div>
 
-              <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">02</div>
-                <h3 className="text-xl font-bold text-black mb-4">Falta de Control</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+              <div className="bg-slate-50 p-12 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[120px] font-black text-[#3A5B1E] leading-none mb-4">02</div>
+                <h3 className="text-2xl font-bold text-black mb-4">Falta de Control</h3>
+                <p className="text-slate-600 leading-relaxed">
                   Sin telemetría en tiempo real, los costos operativos aumentan por consumos anómalos no detectados.
                 </p>
               </div>
 
-              <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">03</div>
-                <h3 className="text-xl font-bold text-black mb-4">Oportunidades Perdidas</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+              <div className="bg-slate-50 p-12 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[120px] font-black text-[#3A5B1E] leading-none mb-4">03</div>
+                <h3 className="text-2xl font-bold text-black mb-4">Oportunidades Perdidas</h3>
+                <p className="text-slate-600 leading-relaxed">
                   Activos con más de 300 kW de consumo permanecen en régimen regulado, perdiendo la ventaja de negociar contratos competitivos.
                 </p>
               </div>
 
-              <div className="bg-slate-50 p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-6xl font-bold text-[#3A5B1E] mb-4">04</div>
-                <h3 className="text-xl font-bold text-black mb-4">Mantenimientos Correctivos</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+              <div className="bg-slate-50 p-12 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[120px] font-black text-[#3A5B1E] leading-none mb-4">04</div>
+                <h3 className="text-2xl font-bold text-black mb-4">Mantenimientos Correctivos</h3>
+                <p className="text-slate-600 leading-relaxed">
                   Reparar al romper es mucho más caro a largo plazo que el preventivo.
                 </p>
               </div>
             </div>
 
             {/* CTA 2: After Problem Section */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">Transformemos estos riesgos en oportunidades</h3>
               <a href="#ecosistema" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
                 Ver la Solución
@@ -194,8 +194,8 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 3: Four Pillars (with links to spokes) */}
-        <section id="ecosistema" className="py-32 bg-white">
+        {/* SECTION 3: Four Pillars (Ecosystem) with SVG Hub Diagram */}
+        <section id="ecosistema" className="py-32 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#8F8B84] mb-4 block">
@@ -206,11 +206,41 @@ export default function PowerPageClient() {
               </h2>
             </div>
 
+            {/* SVG Ecosystem Hub Diagram */}
+            <div className="max-w-4xl mx-auto mb-20">
+              <svg viewBox="0 0 800 600" className="w-full h-auto">
+                {/* Central Hub */}
+                <circle cx="400" cy="300" r="80" fill="#3A5B1E" />
+                <text x="400" y="305" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">GLOBE</text>
+                <text x="400" y="325" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">POWER</text>
+                
+                {/* Service 1: Subdistribución */}
+                <line x1="400" y1="220" x2="400" y2="100" stroke="#91A56E" strokeWidth="2" />
+                <circle cx="400" cy="80" r="40" fill="#91A56E" />
+                <text x="400" y="88" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">Subdist.</text>
+                
+                {/* Service 2: Eficiencia */}
+                <line x1="480" y1="300" x2="600" y2="300" stroke="#91A56E" strokeWidth="2" />
+                <circle cx="620" cy="300" r="40" fill="#91A56E" />
+                <text x="620" y="308" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">Eficiencia</text>
+                
+                {/* Service 3: Software */}
+                <line x1="400" y1="380" x2="400" y2="500" stroke="#91A56E" strokeWidth="2" />
+                <circle cx="400" cy="520" r="40" fill="#91A56E" />
+                <text x="400" y="528" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">Software</text>
+                
+                {/* Service 4: Mantenimiento */}
+                <line x1="320" y1="300" x2="200" y2="300" stroke="#91A56E" strokeWidth="2" />
+                <circle cx="180" cy="300" r="40" fill="#91A56E" />
+                <text x="180" y="308" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">Mant.</text>
+              </svg>
+            </div>
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Pillar 1: Subdistribución y Remarcación */}
               <a 
                 href="/power/subdistribucion-remarcacion" 
-                className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300 group"
+                className="bg-white p-8 rounded-lg hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="text-5xl mb-6 text-[#3A5B1E] font-bold">01</div>
                 <h3 className="text-xl font-bold text-black mb-4 group-hover:text-[#3A5B1E] transition-colors">
@@ -227,7 +257,7 @@ export default function PowerPageClient() {
               {/* Pillar 2: Eficiencia Energética */}
               <a 
                 href="/power/eficiencia-energetica" 
-                className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300 group"
+                className="bg-white p-8 rounded-lg hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="text-5xl mb-6 text-[#3A5B1E] font-bold">02</div>
                 <h3 className="text-xl font-bold text-black mb-4 group-hover:text-[#3A5B1E] transition-colors">
@@ -244,7 +274,7 @@ export default function PowerPageClient() {
               {/* Pillar 3: Software y Reportería */}
               <a 
                 href="/power/software-reporteria" 
-                className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300 group"
+                className="bg-white p-8 rounded-lg hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="text-5xl mb-6 text-[#3A5B1E] font-bold">03</div>
                 <h3 className="text-xl font-bold text-black mb-4 group-hover:text-[#3A5B1E] transition-colors">
@@ -261,7 +291,7 @@ export default function PowerPageClient() {
               {/* Pillar 4: Mantenimiento Eléctrico */}
               <a 
                 href="/power/mantenimiento-electrico" 
-                className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300 group"
+                className="bg-white p-8 rounded-lg hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="text-5xl mb-6 text-[#3A5B1E] font-bold">04</div>
                 <h3 className="text-xl font-bold text-black mb-4 group-hover:text-[#3A5B1E] transition-colors">
@@ -277,7 +307,7 @@ export default function PowerPageClient() {
             </div>
 
             {/* CTA 3: After Ecosystem */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">¿Cómo se integra esto en tu operación?</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
@@ -296,8 +326,8 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 4: Technology (Siemens Partnership) */}
-        <section id="tecnologia" className="py-32 bg-slate-50">
+        {/* SECTION 4: Technology (REDESIGNED Side-by-Side with Photo Placeholder) */}
+        <section id="tecnologia" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#8F8B84] mb-4 block">
@@ -306,86 +336,129 @@ export default function PowerPageClient() {
               <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
                 Rigor industrial y tecnológico en alianza exclusiva con Siemens
               </h2>
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-12">
                 <div className="bg-white px-8 py-4 rounded-lg shadow-lg border-2 border-[#3A5B1E]">
                   <span className="text-2xl font-black text-slate-800">SIEMENS PARTNER</span>
                 </div>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              {/* Hardware de Precisión */}
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <h3 className="text-2xl font-bold text-black mb-6">Hardware de Precisión</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-bold text-lg text-black mb-2">SENTRON PAC 4220 & 7KT1661</h4>
-                    <p className="text-slate-600 text-sm">Precisión &gt;99% — Medición industrial en cada punto</p>
+            {/* Side-by-Side Layout: Specs + Photo */}
+            <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
+              {/* Left: Technical Specs */}
+              <div className="space-y-8">
+                {/* Hardware de Precisión */}
+                <div className="bg-slate-50 p-10 rounded-lg">
+                  <h3 className="text-2xl font-bold text-black mb-6">Hardware de Precisión</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-bold text-lg text-black mb-2">SENTRON PAC 4220 & 7KT1661</h4>
+                      <p className="text-slate-600 text-sm">Precisión &gt;99% — Medición industrial en cada punto</p>
+                    </div>
+                    <ul className="space-y-2 text-slate-600 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                        <span>Medición trifásica de alta precisión</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                        <span>Registro de consumo, potencia, factor de potencia</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                        <span>Conectividad Modbus TCP/RTU</span>
+                      </li>
+                    </ul>
                   </div>
-                  <ul className="space-y-2 text-slate-600 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                      <span>Medición trifásica de alta precisión</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                      <span>Registro de consumo, potencia, factor de potencia</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                      <span>Conectividad Modbus TCP/RTU</span>
-                    </li>
-                  </ul>
+                </div>
+
+                {/* Software y Cloud */}
+                <div className="bg-slate-50 p-10 rounded-lg">
+                  <h3 className="text-2xl font-bold text-black mb-6">Software y Cloud</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-bold text-lg text-black mb-2">Power Digital + Powercenter 3000</h4>
+                      <p className="text-slate-600 text-sm">Análisis predictivo, gestión en tiempo real, reportería avanzada</p>
+                    </div>
+                    <ul className="space-y-2 text-slate-600 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                        <span>Dashboards en tiempo real</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                        <span>AI para detección temprana de anomalías</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
+                        <span>Integración AWS, Azure, Insights Hub</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              {/* Software y Cloud */}
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <h3 className="text-2xl font-bold text-black mb-6">Software y Cloud</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-bold text-lg text-black mb-2">Power Digital + Powercenter 3000</h4>
-                    <p className="text-slate-600 text-sm">Análisis predictivo, gestión en tiempo real, reportería avanzada</p>
+              {/* Right: Photo Placeholder */}
+              <div className="relative bg-slate-200 rounded-lg overflow-hidden aspect-[3/4]">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center px-8">
+                    <div className="text-slate-400 text-sm font-medium mb-3">PHOTO PLACEHOLDER</div>
+                    <div className="text-slate-600 text-xs leading-relaxed">
+                      Siemens SENTRON PAC 4220<br />
+                      Installation Photo<br />
+                      Industrial Setting
+                    </div>
                   </div>
-                  <ul className="space-y-2 text-slate-600 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                      <span>Dashboards en tiempo real</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                      <span>AI para detección temprana de anomalías</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#3A5B1E] text-xl flex-shrink-0">✓</span>
-                      <span>Integración AWS, Azure, Insights Hub</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* EMS + BMS Integration */}
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg md:col-span-2">
-                <h3 className="text-2xl font-bold text-black mb-6">Integración EMS + BMS</h3>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h4 className="font-bold text-lg text-black mb-2">EMS (Energy Management System)</h4>
-                    <p className="text-slate-600 text-sm">Analiza y optimiza consumo energético</p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg text-black mb-2">BMS (Building Management System)</h4>
-                    <p className="text-slate-600 text-sm">Ejecuta y automatiza infraestructura edilicia</p>
-                  </div>
-                </div>
-                <div className="mt-6 p-6 bg-slate-50 rounded-lg">
-                  <p className="text-black font-bold mb-2">Resultado:</p>
-                  <p className="text-slate-600 text-sm">Gestor energético integrado. Eficiencia + mejora continua + cumplimiento ISO 50.001</p>
                 </div>
               </div>
             </div>
 
+            {/* EMS + BMS Integration with SVG Architecture Diagram */}
+            <div className="bg-slate-50 p-12 rounded-lg max-w-6xl mx-auto">
+              <h3 className="text-2xl font-bold text-black mb-8 text-center">Integración EMS + BMS</h3>
+              
+              {/* SVG System Architecture Diagram */}
+              <div className="mb-8">
+                <svg viewBox="0 0 800 300" className="w-full h-auto">
+                  {/* EMS Box */}
+                  <rect x="50" y="100" width="300" height="100" fill="#3A5B1E" rx="8" />
+                  <text x="200" y="140" textAnchor="middle" fill="white" fontSize="18" fontWeight="bold">EMS</text>
+                  <text x="200" y="165" textAnchor="middle" fill="white" fontSize="12">Energy Management</text>
+                  
+                  {/* Arrow */}
+                  <line x1="350" y1="150" x2="450" y2="150" stroke="#91A56E" strokeWidth="3" markerEnd="url(#arrowhead)" />
+                  <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                      <polygon points="0 0, 10 3.5, 0 7" fill="#91A56E" />
+                    </marker>
+                  </defs>
+                  <text x="400" y="135" textAnchor="middle" fill="#3A5B1E" fontSize="12" fontWeight="bold">INTEGRA</text>
+                  
+                  {/* BMS Box */}
+                  <rect x="450" y="100" width="300" height="100" fill="#91A56E" rx="8" />
+                  <text x="600" y="140" textAnchor="middle" fill="white" fontSize="18" fontWeight="bold">BMS</text>
+                  <text x="600" y="165" textAnchor="middle" fill="white" fontSize="12">Building Management</text>
+                </svg>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-bold text-lg text-black mb-2">EMS (Energy Management System)</h4>
+                  <p className="text-slate-600 text-sm">Analiza y optimiza consumo energético</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-lg text-black mb-2">BMS (Building Management System)</h4>
+                  <p className="text-slate-600 text-sm">Ejecuta y automatiza infraestructura edilicia</p>
+                </div>
+              </div>
+              <div className="mt-6 p-6 bg-white rounded-lg">
+                <p className="text-black font-bold mb-2">Resultado:</p>
+                <p className="text-slate-600 text-sm">Gestor energético integrado. Eficiencia + mejora continua + cumplimiento ISO 50.001</p>
+              </div>
+            </div>
+
             {/* CTA 4: After Technology */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">Ve el sistema en acción</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
@@ -405,8 +478,8 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 5: Transparency (Billing) */}
-        <section className="py-32 bg-white">
+        {/* SECTION 5: Transparency (WITH SVG FLOW DIAGRAM) */}
+        <section className="py-32 bg-gradient-to-br from-slate-50 to-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
@@ -415,52 +488,65 @@ export default function PowerPageClient() {
             </div>
 
             <div className="max-w-5xl mx-auto">
-              {/* Flow Diagram */}
-              <div className="grid md:grid-cols-4 gap-4 mb-12">
-                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
-                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">1</div>
-                  <h4 className="font-bold text-black mb-2">Consumo Real</h4>
-                  <p className="text-xs text-slate-600">Medición en tiempo real</p>
-                </div>
-                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
-                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">2</div>
-                  <h4 className="font-bold text-black mb-2">Medición SENTRON</h4>
-                  <p className="text-xs text-slate-600">Precisión &gt;99%</p>
-                </div>
-                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
-                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">3</div>
-                  <h4 className="font-bold text-black mb-2">Procesamiento Powermind</h4>
-                  <p className="text-xs text-slate-600">Cálculo exacto</p>
-                </div>
-                <div className="text-center p-6 bg-slate-50 rounded-lg border-2 border-[#3A5B1E]">
-                  <div className="text-4xl font-bold text-[#3A5B1E] mb-3">4</div>
-                  <h4 className="font-bold text-black mb-2">Facturación Exacta</h4>
-                  <p className="text-xs text-slate-600">Auditable y transparente</p>
-                </div>
+              {/* SVG Flow Diagram with Arrows */}
+              <div className="mb-16">
+                <svg viewBox="0 0 1000 200" className="w-full h-auto">
+                  {/* Step 1 */}
+                  <rect x="0" y="50" width="220" height="100" fill="#3A5B1E" rx="8" />
+                  <text x="110" y="90" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">1</text>
+                  <text x="110" y="115" textAnchor="middle" fill="white" fontSize="14">Consumo Real</text>
+                  
+                  {/* Arrow 1 */}
+                  <line x1="220" y1="100" x2="260" y2="100" stroke="#91A56E" strokeWidth="3" />
+                  <polygon points="260,95 270,100 260,105" fill="#91A56E" />
+                  
+                  {/* Step 2 */}
+                  <rect x="270" y="50" width="220" height="100" fill="#3A5B1E" rx="8" />
+                  <text x="380" y="90" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">2</text>
+                  <text x="380" y="115" textAnchor="middle" fill="white" fontSize="14">Medición SENTRON</text>
+                  
+                  {/* Arrow 2 */}
+                  <line x1="490" y1="100" x2="530" y2="100" stroke="#91A56E" strokeWidth="3" />
+                  <polygon points="530,95 540,100 530,105" fill="#91A56E" />
+                  
+                  {/* Step 3 */}
+                  <rect x="540" y="50" width="220" height="100" fill="#3A5B1E" rx="8" />
+                  <text x="650" y="90" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">3</text>
+                  <text x="650" y="115" textAnchor="middle" fill="white" fontSize="13">Procesamiento</text>
+                  
+                  {/* Arrow 3 */}
+                  <line x1="760" y1="100" x2="780" y2="100" stroke="#91A56E" strokeWidth="3" />
+                  <polygon points="780,95 790,100 780,105" fill="#91A56E" />
+                  
+                  {/* Step 4 */}
+                  <rect x="790" y="50" width="210" height="100" fill="#91A56E" rx="8" />
+                  <text x="895" y="90" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">4</text>
+                  <text x="895" y="115" textAnchor="middle" fill="white" fontSize="14">Facturación Exacta</text>
+                </svg>
               </div>
 
               {/* 3 Benefits */}
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">✓</div>
-                  <p className="font-bold text-black mb-2">Consumos Reales</p>
+                <div className="text-center p-8 bg-white rounded-lg">
+                  <div className="text-6xl mb-4 text-[#3A5B1E]">✓</div>
+                  <p className="font-bold text-black mb-2 text-lg">Consumos Reales</p>
                   <p className="text-sm text-slate-600">Asignamos consumos reales a cada operador e inquilino</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-6xl mb-4">✓</div>
-                  <p className="font-bold text-black mb-2">Sin Prorrateo</p>
+                <div className="text-center p-8 bg-white rounded-lg">
+                  <div className="text-6xl mb-4 text-[#3A5B1E]">✓</div>
+                  <p className="font-bold text-black mb-2 text-lg">Sin Prorrateo</p>
                   <p className="text-sm text-slate-600">Eliminamos el modelo de prorrateo por metro cuadrado</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-6xl mb-4">✓</div>
-                  <p className="font-bold text-black mb-2">Datos Auditables</p>
+                <div className="text-center p-8 bg-white rounded-lg">
+                  <div className="text-6xl mb-4 text-[#3A5B1E]">✓</div>
+                  <p className="font-bold text-black mb-2 text-lg">Datos Auditables</p>
                   <p className="text-sm text-slate-600">Mejoramos la relación propietario-arrendatario con transparencia total</p>
                 </div>
               </div>
             </div>
 
             {/* CTA 5: After Transparency */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">¿Cuánto estás perdiendo con el modelo actual?</h3>
               <a href="#contacto" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
                 Solicita una Auditoría de Facturación Energética
@@ -475,8 +561,8 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 6: Maintenance 4.0 */}
-        <section className="py-32 bg-slate-50">
+        {/* SECTION 6: Maintenance 4.0 (REDESIGNED with Photo Placeholder) */}
+        <section className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
@@ -487,31 +573,49 @@ export default function PowerPageClient() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <h3 className="text-xl font-bold text-black mb-4">Telemetría Activa</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Anticipamos fallas antes de que ocurran mediante monitoreo continuo y alertas predictivas.
-                </p>
+            {/* Photo + Benefits Side-by-Side */}
+            <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+              {/* Photo Placeholder */}
+              <div className="relative bg-slate-200 rounded-lg overflow-hidden aspect-[4/3]">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center px-8">
+                    <div className="text-slate-400 text-sm font-medium mb-3">PHOTO PLACEHOLDER</div>
+                    <div className="text-slate-600 text-xs leading-relaxed">
+                      Electrical Maintenance Team<br />
+                      Predictive Inspection in Progress<br />
+                      Thermographic Camera View
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <h3 className="text-xl font-bold text-black mb-4">Decisiones Basadas en Datos</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  De reactivo a predictivo. Los datos históricos y en tiempo real guían las intervenciones.
-                </p>
-              </div>
+              {/* Benefits */}
+              <div className="space-y-8">
+                <div className="bg-slate-50 p-8 rounded-lg">
+                  <h3 className="text-xl font-bold text-black mb-4">Telemetría Activa</h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    Anticipamos fallas antes de que ocurran mediante monitoreo continuo y alertas predictivas.
+                  </p>
+                </div>
 
-              <div className="bg-white p-8 border-l-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <h3 className="text-xl font-bold text-black mb-4">Eficiencia Presupuestaria</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Realizamos los mantenimientos que los datos demandan, generando ahorro de 20% en presupuesto.
-                </p>
+                <div className="bg-slate-50 p-8 rounded-lg">
+                  <h3 className="text-xl font-bold text-black mb-4">Decisiones Basadas en Datos</h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    De reactivo a predictivo. Los datos históricos y en tiempo real guían las intervenciones.
+                  </p>
+                </div>
+
+                <div className="bg-slate-50 p-8 rounded-lg">
+                  <h3 className="text-xl font-bold text-black mb-4">Eficiencia Presupuestaria</h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    Realizamos los mantenimientos que los datos demandan, generando ahorro de 20% en presupuesto.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* CTA 6: After Maintenance 4.0 */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">¿Cuál es el nivel de riesgo de tu infraestructura eléctrica?</h3>
               <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
                 Solicita una Evaluación de Riesgo
@@ -536,33 +640,33 @@ export default function PowerPageClient() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-10 rounded-lg">
                 <div className="text-5xl font-bold text-[#91A56E] mb-4">01</div>
                 <h3 className="text-xl font-bold mb-3">Comercialización Energética</h3>
-                <p className="text-white/80 text-sm">Comercializamos la energía de la mano de nuestros clientes, optimizando contratos y aprovechando oportunidades de mercado.</p>
+                <p className="text-white/80">Comercializamos la energía de la mano de nuestros clientes, optimizando contratos y aprovechando oportunidades de mercado.</p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-10 rounded-lg">
                 <div className="text-5xl font-bold text-[#91A56E] mb-4">02</div>
                 <h3 className="text-xl font-bold mb-3">Financiamiento de Equipamiento</h3>
-                <p className="text-white/80 text-sm">Financiamos el equipamiento y asumimos la gestión del facility eléctrico, liberando tu capital para tu core business.</p>
+                <p className="text-white/80">Financiamos el equipamiento y asumimos la gestión del facility eléctrico, liberando tu capital para tu core business.</p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-10 rounded-lg">
                 <div className="text-5xl font-bold text-[#91A56E] mb-4">03</div>
                 <h3 className="text-xl font-bold mb-3">Ingresos Recuperados</h3>
-                <p className="text-white/80 text-sm">Generamos ingresos recuperados, reducimos costos operativos y liberamos flujo de caja para inversiones estratégicas.</p>
+                <p className="text-white/80">Generamos ingresos recuperados, reducimos costos operativos y liberamos flujo de caja para inversiones estratégicas.</p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-10 rounded-lg">
                 <div className="text-5xl font-bold text-[#91A56E] mb-4">04</div>
                 <h3 className="text-xl font-bold mb-3">Beneficios Tributarios</h3>
-                <p className="text-white/80 text-sm">Beneficios tributarios y comerciales directos para el propietario del activo, maximizando el retorno de inversión.</p>
+                <p className="text-white/80">Beneficios tributarios y comerciales directos para el propietario del activo, maximizando el retorno de inversión.</p>
               </div>
             </div>
 
             {/* CTA 7: After Business Model */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold mb-6">¿Cuánto podrías recuperar con este modelo?</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contacto" className="inline-block bg-white text-[#3A5B1E] px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#91A56E] hover:text-white transition-all duration-300 rounded-md">
@@ -582,8 +686,8 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 8: Scale */}
-        <section className="py-32 bg-white">
+        {/* SECTION 8: Scale (with Photo Placeholder) */}
+        <section className="py-32 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
@@ -591,38 +695,55 @@ export default function PowerPageClient() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-12">
-              <div className="text-center p-12 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E]">
-                <div className="text-7xl font-black text-[#3A5B1E] mb-4">+70</div>
-                <p className="text-lg font-bold text-black">Activos Gestionados</p>
-                <p className="text-sm text-slate-600 mt-2">De distintas industrias</p>
+            {/* Stats + Photo Layout */}
+            <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
+              <div className="space-y-6">
+                <div className="text-center p-12 bg-white rounded-lg">
+                  <div className="text-7xl font-black text-[#3A5B1E] mb-4">+70</div>
+                  <p className="text-lg font-bold text-black">Activos Gestionados</p>
+                  <p className="text-sm text-slate-600 mt-2">De distintas industrias</p>
+                </div>
+                <div className="text-center p-12 bg-white rounded-lg">
+                  <div className="text-7xl font-black text-[#3A5B1E] mb-4">+2000</div>
+                  <p className="text-lg font-bold text-black">Puntos de Medición</p>
+                  <p className="text-sm text-slate-600 mt-2">Por activo en promedio</p>
+                </div>
               </div>
-              <div className="text-center p-12 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E]">
-                <div className="text-7xl font-black text-[#3A5B1E] mb-4">+2000</div>
-                <p className="text-lg font-bold text-black">Puntos de Medición</p>
-                <p className="text-sm text-slate-600 mt-2">Por activo en promedio</p>
+
+              {/* Photo Placeholder */}
+              <div className="relative bg-slate-200 rounded-lg overflow-hidden aspect-[4/3]">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center px-8">
+                    <div className="text-slate-400 text-sm font-medium mb-3">PHOTO PLACEHOLDER</div>
+                    <div className="text-slate-600 text-xs leading-relaxed">
+                      National Portfolio Map<br />
+                      Real-Time Dashboard<br />
+                      Multi-Asset Management View
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="bg-white p-8 border-l-4 border-[#3A5B1E]">
+              <div className="bg-white p-8 rounded-lg">
                 <h3 className="text-xl font-bold text-black mb-4">Centralización Nacional</h3>
-                <p className="text-slate-600 text-sm">Centralización total del consumo energético a nivel nacional bajo un estándar único.</p>
+                <p className="text-slate-600">Centralización total del consumo energético a nivel nacional bajo un estándar único.</p>
               </div>
 
-              <div className="bg-white p-8 border-l-4 border-[#3A5B1E]">
+              <div className="bg-white p-8 rounded-lg">
                 <h3 className="text-xl font-bold text-black mb-4">Homogeneización</h3>
-                <p className="text-slate-600 text-sm">Homogeneización de la calidad de servicio, la reportería y el control técnico en todo el portafolio.</p>
+                <p className="text-slate-600">Homogeneización de la calidad de servicio, la reportería y el control técnico en todo el portafolio.</p>
               </div>
 
-              <div className="bg-white p-8 border-l-4 border-[#3A5B1E]">
+              <div className="bg-white p-8 rounded-lg">
                 <h3 className="text-xl font-bold text-black mb-4">Escalamiento Corporativo</h3>
-                <p className="text-slate-600 text-sm">Escalamiento del modelo corporativo asegurando visibilidad en tiempo real de todo el portafolio.</p>
+                <p className="text-slate-600">Escalamiento del modelo corporativo asegurando visibilidad en tiempo real de todo el portafolio.</p>
               </div>
             </div>
 
             {/* CTA 8: After Scale */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">¿Gestionas múltiples activos?</h3>
               <a href="#contacto" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
                 Agenda una Consulta para Portafolio
@@ -637,8 +758,8 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 9: Deployment */}
-        <section className="py-32 bg-slate-50">
+        {/* SECTION 9: Deployment (REDESIGNED HORIZONTAL TIMELINE) */}
+        <section className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
               <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
@@ -646,43 +767,52 @@ export default function PowerPageClient() {
               </h2>
             </div>
 
-            {/* 5-Phase Timeline */}
-            <div className="grid md:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
-              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">1</div>
-                <h4 className="font-bold text-black mb-2">Planificación</h4>
-                <p className="text-xs text-slate-600">Consultoría técnica y evaluación de activo</p>
-              </div>
-              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">2</div>
-                <h4 className="font-bold text-black mb-2">Integración</h4>
-                <p className="text-xs text-slate-600">Diseño arquitectónico e instalación SENTRON</p>
-              </div>
-              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">3</div>
-                <h4 className="font-bold text-black mb-2">Monitoreo Inicial</h4>
-                <p className="text-xs text-slate-600">Puesta en marcha Power Digital y baseline</p>
-              </div>
-              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">4</div>
-                <h4 className="font-bold text-black mb-2">Escalamiento</h4>
-                <p className="text-xs text-slate-600">Expansión del modelo a nuevas propiedades</p>
-              </div>
-              <div className="text-center p-6 bg-white border-t-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-4xl font-bold text-[#3A5B1E] mb-3">5</div>
-                <h4 className="font-bold text-black mb-2">Despliegue Total</h4>
-                <p className="text-xs text-slate-600">Operación centralizada de todo el portafolio 24/7</p>
-              </div>
+            {/* SVG Horizontal Timeline with Connecting Line */}
+            <div className="max-w-6xl mx-auto mb-16">
+              <svg viewBox="0 0 1200 300" className="w-full h-auto">
+                {/* Connecting Horizontal Line */}
+                <line x1="100" y1="150" x2="1100" y2="150" stroke="#3A5B1E" strokeWidth="4" />
+                
+                {/* Milestone 1 */}
+                <circle cx="100" cy="150" r="30" fill="#3A5B1E" />
+                <text x="100" y="160" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">1</text>
+                <text x="100" y="220" textAnchor="middle" fill="#3A5B1E" fontSize="14" fontWeight="bold">Planificación</text>
+                <text x="100" y="240" textAnchor="middle" fill="#666" fontSize="11">Consultoría técnica</text>
+                
+                {/* Milestone 2 */}
+                <circle cx="350" cy="150" r="30" fill="#3A5B1E" />
+                <text x="350" y="160" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">2</text>
+                <text x="350" y="220" textAnchor="middle" fill="#3A5B1E" fontSize="14" fontWeight="bold">Integración</text>
+                <text x="350" y="240" textAnchor="middle" fill="#666" fontSize="11">Instalación SENTRON</text>
+                
+                {/* Milestone 3 */}
+                <circle cx="600" cy="150" r="30" fill="#3A5B1E" />
+                <text x="600" y="160" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">3</text>
+                <text x="600" y="220" textAnchor="middle" fill="#3A5B1E" fontSize="14" fontWeight="bold">Monitoreo Inicial</text>
+                <text x="600" y="240" textAnchor="middle" fill="#666" fontSize="11">Puesta en marcha</text>
+                
+                {/* Milestone 4 */}
+                <circle cx="850" cy="150" r="30" fill="#3A5B1E" />
+                <text x="850" y="160" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">4</text>
+                <text x="850" y="220" textAnchor="middle" fill="#3A5B1E" fontSize="14" fontWeight="bold">Escalamiento</text>
+                <text x="850" y="240" textAnchor="middle" fill="#666" fontSize="11">Expansión propiedades</text>
+                
+                {/* Milestone 5 */}
+                <circle cx="1100" cy="150" r="30" fill="#91A56E" />
+                <text x="1100" y="160" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">5</text>
+                <text x="1100" y="220" textAnchor="middle" fill="#3A5B1E" fontSize="14" fontWeight="bold">Despliegue Total</text>
+                <text x="1100" y="240" textAnchor="middle" fill="#666" fontSize="11">Operación 24/7</text>
+              </svg>
             </div>
 
             <div className="text-center">
-              <div className="inline-block bg-white px-8 py-4 rounded-lg border-2 border-[#3A5B1E]">
+              <div className="inline-block bg-slate-50 px-8 py-4 rounded-lg border-2 border-[#3A5B1E]">
                 <p className="text-lg font-bold text-black">Mantenimiento de sistemas energéticos 24/7</p>
               </div>
             </div>
 
             {/* CTA 9: After Deployment */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">Sin impacto operativo. Cero riesgo.</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
@@ -702,48 +832,56 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 10: Metrics */}
-        <section className="py-32 bg-white">
+        {/* SECTION 10: Metrics (REDESIGNED ASYMMETRIC LARGE NUMBERS) */}
+        <section className="py-32 bg-gradient-to-br from-[#3A5B1E] to-[#2d4617] text-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
-              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] text-black mb-6" style={{ letterSpacing: '-0.05em' }}>
+              <h2 className="text-[clamp(40px,6vw,64px)] font-black leading-[1.1] mb-6" style={{ letterSpacing: '-0.05em' }}>
                 Métricas que respaldan nuestra eficiencia operativa
               </h2>
             </div>
 
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-16">
-              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">&gt;90%</div>
-                <div className="text-sm text-slate-600 font-bold">Cobertura de Instalación</div>
-                <div className="text-xs text-slate-500 mt-2">En edificios administrados</div>
+            {/* Staggered Asymmetric Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Large Feature Stat */}
+              <div className="md:col-span-2 bg-white/10 backdrop-blur-sm p-16 rounded-lg">
+                <div className="text-[140px] font-black text-[#91A56E] leading-none mb-6">&gt;90%</div>
+                <div className="text-2xl font-bold mb-2">Cobertura de Instalación</div>
+                <div className="text-white/70">En edificios administrados por Globe Power</div>
               </div>
-              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">99%</div>
-                <div className="text-sm text-slate-600 font-bold">Disponibilidad del Sistema</div>
-                <div className="text-xs text-slate-500 mt-2">Uptime continuo</div>
+              
+              {/* Small Stat */}
+              <div className="bg-white/10 backdrop-blur-sm p-10 rounded-lg flex flex-col justify-center">
+                <div className="text-7xl font-black text-[#91A56E] mb-4">99%</div>
+                <div className="text-lg font-bold mb-2">Disponibilidad del Sistema</div>
+                <div className="text-sm text-white/70">Uptime continuo</div>
               </div>
-              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">15%</div>
-                <div className="text-sm text-slate-600 font-bold">Reducción de Consumo</div>
-                <div className="text-xs text-slate-500 mt-2">No facturado (desperdicio)</div>
+
+              {/* Small Stat */}
+              <div className="bg-white/10 backdrop-blur-sm p-10 rounded-lg flex flex-col justify-center">
+                <div className="text-7xl font-black text-[#91A56E] mb-4">15%</div>
+                <div className="text-lg font-bold mb-2">Reducción de Consumo</div>
+                <div className="text-sm text-white/70">No facturado (desperdicio)</div>
               </div>
-              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">1H</div>
-                <div className="text-sm text-slate-600 font-bold">Tiempo de Respuesta</div>
-                <div className="text-xs text-slate-500 mt-2">Promedio consultas técnicas</div>
+
+              {/* Large Feature Stat */}
+              <div className="md:col-span-2 bg-white/10 backdrop-blur-sm p-16 rounded-lg">
+                <div className="text-[140px] font-black text-[#91A56E] leading-none mb-6">20%</div>
+                <div className="text-2xl font-bold mb-2">Ahorro en Mantenimiento</div>
+                <div className="text-white/70">Reducción de presupuesto anual mediante mantenimiento predictivo</div>
               </div>
-              <div className="text-center p-8 bg-slate-50 rounded-lg border-t-4 border-[#3A5B1E] hover:shadow-xl transition-all duration-300">
-                <div className="text-5xl font-black text-[#3A5B1E] mb-3">20%</div>
-                <div className="text-sm text-slate-600 font-bold">Ahorro en Mantenimiento</div>
-                <div className="text-xs text-slate-500 mt-2">Presupuesto anual</div>
+
+              {/* Bottom Full-Width Stat */}
+              <div className="md:col-span-3 bg-white/10 backdrop-blur-sm p-12 rounded-lg text-center">
+                <div className="text-8xl font-black text-[#91A56E] mb-4">1H</div>
+                <div className="text-xl font-bold">Tiempo de Respuesta Promedio a Consultas Técnicas</div>
               </div>
             </div>
 
             {/* CTA 10: After Metrics */}
-            <div className="text-center mt-16 mb-12">
-              <h3 className="text-2xl font-bold text-black mb-6">Alcanza estos niveles de eficiencia</h3>
-              <a href="#contacto" className="inline-block bg-black text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#3A5B1E] transition-all duration-300 rounded-md">
+            <div className="text-center mt-20">
+              <h3 className="text-2xl font-bold mb-6">Alcanza estos niveles de eficiencia</h3>
+              <a href="#contacto" className="inline-block bg-white text-[#3A5B1E] px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#91A56E] hover:text-white transition-all duration-300 rounded-md">
                 Comienza tu Evaluación Energética
               </a>
             </div>
@@ -755,7 +893,7 @@ export default function PowerPageClient() {
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-full bg-[#3A5B1E]/30" />
         </div>
 
-        {/* SECTION 11: Differentiation */}
+        {/* SECTION 11: Differentiation (NO EMOJIS — Bold Typography Only) */}
         <section className="py-32 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-20">
@@ -765,33 +903,33 @@ export default function PowerPageClient() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-6xl mb-6">🏭</div>
-                <h3 className="text-xl font-bold text-black mb-4">Rigor Industrial</h3>
-                <p className="text-slate-600 text-sm">Alianza exclusiva Siemens para SMB, garantizando calidad de clase mundial.</p>
+              <div className="bg-white p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[#3A5B1E] font-black text-2xl mb-6">RIGOR INDUSTRIAL</div>
+                <h3 className="text-xl font-bold text-black mb-4">Alianza Siemens</h3>
+                <p className="text-slate-600">Alianza exclusiva Siemens para SMB, garantizando calidad de clase mundial.</p>
               </div>
 
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-6xl mb-6">👥</div>
-                <h3 className="text-xl font-bold text-black mb-4">Soporte Humano</h3>
-                <p className="text-slate-600 text-sm">Atención personalizada por especialistas. Sin bots, sin tickets perdidos.</p>
+              <div className="bg-white p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[#3A5B1E] font-black text-2xl mb-6">SOPORTE HUMANO</div>
+                <h3 className="text-xl font-bold text-black mb-4">Atención Personalizada</h3>
+                <p className="text-slate-600">Atención personalizada por especialistas. Sin bots, sin tickets perdidos.</p>
               </div>
 
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-6xl mb-6">⚡</div>
-                <h3 className="text-xl font-bold text-black mb-4">Agilidad Tecnológica</h3>
-                <p className="text-slate-600 text-sm">Plataformas en la nube con IA para detección temprana de anomalías. Predictivo vs. reactivo.</p>
+              <div className="bg-white p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[#3A5B1E] font-black text-2xl mb-6">AGILIDAD TECNOLÓGICA</div>
+                <h3 className="text-xl font-bold text-black mb-4">Cloud + AI</h3>
+                <p className="text-slate-600">Plataformas en la nube con IA para detección temprana de anomalías. Predictivo vs. reactivo.</p>
               </div>
 
-              <div className="bg-white p-10 border-l-4 border-[#3A5B1E] rounded-lg">
-                <div className="text-6xl mb-6">🌱</div>
-                <h3 className="text-xl font-bold text-black mb-4">Sostenibilidad Validada</h3>
-                <p className="text-slate-600 text-sm">Apoyo para certificaciones I-RECs y respaldo como empresa Sistema B.</p>
+              <div className="bg-white p-10 rounded-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-[#3A5B1E] font-black text-2xl mb-6">SOSTENIBILIDAD</div>
+                <h3 className="text-xl font-bold text-black mb-4">Validación Sistema B</h3>
+                <p className="text-slate-600">Apoyo para certificaciones I-RECs y respaldo como empresa Sistema B.</p>
               </div>
             </div>
 
             {/* CTA 11: After Differentiation */}
-            <div className="text-center mt-16 mb-12">
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold text-black mb-6">Experiencia Globe Power vs. Contratistas Tradicionales</h3>
               <a href="#contacto" className="inline-block bg-[#3A5B1E] text-white px-8 py-4 text-sm font-bold tracking-[0.15em] uppercase hover:bg-[#2d4617] transition-all duration-300 rounded-md">
                 Agenda una Reunión Comparativa

@@ -253,6 +253,13 @@ export default function Header() {
           )}
 
           <Link
+            href="/servicios"
+            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
+          >
+            SERVICIOS
+          </Link>
+
+          <Link
             href="/modular"
             className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
           >
@@ -432,6 +439,14 @@ export default function Header() {
                   </AnimatePresence>
                 </div>
               )}
+
+              <Link
+                href="/servicios"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
+              >
+                SERVICIOS
+              </Link>
 
               <Link
                 href="/modular"
