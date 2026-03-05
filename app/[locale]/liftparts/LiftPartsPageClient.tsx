@@ -27,18 +27,18 @@ export default function LiftPartsPageClient() {
       <div className="bg-white">
         {/* Lift Parts Glass Pill Header */}
         <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[95%] mt-6" style={{ zIndex: 9999 }}>
-          <div className="px-14 py-4 flex justify-between items-center w-full h-32">
-            <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
+          <div className="px-6 md:px-8 lg:px-10 py-4 flex justify-between items-center w-full h-32">
+            <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center">
               <img
                 src="/images/liftparts/logo-globe-lift-parts.png"
                 alt="Globe Lift Parts - Repuestos y Reparación de Componentes para Ascensores"
                 height={96}
                 width="auto"
-                className="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                className="h-20 md:h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </a>
 
-            <nav className="flex items-center gap-4 md:gap-6 pr-12">
+            <nav className="flex items-center gap-3 md:gap-4 lg:gap-6">
               <a href={homeLink} onClick={handleInicioClick} className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
                 INICIO
               </a>
@@ -107,13 +107,27 @@ export default function LiftPartsPageClient() {
         {/* Sticky Sub-Navigation */}
         <LiftPartsSubNav />
 
-        {/* Hero Section with Placeholder Video Background */}
+        {/* Hero Section with Animated Background */}
         <section className="relative min-h-[90vh] flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-          <div className="absolute inset-0 z-0">
-            {/* Placeholder for repair lab video */}
-            <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 opacity-80" />
-            <div className="absolute inset-0 bg-[#FCD074]/10" />
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 animate-gradient-slow" />
+            {/* Subtle moving dots pattern */}
+            <div className="absolute inset-0 opacity-20" style={{
+              backgroundImage: 'radial-gradient(circle at 20% 50%, #FCD074 1px, transparent 1px), radial-gradient(circle at 80% 80%, #FCD074 1px, transparent 1px)',
+              backgroundSize: '50px 50px, 80px 80px',
+              animation: 'movePattern 20s linear infinite'
+            }} />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50" />
+            <div className="absolute inset-0 bg-[#FCD074]/5" />
           </div>
+          
+          <style jsx>{`
+            @keyframes movePattern {
+              0% { background-position: 0 0, 0 0; }
+              100% { background-position: 50px 50px, 80px 80px; }
+            }
+          `}</style>
           
           <div className="relative z-10 max-w-7xl mx-auto text-center">
             <h1 className="text-[clamp(48px,6vw,96px)] font-black leading-[1.05] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
