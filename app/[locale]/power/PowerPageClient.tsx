@@ -101,7 +101,7 @@ export default function PowerPageClient() {
         </header>
 
         {/* SECTION 1: Hero Section with Video Background */}
-        <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+        <section className="relative min-h-[90vh] flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
           <div className="absolute inset-0 z-0">
             <video
               autoPlay
