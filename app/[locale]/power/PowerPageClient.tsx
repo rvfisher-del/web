@@ -206,34 +206,13 @@ export default function PowerPageClient() {
               </h2>
             </div>
 
-            {/* SVG Ecosystem Hub Diagram */}
+            {/* Professional Ecosystem Diagram */}
             <div className="max-w-4xl mx-auto mb-20">
-              <svg viewBox="0 0 800 600" className="w-full h-auto">
-                {/* Central Hub */}
-                <circle cx="400" cy="300" r="80" fill="#3A5B1E" />
-                <text x="400" y="305" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">GLOBE</text>
-                <text x="400" y="325" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">POWER</text>
-                
-                {/* Service 1: Subdistribución */}
-                <line x1="400" y1="220" x2="400" y2="100" stroke="#91A56E" strokeWidth="2" />
-                <circle cx="400" cy="80" r="40" fill="#91A56E" />
-                <text x="400" y="88" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">Subdist.</text>
-                
-                {/* Service 2: Eficiencia */}
-                <line x1="480" y1="300" x2="600" y2="300" stroke="#91A56E" strokeWidth="2" />
-                <circle cx="620" cy="300" r="40" fill="#91A56E" />
-                <text x="620" y="308" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">Eficiencia</text>
-                
-                {/* Service 3: Software */}
-                <line x1="400" y1="380" x2="400" y2="500" stroke="#91A56E" strokeWidth="2" />
-                <circle cx="400" cy="520" r="40" fill="#91A56E" />
-                <text x="400" y="528" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">Software</text>
-                
-                {/* Service 4: Mantenimiento */}
-                <line x1="320" y1="300" x2="200" y2="300" stroke="#91A56E" strokeWidth="2" />
-                <circle cx="180" cy="300" r="40" fill="#91A56E" />
-                <text x="180" y="308" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">Mant.</text>
-              </svg>
+              <img
+                src="/images/power/ecosystem-diagram.png"
+                alt="Ecosistema de Servicios de Globe Power"
+                className="w-full h-auto"
+              />
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
