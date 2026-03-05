@@ -25,7 +25,7 @@ export default function EficienciaClient() {
     <>
       <div className="bg-white">
         {/* Glass Pill Header */}
-        <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[95%]" style={{ zIndex: 9999 }}>
+        <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[95%] mt-6" style={{ zIndex: 9999 }}>
           <div className="px-14 py-4 flex justify-between items-center w-full h-32">
             <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center pl-12">
               <img
