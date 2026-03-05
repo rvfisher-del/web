@@ -63,6 +63,16 @@ export default function Header({ scrolled }: HeaderProps) {
             >
               Sectores
             </a>
+            <a
+              href="/servicios"
+              className={`text-sm font-medium transition-colors duration-200 ${
+                scrolled
+                  ? 'text-gray-700 hover:text-[#FF8C42]'
+                  : 'text-white hover:text-[#FF8C42]'
+              }`}
+            >
+              Servicios
+            </a>
 
             {/* Companies Dropdown */}
             <div
@@ -197,6 +207,13 @@ export default function Header({ scrolled }: HeaderProps) {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Sectores
+              </a>
+              <a
+                href="/servicios"
+                className="text-sm font-medium text-gray-700 hover:text-[#FF8C42]"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Servicios
               </a>
               <a
                 href="#valores"
