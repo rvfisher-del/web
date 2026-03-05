@@ -6,7 +6,7 @@ import LiftPartsSubNav from '@/components/LiftPartsSubNav';
 
 export default function LiftPartsPageClient() {
   const pathname = usePathname();
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const getHomeLink = () => {
     if (pathname.includes('/liftparts')) return '/liftparts';
@@ -20,89 +20,116 @@ export default function LiftPartsPageClient() {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+    setMenuOpen(false);
   };
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
       <div className="bg-white">
-        {/* Lift Parts Glass Pill Header */}
+        {/* Clean Minimal Header with Hamburger */}
         <header className="fixed top-0 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 w-[95%] mt-6" style={{ zIndex: 9999 }}>
-          <div className="px-6 md:px-8 lg:px-10 py-4 flex justify-between items-center w-full h-32">
-            <a href="/" className="flex-shrink-0 py-2 bg-transparent flex items-center">
+          <div className="px-6 py-4 flex justify-between items-center w-full h-20">
+            {/* Logo */}
+            <a href="/" className="flex-shrink-0 flex items-center">
               <img
                 src="/images/liftparts/logo-globe-lift-parts.png"
-                alt="Globe Lift Parts - Repuestos y Reparación de Componentes para Ascensores"
-                height={96}
-                width="auto"
-                className="h-20 md:h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                alt="Globe Lift Parts"
+                className="h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </a>
 
-            <nav className="flex items-center gap-3 md:gap-4 lg:gap-6">
-              <a href={homeLink} onClick={handleInicioClick} className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
-                INICIO
-              </a>
-              <a href="#servicios" className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
-                SERVICIOS
-              </a>
-              
-              {/* Services Dropdown */}
-              <div 
-                className="relative"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
-              >
-                <button
-                  className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
-                >
-                  SOLUCIONES ▾
-                </button>
-                
-                {servicesOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 border border-gray-100 z-50">
-                    <a
-                      href="/liftparts/catalogo"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FCD074] transition-colors"
-                    >
-                      Catálogo de Repuestos
-                    </a>
-                    <a
-                      href="/liftparts/laboratorio"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FCD074] transition-colors"
-                    >
-                      Laboratorio de Reparación
-                    </a>
-                    <a
-                      href="/liftparts/marcas"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FCD074] transition-colors"
-                    >
-                      Marcas Soportadas
-                    </a>
-                    <a
-                      href="/liftparts/nosotros"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FCD074] transition-colors"
-                    >
-                      Sobre Nosotros
-                    </a>
-                  </div>
-                )}
-              </div>
-              
-              <a href="mailto:liftparts@grupoglobe.com" className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group whitespace-nowrap">
-                CONTACTO
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FCD074] group-hover:w-full transition-all duration-300" />
-              </a>
-              <a 
-                href="https://wa.me/56977974948?text=Hola%2C%20necesito%20información%20sobre%20repuestos%20para%20ascensores" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 backdrop-blur-sm border border-white/30 text-white px-6 py-2.5 text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-green-700 transition-all duration-300"
-              >
-                📱 WHATSAPP
-              </a>
-            </nav>
+            {/* Hamburger Button */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="flex flex-col gap-1.5 p-2 hover:opacity-80 transition-opacity"
+              aria-label="Menu"
+            >
+              <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            </button>
           </div>
         </header>
+
+        {/* Full-Screen Menu Overlay */}
+        <div className={`fixed inset-0 bg-black/95 backdrop-blur-lg transition-opacity duration-300 ${menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`} style={{ zIndex: 9998 }}>
+          <div className="flex items-center justify-center min-h-screen px-6">
+            <nav className="max-w-2xl w-full">
+              {/* Main Navigation */}
+              <div className="space-y-6 mb-12">
+                <a 
+                  href={homeLink} 
+                  onClick={handleInicioClick} 
+                  className="block text-4xl md:text-5xl font-bold text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  INICIO
+                </a>
+                <a 
+                  href="#servicios" 
+                  onClick={closeMenu}
+                  className="block text-4xl md:text-5xl font-bold text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  SERVICIOS
+                </a>
+              </div>
+
+              {/* Solutions Submenu */}
+              <div className="space-y-4 mb-12 pl-6 border-l-2 border-[#FCD074]/30">
+                <p className="text-sm font-bold tracking-widest uppercase text-[#FCD074] mb-4">SOLUCIONES</p>
+                <a
+                  href="/liftparts/catalogo"
+                  onClick={closeMenu}
+                  className="block text-2xl font-light text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  Catálogo de Repuestos
+                </a>
+                <a
+                  href="/liftparts/laboratorio"
+                  onClick={closeMenu}
+                  className="block text-2xl font-light text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  Laboratorio de Reparación
+                </a>
+                <a
+                  href="/liftparts/marcas"
+                  onClick={closeMenu}
+                  className="block text-2xl font-light text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  Marcas Soportadas
+                </a>
+                <a
+                  href="/liftparts/nosotros"
+                  onClick={closeMenu}
+                  className="block text-2xl font-light text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  Sobre Nosotros
+                </a>
+              </div>
+
+              {/* Contact Actions */}
+              <div className="space-y-4">
+                <a 
+                  href="mailto:liftparts@grupoglobe.com"
+                  onClick={closeMenu}
+                  className="block text-2xl font-light text-white hover:text-[#FCD074] transition-colors duration-300"
+                >
+                  CONTACTO
+                </a>
+                <a 
+                  href="https://wa.me/56977974948?text=Hola%2C%20necesito%20información%20sobre%20repuestos%20para%20ascensores" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMenu}
+                  className="inline-block bg-green-600 text-white px-8 py-4 text-lg font-bold uppercase rounded-lg hover:bg-green-700 transition-all duration-300"
+                >
+                  📱 WhatsApp
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
 
         {/* Sticky Sub-Navigation */}
         <LiftPartsSubNav />
