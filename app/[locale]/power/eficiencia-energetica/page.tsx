@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import PowerSubNav from '@/app/components/PowerSubNav';
 import EficienciaClient from './EficienciaClient';
 
 export const metadata: Metadata = {
@@ -21,5 +22,10 @@ export const metadata: Metadata = {
 };
 
 export default function EficienciaEnergeticaPage() {
-  return <EficienciaClient />;
+  return (
+    <>
+      <PowerSubNav />
+      <EficienciaClient />
+    </>
+  );
 }

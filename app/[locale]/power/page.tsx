@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import PowerSubNav from '@/app/components/PowerSubNav';
 import PowerPageClient from './PowerPageClient';
 
 export const metadata: Metadata = {
@@ -20,5 +21,10 @@ export const metadata: Metadata = {
 };
 
 export default function PowerPage() {
-  return <PowerPageClient />;
+  return (
+    <>
+      <PowerSubNav />
+      <PowerPageClient />
+    </>
+  );
 }
