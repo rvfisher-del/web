@@ -108,11 +108,10 @@ export default function Header() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        style={{ zIndex: 9999 }}
-        className={`fixed top-6 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
+        className={`sticky top-0 z-50 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
           isScrolled 
-            ? 'w-[90%]' 
-            : 'w-[95%]'
+            ? 'w-[90%] mt-6' 
+            : 'w-[95%] mt-6'
         }`}
       >
       <div className="px-14 py-4 flex justify-between items-center w-full h-32">
