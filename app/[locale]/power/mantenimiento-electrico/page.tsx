@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import PowerSubNav from '@/app/components/PowerSubNav';
 import MantenimientoClient from './MantenimientoClient';
 
 export const metadata: Metadata = {
@@ -22,10 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function MantenimientoElectricoPage() {
-  return (
-    <>
-      <PowerSubNav />
-      <MantenimientoClient />
-    </>
-  );
+  return <MantenimientoClient />;
 }

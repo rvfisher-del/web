@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import PowerSubNav from '@/app/components/PowerSubNav';
 import SoftwareClient from './SoftwareClient';
 
 export const metadata: Metadata = {
@@ -22,10 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function SoftwareReporteriaPage() {
-  return (
-    <>
-      <PowerSubNav />
-      <SoftwareClient />
-    </>
-  );
+  return <SoftwareClient />;
 }

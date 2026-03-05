@@ -9,6 +9,7 @@ interface HeaderProps {
 export default function Header({ scrolled }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [companiesDropdownOpen, setCompaniesDropdownOpen] = useState(false);
+  const [powerSubmenuOpen, setPowerSubmenuOpen] = useState(false);
   const [powerPrefetched, setPowerPrefetched] = useState(false);
 
   // Prefetch /power route when hovering over Globe Power link
@@ -95,14 +96,58 @@ export default function Header({ scrolled }: HeaderProps) {
                   onMouseEnter={() => setCompaniesDropdownOpen(true)}
                   onMouseLeave={() => setCompaniesDropdownOpen(false)}
                 >
-                  <a
-                    href="/power/"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
-                    onClick={() => setCompaniesDropdownOpen(false)}
-                    onMouseEnter={prefetchPower}
+                  {/* Globe Power with submenu */}
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setPowerSubmenuOpen(true)}
+                    onMouseLeave={() => setPowerSubmenuOpen(false)}
                   >
-                    Globe Power
-                  </a>
+                    <a
+                      href="/power/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                      onClick={() => setCompaniesDropdownOpen(false)}
+                      onMouseEnter={prefetchPower}
+                    >
+                      Globe Power →
+                    </a>
+                    
+                    {powerSubmenuOpen && (
+                      <div 
+                        className="absolute left-full top-0 ml-1 w-56 bg-white rounded-lg shadow-lg py-2 border border-gray-100"
+                        onMouseEnter={() => setPowerSubmenuOpen(true)}
+                        onMouseLeave={() => setPowerSubmenuOpen(false)}
+                      >
+                        <a
+                          href="/power/subdistribucion-remarcacion"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                          onClick={() => { setCompaniesDropdownOpen(false); setPowerSubmenuOpen(false); }}
+                        >
+                          Subdistribución y Remarcación
+                        </a>
+                        <a
+                          href="/power/eficiencia-energetica"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                          onClick={() => { setCompaniesDropdownOpen(false); setPowerSubmenuOpen(false); }}
+                        >
+                          Eficiencia Energética
+                        </a>
+                        <a
+                          href="/power/software-reporteria"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                          onClick={() => { setCompaniesDropdownOpen(false); setPowerSubmenuOpen(false); }}
+                        >
+                          Software y Reportería
+                        </a>
+                        <a
+                          href="/power/mantenimiento-electrico"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"
+                          onClick={() => { setCompaniesDropdownOpen(false); setPowerSubmenuOpen(false); }}
+                        >
+                          Mantenimiento Eléctrico
+                        </a>
+                      </div>
+                    )}
+                  </div>
                   <a
                     href="#globe-flota"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF8C42] transition-colors"

@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import PowerSubNav from '@/app/components/PowerSubNav';
 import SubdistribucionClient from './SubdistribucionClient';
 
 export const metadata: Metadata = {
@@ -22,10 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function SubdistribucionRemarcacionPage() {
-  return (
-    <>
-      <PowerSubNav />
-      <SubdistribucionClient />
-    </>
-  );
+  return <SubdistribucionClient />;
 }
