@@ -108,10 +108,11 @@ export default function Header() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className={`sticky top-0 z-50 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
+        style={{ zIndex: 9999 }}
+        className={`fixed top-6 left-1/2 -translate-x-1/2 max-w-7xl mx-auto rounded-full border border-white/10 bg-black/20 backdrop-blur-md shadow-2xl transition-all duration-500 ${
           isScrolled 
-            ? 'w-[90%] mt-6' 
-            : 'w-[95%] mt-6'
+            ? 'w-[90%]' 
+            : 'w-[95%]'
         }`}
       >
       <div className="px-14 py-4 flex justify-between items-center w-full h-32">
@@ -250,13 +251,6 @@ export default function Header() {
               </AnimatePresence>
             </div>
           )}
-
-          <Link
-            href="/servicios"
-            className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
-          >
-            SERVICIOS
-          </Link>
 
           <Link
             href="/modular"
@@ -438,14 +432,6 @@ export default function Header() {
                   </AnimatePresence>
                 </div>
               )}
-
-              <Link
-                href="/servicios"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-4 py-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:bg-white/5 rounded-md transition-colors"
-              >
-                SERVICIOS
-              </Link>
 
               <Link
                 href="/modular"

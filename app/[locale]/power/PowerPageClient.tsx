@@ -1,10 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
 export default function PowerPageClient() {
   const pathname = usePathname();
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const getHomeLink = () => {
     if (pathname.includes('/servicios')) return '/servicios';
@@ -44,6 +46,49 @@ export default function PowerPageClient() {
               <a href="#ecosistema" className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300">
                 ECOSISTEMA
               </a>
+              
+              {/* Services Dropdown */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
+                <button
+                  className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300"
+                >
+                  SERVICES ▾
+                </button>
+                
+                {servicesOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 border border-gray-100 z-50">
+                    <a
+                      href="/power/subdistribucion-remarcacion"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#3A5B1E] transition-colors"
+                    >
+                      Subdistribución y Remarcación
+                    </a>
+                    <a
+                      href="/power/eficiencia-energetica"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#3A5B1E] transition-colors"
+                    >
+                      Eficiencia Energética
+                    </a>
+                    <a
+                      href="/power/software-reporteria"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#3A5B1E] transition-colors"
+                    >
+                      Software y Reportería
+                    </a>
+                    <a
+                      href="/power/mantenimiento-electrico"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#3A5B1E] transition-colors"
+                    >
+                      Mantenimiento Eléctrico
+                    </a>
+                  </div>
+                )}
+              </div>
+              
               <a href="mailto:talento@grupoglobe.cl" className="px-3 text-xs font-bold tracking-[0.2em] uppercase text-white hover:text-white/80 transition-colors duration-300 relative group whitespace-nowrap">
                 TRABAJA CON NOSOTROS
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3A5B1E] group-hover:w-full transition-all duration-300" />
