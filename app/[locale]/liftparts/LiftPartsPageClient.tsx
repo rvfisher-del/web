@@ -134,27 +134,26 @@ export default function LiftPartsPageClient() {
         {/* Sticky Sub-Navigation */}
         <LiftPartsSubNav />
 
-        {/* Hero Section with Animated Background */}
+        {/* Hero Section with Video Background */}
         <section className="relative min-h-[90vh] flex items-center justify-center pt-48 pb-24 px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-          <div className="absolute inset-0 z-0 overflow-hidden">
-            {/* Animated gradient background */}
-            <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 animate-gradient-slow" />
-            {/* Subtle moving dots pattern */}
-            <div className="absolute inset-0 opacity-20" style={{
-              backgroundImage: 'radial-gradient(circle at 20% 50%, #FCD074 1px, transparent 1px), radial-gradient(circle at 80% 80%, #FCD074 1px, transparent 1px)',
-              backgroundSize: '50px 50px, 80px 80px',
-              animation: 'movePattern 20s linear infinite'
-            }} />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50" />
-            <div className="absolute inset-0 bg-[#FCD074]/5" />
+          {/* Video Background - Elevator Parts & Repair */}
+          <div className="absolute inset-0 z-0">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover opacity-60"
+              aria-label="Globe Lift Parts - Repuestos y Reparación de Ascensores"
+              title="Globe Lift Parts — Repuestos y Reparación de Ascensores"
+            >
+              <source src="https://kfli3thlaotlfeup.public.blob.vercel-storage.com/Elevator_Parts_Repair_Video_Concept.mp4" type="video/mp4" />
+            </video>
+            {/* Dark gradient overlay - ensures white text remains 100% legible */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/70" />
+            {/* Yellow accent overlay */}
+            <div className="absolute inset-0 bg-[#FCD074]/10" />
           </div>
-          
-          <style jsx>{`
-            @keyframes movePattern {
-              0% { background-position: 0 0, 0 0; }
-              100% { background-position: 50px 50px, 80px 80px; }
-            }
-          `}</style>
           
           <div className="relative z-10 max-w-7xl mx-auto text-center">
             <h1 className="text-[clamp(48px,6vw,96px)] font-black leading-[1.05] text-white mb-12" style={{ letterSpacing: '-0.05em' }}>
